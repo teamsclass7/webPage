@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('./mobile.css');
 /*font-family: 'Noto Sans KR', sans-serif;*/
 /*font-family: '양진체'*/
 html{font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
