@@ -56,7 +56,8 @@ h2{
 .util_right>li:nth-child(2),
 .util_right>li:nth-child(4),
 .util_right>li:nth-child(6),
-.util_right>li:nth-child(8){
+.util_right>li:nth-child(8),
+.util_right>li:nth-child(10){
     margin:0 20px 0 20px;
 }
 .util_right::after{
@@ -73,7 +74,7 @@ h2{
     position:absolute;
     transform:translateX(-50%);
     left:50%;
-    width:1200px;
+    width:720px;
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
@@ -90,11 +91,16 @@ h2{
     transition: all .4s;
     width:240px;
     position:relative;
+    color:#5d5d5d;
 }
 .gnb>li>a:hover{
     font-size:1.9rem;
+    color:#156037;
     transition: all .4s;
 }
+.gnb>li:nth-child(1)>a{font-size:1.9rem;
+    color:#156037;}
+
 .gnb>li>a::after {
     content: "";
     width: 0;
@@ -113,9 +119,19 @@ h2{
     transform: translateX(-50%);
     transition: all 0.3s;
 }
-.gnb>li>a:first-child:hover::after {
-    width: 60%;
-}
+.gnb>li:nth-child(1)>a::after{ content: "";
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    background: #156037;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    transition: all 0.3s;}
+    .gnb>li:nth-child(1)>a:first-child:hover::after,
+    .gnb>li:nth-child(2)>a:first-child:hover::after {
+        width: 60%;
+    }
 
 
 #menu{
@@ -375,3 +391,14 @@ footer>div>.ft_01>li>a{
 }
 
 
+@media all and (max-width:1024px){
+    body{width: 100%; }
+    
+    
+ 
+
+
+
+
+
+}
