@@ -408,11 +408,12 @@ footer>div>.ft_01>li>a{
 
     #m_header{display: block;
     width:100%; margin: 0 auto;
-        height:70px; 
+        height:100px; 
+       
         position: fixed;
         background: #fff;
 }
-#logo{margin: 0; position: absolute; left: 50%; transform: translateX(-50%);}
+#logo{margin: 0; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 
     input[id="m_btn"] {
         display: none;
