@@ -1,0 +1,596 @@
+@import "mobile.css";
+
+body h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+
+/*헤더영역*/
+
+.container{
+    width: 1920px;
+    background: url('../images/business/main/banner.png') no-repeat;
+}
+#util{
+    width: 100%; height: 110px;
+    position: relative;
+    border-bottom: 1px solid #666;
+    background: rgba(0,0,0,0.2);
+}
+#logo{
+    width: 150px; height: 40px;
+    position: absolute;
+    top: 35px; left: 40px;
+}
+#logo>a{
+    display: block;
+    background: url('../images/business/main/logo.png') no-repeat;
+    width: 100%; height: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+#util>ul{
+    position: absolute;
+    left: 25%; bottom: 0;
+}
+#util>ul::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+ }
+ 
+#util>ul>li{
+    float: left;
+}
+
+#util>ul>li>a{
+    display: block;
+    margin: 0 25px;
+    height: 38px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#util>ul>li>a:hover{
+    color: #e21129;
+    border-bottom: 3px solid #e21129;
+    box-sizing: border-box;
+}
+#menu{
+    display:none;
+    width:40px;
+    margin-left:10px;
+    position: absolute;
+    top: 50%; right: 60px;
+    transform: translateY(-50%);
+}
+#menu>span{
+    width: 100%;
+    height: 8px;
+    background: #fff;
+    display: block;
+} 
+#menu>span:nth-child(2){margin: 7px 0;}
+
+
+/*배너영역*/
+
+#banner{
+    width: 1920px; height: 970px;
+    position: relative;
+}
+#banner>div{
+    width: 1000px; height: 160px;
+    background: rgba(0,0,0,0.2);
+    text-align: right;
+    position: absolute;
+    top:500px;
+}
+#banner>div>h3{
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 60px;
+}
+#banner>div>h4{
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 20px;
+    line-height: 1.6;
+}
+.line_logo{
+    width: 1920px;
+    text-align: center;
+    margin: 80px auto;
+}
+
+/*product*/
+
+.line{
+    width: 60px; height: 5px;
+    background: #26562e;
+    margin: 80px auto;
+}
+
+#product{
+    width: 1920px; height: 620px;
+    position: relative;
+}
+#product>div:nth-of-type(1){
+    position: absolute;
+    top: 18%; right: 50%;
+}
+#product>div:nth-of-type(2){
+    position: absolute;
+    right: 2%;
+}
+#product>div>div{
+    width: 600px; height:400px;
+}
+#product>div:nth-of-type(1){
+    width: 540px; height: 300px;
+    background: url('../images/business/main/doguri.png') no-repeat center center;
+    border: 2px solid #999;
+}
+#product>div:nth-of-type(2){
+    width: 850px; height: 620px;
+    text-align: right;
+}
+#product>div:nth-of-type(2)>p{
+    display: inline-block;
+    width: 300px; height: 60px;
+    margin-right: 40px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-bottom: 5px solid #333;
+}
+#product>div:nth-of-type(2)>div{
+    text-align: left;
+    margin:60px 30px;
+    position: relative;
+}
+
+#product>div:nth-of-type(2)>div>h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#product>div:nth-of-type(2)>div>h3{
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+#product>div:nth-of-type(2)>div>p{
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+#product>div:nth-of-type(2)>div>h5>a{
+    display: block;
+    width: 120px; height: 40px;
+    background: #333;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 50%;
+    margin-top: 30px;
+}
+
+
+
+
+/*brand*/
+#brand{
+    width: 1920px; height: 620px;
+    position: relative;
+}
+#brand>div>h3{
+    display: inline-block;
+    position: absolute;
+    left: 3%;
+    width: 300px; height: 60px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-bottom: 5px solid #333;
+}
+#brand>div>ul>a>li{
+    width: 320px; height: 400px;
+    background: url('')no-repeat center center/90%;
+}
+
+#brand>div>ul>a>li:nth-child(1){
+    position: absolute;
+    top: 20%; right: 5%;
+    background-image: url('../images/business/main/hwalmyeongsoo.png');
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+#brand>div>ul>a>li:nth-child(2){
+    position: absolute;
+    top: 25%; right: 25%;
+    background-image: url('../images/business/main/itchi.png');
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+#brand>div>ul>a>li:nth-child(3){
+    position: absolute;
+    top: 20%; right: 45%;
+    background-image: url('../images/business/main/hoosidin.png');
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+#brand>div>ul>a>li:nth-child(4){
+    position: absolute;
+    top: 25%; right: 65%;
+    background-image: url('../images/business/main/cosmatic.png');
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+#brand>div>ul>a>li:hover{
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+    transform: scale(1.02);
+}
+
+/*story*/
+#story{
+    width: 100%; height: 620px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+}
+.news{
+    width: 600px; height: 560px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.news>h3, .video>h3{
+    font-size: 2rem;
+    border-bottom: 2px solid #333;
+    line-height: 2;
+    font-weight: 700;
+}
+.news>ul{
+    margin: 10px auto;
+    border-bottom: 1px solid #666;
+}
+.news>ul>li{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.news>ul>li>a{color: #666;}
+.news>p{
+    text-align:right;
+    margin: 30px 5px 0 0;
+}
+
+.video{
+    width: 940px; height: 560px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.video>div{
+    width: 90%; height: 80%;
+    margin: 30px auto;
+    background: #000;
+}
+
+/*footer*/
+
+footer{
+    width: 100%; height: 80px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    background: #ddd;
+}
+
+footer>div{
+    width: 480px; height: 100%;
+    position: relative;
+}
+footer>div>img{
+    position: absolute;
+    top:20px; left: 170px;
+    transform: scale(1.2);
+}
+
+footer>address{
+    width: 880px; height: 100%;
+}
+footer>address>p{
+    margin-top: 13px;
+}
+footer>address>p:first-child{
+    margin-top: 20px;
+}
+footer>p{
+    width: 540px; height: 100%;
+    line-height: 80px;
+}
+
+
+@media all and (max-width:1020px){
+    .container{
+        width: 1020px;
+        background: url('../images/business/main/banner.png') no-repeat top center/contain;
+    }
+    #logo{
+        width: 65px; height: 65px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #logo>a{
+        display: block;
+        background: url('../images/business/main/m_logo.png') no-repeat;
+        width: 100%; height: 100%;
+        overflow: hidden;
+        text-indent: -999px;
+    }
+    #util>ul{display: none;}
+    #menu{display: block;}
+
+    /*배너영역*/
+    #banner{height: 464px}
+    #banner>div{
+        width: 500px; height: 80px;
+        background: rgba(0,0,0,0.2);
+        text-align: right;
+        position: absolute;
+        top:230px;
+    }
+    #banner>div>h3{
+        font-size: 3rem;
+        font-weight: 700;
+        color: #fff;
+        margin-right: 30px;
+    }
+    #banner>div>h4{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-right: 20px;
+        line-height: 1.6;
+    }
+    .line_logo{
+        width: 1020px;
+        text-align: center;
+        margin: 80px auto;
+    }
+    
+    /*product*/
+    
+    .line{
+        width: 60px; height: 5px;
+        background: #26562e;
+        margin: 80px auto;
+    }
+    
+    #product{
+        width: 1020px; height: 620px;
+        position: relative;
+    }
+    #product>div:nth-of-type(1){
+        position: absolute;
+        top: 18%; right: 50%;
+    }
+    #product>div:nth-of-type(2){
+        position: absolute;
+        right: 2%;
+    }
+    #product>div>div{
+        width: 600px; height:400px;
+    }
+    #product>div:nth-of-type(1){
+        width: 540px; height: 300px;
+        background: url('../images/business/main/doguri.png') no-repeat center center;
+        border: 2px solid #999;
+    }
+    #product>div:nth-of-type(2){
+        width: 850px; height: 620px;
+        text-align: right;
+    }
+    #product>div:nth-of-type(2)>p{
+        display: inline-block;
+        width: 300px; height: 60px;
+        margin-right: 40px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        border-bottom: 5px solid #333;
+    }
+    #product>div:nth-of-type(2)>div{
+        text-align: left;
+        margin:60px 30px;
+        position: relative;
+    }
+    
+    #product>div:nth-of-type(2)>div>h4{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    #product>div:nth-of-type(2)>div>h3{
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    #product>div:nth-of-type(2)>div>p{
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    #product>div:nth-of-type(2)>div>h5>a{
+        display: block;
+        width: 120px; height: 40px;
+        background: #333;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        font-size: 1.2rem;
+        position: absolute;
+        right: 50%;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    /*brand*/
+    #brand{
+        width: 1920px; height: 620px;
+        position: relative;
+    }
+    #brand>div>h3{
+        display: inline-block;
+        position: absolute;
+        left: 3%;
+        width: 300px; height: 60px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        border-bottom: 5px solid #333;
+    }
+    #brand>div>ul>a>li{
+        width: 320px; height: 400px;
+        background: url('')no-repeat center center/90%;
+    }
+    
+    #brand>div>ul>a>li:nth-child(1){
+        position: absolute;
+        top: 20%; right: 5%;
+        background-image: url('../images/business/main/hwalmyeongsoo.png');
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    }
+    #brand>div>ul>a>li:nth-child(2){
+        position: absolute;
+        top: 25%; right: 25%;
+        background-image: url('../images/business/main/itchi.png');
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    }
+    #brand>div>ul>a>li:nth-child(3){
+        position: absolute;
+        top: 20%; right: 45%;
+        background-image: url('../images/business/main/hoosidin.png');
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    }
+    #brand>div>ul>a>li:nth-child(4){
+        position: absolute;
+        top: 25%; right: 65%;
+        background-image: url('../images/business/main/cosmatic.png');
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    }
+    #brand>div>ul>a>li:hover{
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+        transform: scale(1.02);
+    }
+    
+    /*story*/
+    #story{
+        width: 100%; height: 620px;
+        display: flex;
+        flex-wrap: row wrap;
+        justify-content: space-between;
+    }
+    .news{
+        width: 600px; height: 560px;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+    .news>h3, .video>h3{
+        font-size: 2rem;
+        border-bottom: 2px solid #333;
+        line-height: 2;
+        font-weight: 700;
+    }
+    .news>ul{
+        margin: 10px auto;
+        border-bottom: 1px solid #666;
+    }
+    .news>ul>li{
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    .news>ul>li>a{color: #666;}
+    .news>p{
+        text-align:right;
+        margin: 30px 5px 0 0;
+    }
+    
+    .video{
+        width: 940px; height: 560px;
+        margin-top: 30px;
+        margin-right: 100px;
+    }
+    .video>div{
+        width: 90%; height: 80%;
+        margin: 30px auto;
+        background: #000;
+    }
+    
+    /*footer*/
+    
+    footer{
+        width: 100%; height: 80px;
+        display: flex;
+        flex-wrap: row wrap;
+        justify-content: space-between;
+        background: #ddd;
+    }
+    
+    footer>div{
+        width: 480px; height: 100%;
+        position: relative;
+    }
+    footer>div>img{
+        position: absolute;
+        top:20px; left: 170px;
+        transform: scale(1.2);
+    }
+    
+    footer>address{
+        width: 880px; height: 100%;
+    }
+    footer>address>p{
+        margin-top: 13px;
+    }
+    footer>address>p:first-child{
+        margin-top: 20px;
+    }
+    footer>p{
+        width: 540px; height: 100%;
+        line-height: 80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+html{font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#333;}
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+
+.wrap{width:1200px; margin:0 auto;}
+h2{
+    display: none;
+    visibility: hidden;
+    width: 0; height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+/*헤더영역*/
+#header{
+    width:1620px;
+    margin:0 auto;
+}
+#logo{
+    width:250px;
+    height:70px;
+    display:inline-block;
+    margin-top:40px;
+}
+#util{
+    float:right;
+    margin-top:30px;
+}
+.util_right>li{
+    float:left;
+}
+.util_right>li:nth-child(2),
+.util_right>li:nth-child(4),
+.util_right>li:nth-child(6),
+.util_right>li:nth-child(8){
+    margin:0 20px 0 20px;
+}
+.util_right::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.util_right>li>a{
+    font-size:1.2rem;
+}
+.gnb{
+    position:absolute;
+    transform:translateX(-50%);
+    left:50%;
+    padding-top:30px;
+}
+.gnb>li{
+    float:left;
+}
+.gnb>li>a{
+    font-size:2.2rem;
+    font-weight:bold;
+}
+.gnb>li:nth-child(1){
+    margin:0 60px 0 0;
+}
+.gnb>li:nth-child(5){
+    margin:0 0 0 60px;
+}
+
+.gnb>li:nth-child(2),
+.gnb>li:nth-child(3),
+.gnb>li:nth-child(4){
+    margin:0 60px 0 60px;
+}
+/*푸터영역*/
+footer{
+    background:#d7d7d7;
+    height:150px;
+}
+footer>.wrap{
+    position:relative;
+}
+footer>div>.logo{
+    float:left;
+    margin-top:65px;
+}
+footer>div>address{
+    position:absolute;
+    left:300px;
+    top:55px;
+}
+footer>div>address>p{
+    line-height:25px;
+    font-size:1.2rem;
+    color:#5d5d5d;
+}
+footer>div>.ft_01{
+    float:right;
+    margin-top:55px;
+}
+footer>div>.ft_01>li{
+    padding:5px;
+}
+footer>div>.ft_01>li:nth-child(1){
+    text-align:right;
+}
+footer>div>.ft_01>li:nth-child(2){
+    font-size:1.2rem;
+    color:#5d5d5d;
+}
+footer>div>.ft_01>li>a{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#5d5d5d;
+}
+
+
