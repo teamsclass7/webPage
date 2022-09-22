@@ -39,6 +39,7 @@ h2{
     height:200px;
     margin:0 auto;
 }
+#m_header{display: none;}
 #logo{
     width:250px;
     height:70px;
@@ -120,7 +121,7 @@ h2{
     transition: all 0.3s;
 }
 .gnb>li:nth-child(1)>a::after{ content: "";
-    width: 50%;
+    width: 60%;
     height: 4px;
     position: absolute;
     background: #156037;
@@ -128,8 +129,8 @@ h2{
     bottom: -30px;
     transform: translateX(-50%);
     transition: all 0.3s;}
-    .gnb>li:nth-child(1)>a:first-child:hover::after,
-    .gnb>li:nth-child(2)>a:first-child:hover::after {
+    .gnb>li:nth-child(2)>a:first-child:hover::after,
+    .gnb>li:nth-child(3)>a:first-child:hover::after {
         width: 60%;
     }
 
@@ -392,13 +393,79 @@ footer>div>.ft_01>li>a{
 
 
 @media all and (max-width:1024px){
+
+    
     body{width: 100%; }
     
     
- 
+    #header{
+        display:none;
+    }
+    #util,.gnb{display: none;}
+    
+    
+    #menu{display: none;}
 
+    #m_header{display: block;
+    width:100%; margin: 0 auto;
+        height:70px; 
+        position: fixed;
+        background: #fff;
+}
+#logo{margin: 0; position: absolute; left: 50%; transform: translateX(-50%);}
 
+    input[id="m_btn"] {
+        display: none;
+    }
+     
+    input[id="m_btn"] + label {
+        display:block;
+        width: 60px;
+        height: 40px;
+        cursor:pointer;
+        position:relative;
+        
+        float:right;
+        right:5%;
+        top:20%;
+    }
+     
+    
+     
 
-
+    input[id="m_btn"] + label > span {
+        display:block;
+       
+        height:5px;
+        width:100%;
+        border-radius:30px;
+        background: black;
+        position:absolute;
+       
+       
+    }
+     
+     
+    input[id="m_btn"] + label > span:nth-child(1) {
+        top:0;
+    }
+     
+    input[id="m_btn"] + label > span:nth-child(2) {
+        top:50%;
+        transform:translateY(-50%);
+    }
+     
+    input[id="m_btn"] + label > span:nth-child(3) {
+        bottom:0;
+    }
 
 }
+   
+   
+   
+
+
+
+
+
+
