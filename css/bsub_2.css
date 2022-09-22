@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+html{font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#333;}
+
+.wrap{width:1200px; margin:0 auto; text-align: center; padding:100px 0;}
+h2{
+    display: none;
+    visibility: hidden;
+    width: 0; height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.clear::after{
+    content:'';
+    display:block;
+    width: 0; height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear:both;
+}
+
+.top{font-size:15px; margin-bottom:70px;}
+.top>p{float:left;}
+.top>ul{float:right;}
+.top>ul>li{float:left; margin-left: 20px;}
+.product_list{padding:0;}
+.product_list>div{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+.product_list>div>a{
+    display:inline-block;
+    width:220px;
+    margin-left:106px;
+    margin-bottom:115px;
+    text-align: left;
+    line-height:1.5;
+}
+.product_list>div>a:nth-child(4n+1){
+    margin-left:0;
+}
+.product_list>div>a img{height: 200px; padding:10px;}
+.product_list>div>a>ul>li:first-child{
+    width:220px; height:220px;
+    border: solid 1px #d0d0d0;
+    margin-bottom:30px;
+    text-align: center;
+
+}
+.product_list>div>a>ul>li:nth-child(2){font-size:17px;}
+.product_list>div>a>ul>li:nth-child(3){font-size:20px;}
+.product_list>div>a>ul>li:nth-child(3)>span{font-weight:bold;}
+
+.product_list>div>ul{margin:0 auto; text-align: center;}
+.product_list>div>ul>li{float:left; font-size:18px; padding:10px;}
+.product_list>div>ul>li:nth-child(2){font-weight:bold;}
+.product_list>div>ul>li>a{float:left;}
