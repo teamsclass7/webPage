@@ -498,6 +498,7 @@ footer>div>.ft_01>li>a{
     input[id="m_btn"]:checked + label > span:nth-child(1) {
         top:50%;
         transform:translateY(-50%) rotate(45deg);
+        transition: all 0.4s;
     }
      
     input[id="m_btn"]:checked + label > span:nth-child(2) {
@@ -507,12 +508,14 @@ footer>div>.ft_01>li>a{
     input[id="m_btn"]:checked + label > span:nth-child(3) {
         bottom:50%;
         transform:translateY(50%) rotate(-45deg);
+        transition: all 0.4s;
     }
      
      
     input[id="m_btn"]:checked ~ #m_popup{
         opacity: 1;
         background: rgba(0,0,0,0.5);
+        transition: all 0.4s;
     }
 
 
