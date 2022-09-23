@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/join.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 자바스크립트(유효성검사 해당) -->
+<script src ="signUpjs3.js"></script> 
+<!-- 다음 우편번호찾기 API -->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+</head>
+<body>
+    
+<div class="wrap">    
+    <div class="logo_wrap">
+        <a href="./br.html">
+            <img class="logo" src="./images/brand_main/water_logo.png" alt="" />
+        </a>
+    </div>
+    <form action="./login.html">
+    <section id="sec01_wrap">
+        <h2>회원가입</h2>
+        <h3>정보 입력</h3><span>*표시는 필수 입력 사항입니다.</span>
+        <hr/>
+      
+    <div class="userInput">
+        <a class="list">* 아이디</a>
+        <span class="int_id" >
+            <input type="text" id="id" name="id" class="int check"maxlength="20" autocomplete="off">
+        </span>
+    </div>
+   <div class="userInput">
+        <a class="list">* 비밀번호</a>
+        <span class="int_id">
+            <input type="password" id="pw"  name="pw" class="int check"maxlength="20" autocomplete="off">
+        </span>
+    </div>
+    <div class="userInput">
+        <a class="list">* 비밀번호 재확인</span></a>
+        <span class="int_id">
+            <input type="password" id="pwCheck" name="pwCheck" class="int check" maxlength="20" autocomplete="off">
+        </span>
+    </div>
+    <div class="userInput">
+        <a class="list">* 이름</a>
+        <span class="int_id" >
+            <input type="text" id="name" class="int check" name="m_id" maxlength="20" autocomplete="off">
+        </span>
+    </div>     
+    <div class="userInput">
+        <a class="list">* 전화번호</a>
+        <span class="int_id">
+            <select>
+                <option>010</option>
+                <option>011</option>
+            </select>
+            <input type="text" id="phoneNum" name="phoneNum" class="int check" maxlength="8" autocomplete="off">
+           
+        </span>
+     </div>
+    <div class="userInput">
+        <a class="list">&nbsp;&nbsp;&nbsp;E-mail</a>
+        <span class="emailInt" id="emailBox">
+            <input type="text" id="email" maxlength="20" class="int check" autocomplete="off"> 
+           <span>&nbsp;@&nbsp;</span> 
+              
+              <select id="mail_Select">
+                 <option>이메일 선택</option>
+                 <option>naver.com</option>
+                 <option>gmail.com</option>
+                 <option>daum.net</option>
+                 <option>hanmail.net</option>
+              </select>
+        </span>
+     </div>
+
+
+ <!-- 주소 입력 -->
+ <div class="userInput">
+    <a class="list address_list">&nbsp;&nbsp;&nbsp;자택주소</a>
+    <div class="postwrap">
+            <input type="text" id="sample6_postcode" class="int check" placeholder="우편번호">
+            <input type="button" id="post_btn"onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+            
+            <input type="text" id="sample6_address" class="int check" placeholder="주소"><br>
+            <input type="text" id="sample6_extraAddress" class="int check" placeholder="참고항목">
+            <input type="text" id="sample6_detailAddress" class="int check" placeholder="상세주소">
+            </div>
+</div>
+
+  
+    </section>
+    <section id="sec02_wrap">
+
+    <h3>약관 동의</h3><span>*표시는 필수 입력 사항입니다.</span>
+    <hr/>
+
+    <div class="j2_alck"><input type="checkbox" id="j2_allchk"><label for="j2_allchk"><span></span>모든 약관 동의</label></div>
+    <div class="j2_agr_wrap">
+        <h4>* 홈페이지 이용약관(필수)</h4>
+        <div class="j2_agr">
+            <pre>
+    제 1 장 총칙
+    
+    제 1 조 목 적
+    
+    본 약관은 동화약품(주)(이하 "회사"라 합니다)에서 운영하는 동화약품 리조트의 온라인 서비스
+    (이하 "서비스"라 한다) 이용 및 제공에 관한 제반 사항의 규정을 목적으로 합니다.
+    
+    제 2 조 용어의 정의
+    
+    ① “서비스”라 함은 회사가 홈페이지를 통해 제공하는 상품 예약 서비스 • 안내 및 정보제공 서비스와,
+         회사의 모바일 앱을 통해 제공하는 동화약품 입장, 어트랙션 이용예약, 공연 예약, 유무상 행사 •
+         이벤트 참가 예약 서비스, 할인쿠폰 • 에버파워/보너스파워 제공 서비스 등를  회원이 PC, TV,
+         휴대형단말기 등의 각종 유무선 장치 포함한 단말기를 통해 이용할 수 있는 온라인 서비스를 말합니다.
+    ② “이용자”라 함은 이 약관에 따라 회사가 제공하는 서비스를 제공받는 회원 및 비회원을
+         말합니다.
+    ③ “회원”이라 함은 회사에 개인정보를 제공하여 회원등록을 한 자로서, 서비스에 접속하여 정보를
+         지속적으로 제공받으며 회사가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.
+    ④ “비회원”이라 함은 회원에 가입하지 않고 회사가 홈페이지를 통해 제공하는 서비스를 이용하는 자를
+         말합니다.
+    ⑤ "아이디(ID)"이라 함은 회원의 식별과 서비스 이용을 위하여 회원이 정하고 회사가 승인하는 문자와
+         숫자의 조합을 의미합니다.
+    ⑥ "비밀번호"이라 함은 회원이 등록한 아이디(ID)와 일치된 회원임을 확인하고 회원 자신의 개인정보를
+         보호하기 위하여 회원이 정한 문자와 숫자의 조합을 말합니다.
+    ⑦ “게시물”이라 함은 회사 또는 회원이 홈페이지를 이용함에 있어서 게시한 부호, 문자, 음성,
+         음향, 화상, 동영상 등의 정보 형태의 글,사진, 동영상 및 각종 파일과 링크 등을 의미합니다.
+    </pre>
+        </div>
+        <input type="checkbox" class="agr_chk" name="agr1" id="j2_agr1"><label for="j2_agr1" required><span></span> 동의합니다</label>
+    </div>
+    <div class="j2_agr_wrap">
+        <h4>* 전자상거래 이용약관(필수)</h4>
+        <div class="j2_agr">
+            <pre>
+    제1조(목적) 이 약관은 동화약품(주)이 운영하는 동화약품 사이버 몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스이하 "서비스"라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리,의무 및 책임사항을 규정함을 목적으로 합니다.
+    
+    ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+    
+    제2조(정의)
+    
+    ① "몰"이란 동화약품주식회사가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.
+    
+    ② "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+    
+    ③ '회원'이라 함은 "몰"에 회원등록을 한 자로서, 계속적으로 "몰"이 제공하는 서비스를 이용할 수 있는 자를 말합니다.
+    
+    ④ '비회원'이라 함은 회원에 가입하지 않고 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.
+     ⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 「전자상거래 등에서의 소비자 보호지침」 및 관계법령 또는 상관례에 따릅니다.
+  </pre>
+        </div>
+        <input type="checkbox" class="agr_chk" name="agr2" id="j2_agr2"><label for="j2_agr2"><span></span> 동의합니다</label>
+    </div>
+
+    <div class="j2_agr_wrap">
+        <h4>이벤트 프로모션 알림 안내(선택)</h4>
+        <div class="j2_agr">
+            <pre>
+    1. 개인정보의 수집 및 이용목적
+    
+    구분
+    마케팅 및 광고 활용
+    이용목적
+    - 경품행사, 이벤트 정보 안내
+    - 개인서비스 제공 및 마케팅 활용
+    - 통계학적 특성에 따른 서비스 제공 및 광고 게재
+    - 웹페이지 접속 빈도 파악
+    
+    2. 개인정보의 보유 및 이용기간
+    - 회원 탈퇴 시 까지
+    - 마케팅 동의 철회 시까지
+    
+    동의를 거부하시는 경우에도 동화약품 서비스를 이용하실 수 있으나, 경품 행사 및 상품 안내 서비스, 추가 할인 등의 혜택 제공이 제한될 수 있습니다.
+    </pre>
+        </div>
+        <input type="checkbox" class="agr_chk" name="agr3" id="j2_agr3" /><label for="j2_agr3"><span></span> 동의합니다</label>
+    </div>
+
+</section>
+<div class="btn">
+    <button type="submit" class="logbtn joina">회원가입</button>
+
+</div>
+
+
+</form>
+
+
+</div>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="./js/join.js"></script>
+</body>
+</html>

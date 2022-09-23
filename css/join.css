@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+#sec01_wrap>h3{margin-top:30px;}
+html{width:100%;height:100%;margin:0 atuo;font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#333;}
+
+
+.wrap{
+    padding:50px 0;
+    width:800px;
+	margin:0 auto;
+
+}
+div.logo_wrap{text-align:center;margin:0 auot;}
+.logo{width:280px; display: block; margin: 0px auto; }
+#sec01_wrap>h2{
+    padding:30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#sec01_wrap>h3,#sec02_wrap>h3{
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    width:650px;
+}
+
+#sec01_wrap hr,#sec02_wrap hr{
+    border: 0;
+    background:#156037;
+    width: 100%;
+    height: 3px;
+    margin:10px 0 30px 0;
+}
+
+#sec02_wrap>h3{margin-top:100px;}
+
+
+.userInput{
+height:30px;
+    margin:10px 0;width:100%;}
+
+.int {
+    display: inline-block;
+    position: relative;
+    width:200px;
+    height:30px;
+    border: solid 1px #dadada;
+    padding-right: 25px;
+    line-height:30px;
+    background: #fff;
+    box-sizing: border-box;
+
+ }
+
+a.list{
+    color:#fff;
+    margin:0 10px;
+background-color: #156037;
+    text-align:left;
+    padding:0 15px;
+ height:30px;line-height:30px;
+    display:inline-block;width:100px;}
+
+#phoneNum{width:138px;}
+
+
+.int_id>select{height:30px;width:60px;}
+#mail_Select{height:30px;}
+.postwrap{
+    position:relative;
+    top:-119px;
+    left:153px;}
+.postwrap input{ margin-top:10px;}
+.address_list{height:110px !important;}
+
+.j2_agr {
+    height:80px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding:30px;
+}
+.j2_alck {
+    font-size: 16px;
+    font-weight:500;
+
+}
+.j2_agr_wrap>h4 {
+    margin:10px 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+.j2_agr_wrap{padding:10px;}
+.btn{margin:0 atuo;width:100%;}
+.logbtn{
+    display: block;
+    width:150px;
+    height: 50px;
+    border: none;
+    background:#156037;
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size:1.5rem;
+    font-weight: 800;
+    margin:0 auto;
+}

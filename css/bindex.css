@@ -92,6 +92,11 @@ h2{
 }
 .gnb>li>a:hover{
     font-size:1.9rem;
+    color:#156037;
+    transition: all .4s;
+}
+.util_right>li>a:hover{
+    color:#156037;
     transition: all .4s;
 }
 .gnb>li>a::after {
@@ -196,7 +201,8 @@ span{
     font-family: '양진체';
 }
 
-.origin img:hover{transform:scale(1.2);}
+.origin img{transition:all .4s;}
+.origin img:hover{transform:scale(1.1); transition:all .4s;}
 #page1_1>div>.origin{    
     margin:0 auto;
     display:flex;
@@ -262,7 +268,9 @@ span{
     width:700px;
     margin:0 auto;
 }
-.latest img:hover{transform:scale(1.1);}
+
+.latest img{transition:all .4s;}
+.latest img:hover{transform:scale(1.1); transition:all .4s;}
 
 /*page2 구역*/
 #page2{background:#f5fbe2;}
