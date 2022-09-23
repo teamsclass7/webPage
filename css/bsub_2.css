@@ -46,7 +46,7 @@ h2{
     display:inline-block;
     width:220px;
     margin-left:106px;
-    margin-bottom:115px;
+    margin-bottom:100px;
     text-align: left;
     line-height:1.5;
 }
@@ -57,15 +57,35 @@ h2{
 .product_list>div>a>ul>li:first-child{
     width:220px; height:220px;
     border: solid 1px #d0d0d0;
-    margin-bottom:30px;
+    margin-bottom:20px;
     text-align: center;
-
 }
-.product_list>div>a>ul>li:nth-child(2){font-size:17px;}
-.product_list>div>a>ul>li:nth-child(3){font-size:20px;}
-.product_list>div>a>ul>li:nth-child(3)>span{font-weight:bold;}
+.product_list>div>a>ul>li:nth-child(2){font-size:18px;}
+.product_list>div>a>ul>li:nth-child(3){font-size:14px; color:#555;}
+.product_list>div>a>ul>li:nth-child(4){font-size:20px;}
+.product_list>div>a>ul>li:nth-child(4) span{font-weight:bold;}
+.product_list>div>a>ul>li:nth-child(4)>ul{display:flex; flex-flow:row wrap; justify-content: space-between;}
+.product_list>div>a>ul>li:nth-child(4)>ul>li:last-child{color:#156037; font-size:15px; line-height: 35px;}
+
 
 .product_list>div>ul{margin:0 auto; text-align: center;}
 .product_list>div>ul>li{float:left; font-size:18px; padding:10px;}
 .product_list>div>ul>li:nth-child(2){font-weight:bold;}
 .product_list>div>ul>li>a{float:left;}
+
+
+
+/*mobile V*/
+@media all and (max-width:1024px){
+    .wrap{width:740px;}
+    .top>ul>li{margin-left: 0px;}
+    .top>ul>li>a{padding:10px;}
+    .product_list>div>a{
+        width:325px;
+        margin-left:0px;
+        margin-bottom:100px;
+    }
+    .product_list>div>a img{height: 305px; padding:10px;}
+    .product_list>div>a>ul>li:first-child{width:325px; height:325px;}
+    
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>간짜장먹고싶니?</title>
+    <link href="css/bsub_2-1.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <section class="opt_sec wrap">
+        <h2>주문구역</h2>
+        <div class="thumbnail">
+            <ul>
+                <li class="bigthumb"><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+            </ul>
+        </div>
+        <div class="sel_opt">
+            <ul>
+                <li>까스 활명수-큐액(75ml)</li>
+                <li>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식, 체함, 구역, 구토</li>
+                <li><del>91,500원</del></li>
+                <li><span>14,400</span>원</li>
+            </ul>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>배송방법</dt>
+                        <dd>택배</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>배송비</dt>
+                        <dd>무료</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>배송정보</dt>
+                        <dd>평균 배송 : 3일</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>구매수량</dt>
+                        <dd>
+                            <div id="input_div"> 
+                                <input type="button" value="-" id="moins" onclick="minus()">
+                                <input type="text" size="25" value="1" id="count">
+                                <input type="button" value="+" id="plus" onclick="plus()">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li><hr></li>
+                <li>
+                    <dl>
+                        <dt>총 상품 금액 : </dt>
+                        <dd>
+                            <input type="text" value="14400" id="total_count" hidden=hidden />
+                            <input type="text" value="14400" id="total_count_view"  />
+                            <hr />
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button type="button" class="btn btn-success">
+                        장바구니
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info">
+                        바로구매
+                    </button></li>
+            </ul>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="./js/bsub_2-1.js"></script>
+</body>
+</html>
