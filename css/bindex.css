@@ -425,7 +425,7 @@ footer>div>.ft_01>li>a{
         height: 40px;
         cursor:pointer;
         position:relative;
-        
+        z-index: 2;
         float:right;
         right:5%;
         top:20%;
@@ -459,6 +459,62 @@ footer>div>.ft_01>li>a{
     input[id="m_btn"] + label > span:nth-child(3) {
         bottom:0;
     }
+    #m_popup{
+        position:fixed;
+        width:300px;
+        height:100%;
+       opacity: 0;
+        
+        padding:60px 25px 25px 25px;
+        box-sizing:border-box;
+        top:0;
+        right:0;
+        z-index:1;
+        
+        
+    }
+    .m_gnb{width:90%; border-bottom: 3px solid #156037; margin-bottom: 10%;}
+   .m_gnb>li>a{
+    display: block;
+    color:#f2f2f2;
+    font-size: 3.0rem;
+    line-height: 1.5;
+}
+
+    .m_util{width:90%;}
+    .m_util>li>a{
+        display: block;
+    color:#f2f2f2;
+    font-size: 2.0rem;
+    line-height: 1.5;
+    }
+
+    .m_gnb>li>a:hover,.m_util>li>a:hover{
+       
+        font-weight: bold;
+        color: #156037; }
+
+
+    input[id="m_btn"]:checked + label > span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+     
+    input[id="m_btn"]:checked + label > span:nth-child(2) {
+        display:none;
+    }
+     
+    input[id="m_btn"]:checked + label > span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+     
+     
+    input[id="m_btn"]:checked ~ #m_popup{
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
+    }
+
 
 }
    
