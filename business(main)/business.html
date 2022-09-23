@@ -5,43 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>동화제약 활명수</title>
-    <link href="../css/business.css" rel="stylesheet" type="text/css" />
+    <link href="../css/business_1.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="container">
-<header id="util">
-    <h1 id="logo"><a href="#">LOGO</a></h1>
-    <ul>
-        <li><a href="#">회사소개</a></li>
-        <li><a href="#">연구개발</a></li>
-        <li><a href="#">제품정보</a></li>
-        <li><a href="#">채용정보</a></li>
-        <li><a href="#">미디어센터</a></li>
-        <li><a href="#">IR자료실</a></li>
-        <li><a href="#">사회공헌</a></li>
-        <li><a href="#">윤리경영</a></li>
-    </ul>
-    <div id="menu">
-        <span></span>
-        <span></span>
-        <span></span>
+<div id="wrap">
+<header>
+    <div class="util">
+        <h1 id="logo"><a href="#">LOGO</a></h1>
+        <nav id="gnb">
+            <ul class="main_menu">
+                <li><a href="#">회사소개</a>
+                    <ul class="sub1">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">기업이념</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">연구개발</a>
+                    <ul class="sub1">
+                        <li><a href="#">R&D소개</a></li>
+                        <li><a href="#">연구분야</a>
+                            <ul class="sub2">
+                                <li><a href="#">조직 및 업무</a></li>
+                                <li><a href="#">중점 연구분야</a></li>
+                                <li><a href="#">주요연구과제</a></li>
+                                <li><a href="#">연구성과</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">네트워크</a>
+                            <ul class="sub2">
+                                <li><a href="#">기술혁신 네트워크</a></li>
+                                <li><a href="#">글로벌동화</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">제품정보</a>
+                    <ul class="sub1">
+                        <li><a href="#">전문의약품</a></li>
+                        <li><a href="#">일반의약품</a></li>
+                        <li><a href="#">의약외품</a></li>
+                        <li><a href="#">건강기능식품</a></li>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">화장품</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">채용정보</a>
+                    <ul class="sub1">
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">상시채용</a></li>
+                        <li><a href="#">지원결과확인</a></li>
+                        <li><a href="#">채용 Q&A</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">미디어센터</a>
+                    <ul class="sub1">
+                        <li><a href="#">TV광고</a></li>
+                        <li><a href="#">디지털콘텐츠</a></li>
+                        <li><a href="#">라디오광고</a></li>
+                        <li><a href="#">인쇄광고</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">IR자료실</a>
+                    <ul class="sub1">
+                        <li><a href="#">공시</a></li>
+                        <li><a href="#">사업보고서</a></li>
+                        <li><a href="#">전자공고</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">사회공헌</a>
+                    <ul class="sub1">
+                        <li><a href="#">또 하나의 마을 만들기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">윤리경영</a>
+                    <ul class="sub1">
+                        <li><a href="#">대표이사메세지</a></li>
+                        <li><a href="#">윤리강령</a></li>
+                        <li><a href="#">자율준수</a></li>
+                        <li><a href="#">부패방지방침</a></li>
+                        <li><a href="#">관련사이트</a></li>
+                        <li><a href="#">사이버제보센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-</header>
-<section id="banner">
-    <h2>비주얼배너</h2>
-    <div>
+    <div id="banner">
         <h3>좋은 약, 행복한 기업</h3>
         <h4>construction association of korea</h4>
-    </div>
-</section>
+    </div>   
+</header>
+
 <div class="line_logo">
     <img src="../images/business/main/line_logo.jpg" alt="line_logo" />
 </div>
 <section id="product">
     <h2>PRODUCT</h2>
-    <div>&nbsp;</div>
-    <div>
-        <p>주요제품</p>
+    <h3>주요제품</h3>
+    <div class="info">
+        <div><img src="../images/business/main/doguri.png" alt="doguri" /></div>
         <div>
             <h4>도구리 파워 비타민</h4>
             <h3>
@@ -66,18 +137,41 @@
 <hr class="line">
 <section id="brand">
     <h2>BRAND</h2>
+    <h3>브랜드관</h3>
     <div>
-        <h3>브랜드관</h3>
-        <ul>
-            <a href="#">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </a>
+        <ul class="slideWrap">
+            <li><a href="#">
+                <div class="photo">
+                    <img src="../images/business/main/hwalmyeongsoo.png" alt="slide1" />
+                </div>
+                </a>
+            </li>
+            <li><a href="#">
+                <div class="photo">
+                    <img src="../images/business/main/hoosidin.png" alt="slide2" />
+                </div>
+                </a>    
+            </li>
+            <li><a href="#">
+                <div class="photo">
+                    <img src="../images/business/main/cosmatic.png" alt="slide3" />
+                </div>
+                </a>
+            </li>
+            <li><a href="#">
+                <div class="photo">
+                    <img src="../images/business/main/itchi.png" alt="slide4" />
+                </div>
+                </a>
+            </li>
         </ul>
-    </div>
-   
+        <div class="l_btn">
+            <button onclick="prevFunc()"><img src="../images/business/main/l_btn.png" alt="btn" /></button>
+        </div>
+        <div class="r_btn">
+            <button onclick="nextFunc()"><img src="../images/business/main/r_btn.png" alt="btn" /></button>
+        </div>
+    <div>
 </section>
  <hr class="line">
 <section id="story">
@@ -113,7 +207,7 @@
     <article class="video">
         <h3>광고갤러리</h3>
         <div>
-            <video src="../images/business/main/video.mp4" width="100%" height="100%" controls preload="auto" poster="./media/first.png" ></video>
+            <video src="../images/business/main/video.mp4" width="100%" height="100%" controls preload="auto" ></video>
         </div>
     </article>
 </section>
@@ -128,5 +222,6 @@
     <p>Copyright(c) DONG WHA PHARM. CO., LTD. All Rights Reserved.</p>
 </footer>
 </div>
+<script src="../js/script.js"></script>
 </body>
 </html>
