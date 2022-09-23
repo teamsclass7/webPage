@@ -397,7 +397,7 @@ footer>div>.ft_01>li>a{
     
     body{width: 100%; }
     
-    
+    /*모바일 헤더영역 */
     #header{
         display:none;
     }
@@ -461,9 +461,14 @@ footer>div>.ft_01>li>a{
     }
     #m_popup{
         position:fixed;
-        width:300px;
-        height:100%;
-       opacity: 0;
+        
+       
+         visibility:hidden;
+        width:0; height:0;
+        overflow:hidden;
+        text-indent:-9999px;
+         
+         
         
         padding:60px 25px 25px 25px;
         box-sizing:border-box;
@@ -513,10 +518,25 @@ footer>div>.ft_01>li>a{
      
      
     input[id="m_btn"]:checked ~ #m_popup{
-        opacity: 1;
+        visibility:visible;
+        width:300px; height:100%;
+        overflow:hidden;
+        text-indent:0;
+        right:0;
         background: rgba(0,0,0,0.5);
         transition: all 0.4s;
     }
+
+
+    /*모바일 page1 구역*/
+
+    #page1>div>div{
+        display: block;
+    }
+
+
+
+
 
 
 }
