@@ -51,9 +51,10 @@ div.logo_wrap{text-align:center;margin:0 auot;}
 
 .userInput{
 height:30px;
+
     margin:10px 0;width:100%;}
 
-.int {
+.int,#phone_select{
     display: inline-block;
     position: relative;
     width:200px;
@@ -65,7 +66,8 @@ height:30px;
     box-sizing: border-box;
 
  }
-
+#phone_select{width:75px;}
+#phoneNum{width:123px;}
 a.list{
     color:#fff;
     margin:0 10px;
@@ -75,11 +77,23 @@ background-color: #156037;
  height:30px;line-height:30px;
     display:inline-block;width:100px;}
 
-#phoneNum{width:138px;}
+
 
 
 .int_id>select{height:30px;width:60px;}
-#mail_Select{height:30px;}
+
+
+#mail_Select{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 30px;
+    border: solid 1px #dadada;
+    padding-right: 25px;
+    line-height: 30px;
+    background: #fff;
+    box-sizing: border-box;
+}
 .postwrap{
     position:relative;
     top:-119px;
