@@ -24,7 +24,7 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 	
 }
 
-#sec01_wrap>h2{
+#sec01_wrap>h2,#sec01_wrap>h3{
     padding:30px 0;
     text-align: center;
     font-size: 30px;
@@ -42,7 +42,7 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 
 /*ㅇ*/
 #l2_tabs{
-	margin-top:80px;
+    
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:center;
@@ -52,18 +52,20 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 	text-align:center;
 	line-height:70px;
 	font-size:20px;	
+    
 }
 .tab_b02{
 	border:1px solid #e1e1e1;	
 	border-bottom:3px solid #156037;
 	color:#156037;
 	box-sizing:border-box;
+    font-weight: 700;
 }
 .tab_b01{
 	box-sizing:border-box;
 	border:1px solid #e1e1e1;
 	box-sizing:border-box;
-	color:#333;
+	color:#c1c1c1;
 }
 
 /*비밀번호 찾기*/
@@ -187,12 +189,15 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 
 }
 .radio_sch label{padding:0 10px;}
-
+#sec01_wrap>h3{display:none;}
 @media all and (max-width:1024px) {
 	.wrap{
         width:100%;
 
         margin:0 auto;
     }
+    #l2_tabs{display:none;}
+    #sec01_wrap h2:first-child{display:none;}
+    #sec01_wrap>h3{display:block;}
 
 }
