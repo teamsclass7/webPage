@@ -50,7 +50,6 @@ div.logo_wrap{text-align:center;margin:0 auot;}
 
 
 .userInput{
-height:30px;
 
     margin:10px 0;width:100%;}
 
@@ -81,7 +80,7 @@ background-color: #156037;
 
 
 .int_id>select{height:30px;width:60px;}
-
+.adress_input{height:50px;}
 
 #mail_Select{
     display: inline-block;
@@ -98,7 +97,7 @@ background-color: #156037;
     position:relative;
     top:-119px;
     left:153px;}
-.postwrap input{ margin-top:10px;}
+.postwrap input{ margin-top:10px; padding-left:10px;font-size:1.2rem;}
 .address_list{height:110px !important;}
 
 .j2_agr {
@@ -109,14 +108,14 @@ background-color: #156037;
     padding:30px;
 }
 .j2_alck {
-    font-size: 16px;
+    font-size:1.5rem;
     font-weight:500;
 
 }
 .j2_agr_wrap>h4 {
     margin:10px 0;
     font-weight: 400;
-    font-size: 14px;
+    font-size:1.2rem;
 }
 .j2_agr_wrap{padding:10px;}
 .btn{margin:0 atuo;width:100%;}
@@ -133,4 +132,104 @@ background-color: #156037;
     font-size:1.5rem;
     font-weight: 800;
     margin:0 auto;
+}
+@media all and (max-width:1024px) {
+	.wrap{
+        width:740px;
+        margin:0 auto;
+    }
+    #sec01_wrap>h3,#sec01_wrap>span{display:none;}
+#sec01_wrap> hr{width:100%;}
+
+.list{
+    display:block;
+    font-size: 1.8rem;
+   
+}
+
+
+#sec02_wrap>h3,#sec02_wrap>span,#sec02_wrap>hr{display:none;}
+.j2_agr{display:none;}
+#sec01_wrap{
+    display:block;
+ }
+
+.form_wrap{width:100%;display:block;margin:0 auto;}
+.userInput>.list{
+    display:block;
+    width:80%;
+    background-color: #fff;
+    color:black;
+    padding-bottom:10px;
+}
+.int_id input{
+    
+    font-size: 1.5rem;
+    width:700px;height:50px;}
+
+
+
+#phone_select{
+    padding-left:10px;
+    height:50px;
+    font-size: 1.5rem;
+    width:200px; 
+  
+}
+#phoneNum{width:490px;}
+div .userInput{text-align: center;}
+#email{width:480px;height:50px;}
+#emailBox>span{font-size:1.5rem;}
+#mail_Select{padding-left:10px;height:50px;font-size:1.5rem;}
+
+#sec02_wrap{
+
+    border: 1px solid #ccc;width:640px;margin:0 auto;padding:20px;}
+    #sec02_wrap{margin-top:265px;}
+.postwrap{
+    position: relative;
+    width:700px;
+    }
+
+.j2_agr_wrap{font-size: 1.8rem;}
+.btn{margin:50px auto;}
+.logbtn{width:700px;font-size:1.8rem;}
+
+/*adress*/
+#sample6_postcode{
+    position:absolute;
+    top:30px;
+    left:-130px;
+        width:480px;height:50px;}
+#post_btn{
+    position:absolute;
+    top:30px;
+    left:380px;
+    width:120px;height:50px;
+}
+#sample6_address{
+    position:absolute;
+    top:90px;
+    left:-130px;
+    width:690px;height:50px;
+}
+#sample6_extraAddress{
+    position:absolute;
+    top:150px;
+    left:-130px;
+    width:690px;height:50px;    
+}
+#sample6_detailAddress{
+    position:absolute;
+    top:210px;
+    left:-130px;
+    width:690px;height:50px;    
+}
+
+
+
+.j2_agr_wrap label{font-size:1.2rem;}
+.j2_agr_wrap h4{font-size:1.4rem;}
+
+
 }

@@ -23,33 +23,33 @@
         <h2>회원가입</h2>
         <h3>정보 입력</h3><span>*표시는 필수 입력 사항입니다.</span>
         <hr/>
-      
+      <div class="form_wrap">
     <div class="userInput">
-        <a class="list">* 아이디</a>
+        <a class="list">아이디 *</a>
         <span class="int_id" >
             <input type="text" id="id" name="id" class="int check"maxlength="20" autocomplete="off">
         </span>
     </div>
    <div class="userInput">
-        <a class="list">* 비밀번호</a>
+        <a class="list">비밀번호 *</a>
         <span class="int_id">
             <input type="password" id="pw"  name="pw" class="int check"maxlength="20" autocomplete="off">
         </span>
     </div>
     <div class="userInput">
-        <a class="list">* 비밀번호 재확인</span></a>
+        <a class="list">비밀번호 재확인 *</span></a>
         <span class="int_id">
             <input type="password" id="pwCheck" name="pwCheck" class="int check" maxlength="20" autocomplete="off">
         </span>
     </div>
     <div class="userInput">
-        <a class="list">* 이름</a>
+        <a class="list">이름 *</a>
         <span class="int_id" >
             <input type="text" id="name" class="int check" name="m_id" maxlength="20" autocomplete="off">
         </span>
     </div>     
     <div class="userInput">
-        <a class="list">* 전화번호</a>
+        <a class="list">전화번호 *</a>
         <span class="int_id">
             <select id="phone_select">
                 <option>010</option>
@@ -60,7 +60,7 @@
         </span>
      </div>
     <div class="userInput uesrInput_wrap">
-        <a class="list">&nbsp;&nbsp;&nbsp;E-mail</a>
+        <a class="list">E-mail</a>
         <span class="emailInt" id="emailBox">
             <input type="text" id="email" maxlength="20" class="int check" autocomplete="off"> 
            <span>&nbsp;@&nbsp;</span> 
@@ -76,8 +76,8 @@
 
 
  <!-- 주소 입력 -->
- <div class="userInput">
-    <a class="list address_list">&nbsp;&nbsp;&nbsp;자택주소</a>
+ <div class="userInput adress_input">
+    <a class="list address_list">자택주소</a>
     <div class="postwrap">
             <input type="text" id="sample6_postcode" class="int check" placeholder="우편번호" autocomplete="off">
             <input type="button" id="post_btn"onclick="sample6_execDaumPostcode()" value="우편번호 찾기" autocomplete="off"><br>
@@ -88,14 +88,14 @@
             </div>
 </div>
 
-  
+</div>
     </section>
     <section id="sec02_wrap">
 
     <h3>약관 동의</h3><span>*표시는 필수 입력 사항입니다.</span>
     <hr/>
 
-    <div class="j2_alck"><input type="checkbox" id="j2_allchk"><label for="j2_allchk"><span></span>모든 약관 동의</label></div>
+    <div class="j2_alck"><input type="checkbox" id="j2_allchk"><label for="j2_allchk">모든 약관 동의</label></div>
     <div class="j2_agr_wrap">
         <h4>* 홈페이지 이용약관(필수)</h4>
         <div class="j2_agr">
@@ -127,7 +127,7 @@
          음향, 화상, 동영상 등의 정보 형태의 글,사진, 동영상 및 각종 파일과 링크 등을 의미합니다.
     </pre>
         </div>
-        <input type="checkbox" class="agr_chk" name="agr1" id="j2_agr1"><label for="j2_agr1" required><span></span> 동의합니다</label>
+        <input type="checkbox" class="agr_chk" name="agr1" id="j2_agr1"><label for="j2_agr1" required>동의합니다</label>
     </div>
     <div class="j2_agr_wrap">
         <h4>* 전자상거래 이용약관(필수)</h4>
@@ -149,7 +149,7 @@
      ⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 「전자상거래 등에서의 소비자 보호지침」 및 관계법령 또는 상관례에 따릅니다.
   </pre>
         </div>
-        <input type="checkbox" class="agr_chk" name="agr2" id="j2_agr2"><label for="j2_agr2"><span></span> 동의합니다</label>
+        <input type="checkbox" class="agr_chk" name="agr2" id="j2_agr2"><label for="j2_agr2">동의합니다</label>
     </div>
 
     <div class="j2_agr_wrap">
@@ -173,7 +173,7 @@
     동의를 거부하시는 경우에도 동화약품 서비스를 이용하실 수 있으나, 경품 행사 및 상품 안내 서비스, 추가 할인 등의 혜택 제공이 제한될 수 있습니다.
     </pre>
         </div>
-        <input type="checkbox" class="agr_chk" name="agr3" id="j2_agr3" /><label for="j2_agr3"><span></span> 동의합니다</label>
+        <input type="checkbox" class="agr_chk" name="agr3" id="j2_agr3" /><label for="j2_agr3">동의합니다</label>
     </div>
 
 </section>
