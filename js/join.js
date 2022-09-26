@@ -45,6 +45,7 @@ function sample6_execDaumPostcode() {
             document.getElementById("sample6_detailAddress").focus();
         }
     }).open();
+    
 }
 
 $(document).ready(function(){
@@ -52,6 +53,7 @@ $("#j2_allchk").change(function(){
     var is_chk = $(this).is(":checked");
     $(".agr_chk").prop("checked",is_chk);
 });
+
 });
 
 /*미입력 시 alert창*/

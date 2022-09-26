@@ -187,3 +187,12 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 
 }
 .radio_sch label{padding:0 10px;}
+
+@media all and (max-width:1024px) {
+	.wrap{
+        width:100%;
+
+        margin:0 auto;
+    }
+
+}
