@@ -53,20 +53,20 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 	line-height:70px;
 	font-size:20px;	
 }
-.tab_b01{
+.tab_b02{
 	border:1px solid #e1e1e1;	
 	border-bottom:3px solid #156037;
 	color:#156037;
 	box-sizing:border-box;
 }
-.tab_b02{
+.tab_b01{
 	box-sizing:border-box;
 	border:1px solid #e1e1e1;
 	box-sizing:border-box;
 	color:#333;
 }
 
-/*아이디찾기 입력*/
+/*비밀번호 찾기*/
 
 .findarea input::placeholder {
 	color:#c1c1c1;
