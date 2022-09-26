@@ -7,36 +7,6 @@
     <title>동화제약 활명수</title>
     <link href="../css/business.css" rel="stylesheet" type="text/css" />
 </head>
-<script>
-    var idx = 0;
-    function slideFunc(){
-        idx++;
-        var idxMod = idx % 5;
-            if(idxMod == 1){
-                $(".slideWrap").children('li.photo1').removeClass("item01").addClass("item02");  //1번 
-                $(".slideWrap").children('li.photo2').removeClass("item02").addClass("item03");  //2번
-                $(".slideWrap").children('li.photo3').removeClass("item03").addClass("item04");  //3번
-                $(".slideWrap").children('li.photo4').removeClass("item04").addClass("item01");  //4번
-            }else if(idxMod == 2){
-                $(".slideWrap").children('li.photo1').removeClass("item02").addClass("item04");  //1번
-                $(".slideWrap").children('li.photo2').removeClass("item04").addClass("item03");  //2번 
-                $(".slideWrap").children('li.photo3').removeClass("item01").addClass("item02");  //3번
-                $(".slideWrap").children('li.photo4').removeClass("item03").addClass("item01");  //4번
-            }else if(idxMod == 3){
-                $(".slideWrap").children('li.photo1').removeClass("item04").addClass("item03");  //1번
-                $(".slideWrap").children('li.photo2').removeClass("item03").addClass("item01");  //2번
-                $(".slideWrap").children('li.photo3').removeClass("item02").addClass("item04");  //3번 
-                $(".slideWrap").children('li.photo4').removeClass("item01").addClass("item02");  //4번
-            }else if(idxMod == 4){
-                $(".slideWrap").children('li.photo1').removeClass("item03").addClass("item01");  //1번 
-                $(".slideWrap").children('li.photo2').removeClass("item01").addClass("item02");  //2번
-                $(".slideWrap").children('li.photo3').removeClass("item04").addClass("item03");  //3번
-                $(".slideWrap").children('li.photo4').removeClass("item02").addClass("item04");  //4번
-                idx=0;
-            }
-    }
-    
-    </script>
 <body>
 <div id="wrap">
 <header>
@@ -170,19 +140,23 @@
     <h3>브랜드관</h3>
     <div>
         <ul class="slideWrap">
-            <li class="photo1 item01"><a href="#">
+            <li>
+                <a href="#">
                     <img src="../images/business/main/hwalmyeongsoo.png" alt="slide1" />
                 </a>
             </li>
-            <li class="photo2 item02"><a href="#">
+            <li>
+                <a href="#">
                     <img src="../images/business/main/hoosidin.png" alt="slide2" />
                 </a>    
             </li>
-            <li class="photo3 item03"><a href="#">
+            <li>
+                <a href="#">
                     <img src="../images/business/main/cosmatic.png" alt="slide3" />
                 </a>
             </li>
-            <li class="photo4 item04"><a href="#">
+            <li>
+                <a href="#">
                     <img src="../images/business/main/itchi.png" alt="slide4" />
                 </a>
             </li>
@@ -191,7 +165,7 @@
             <button onclick="prevFunc()"><img src="../images/business/main/l_btn.png" alt="btn" /></button>
         </div>
         <div class="r_btn">
-            <button onclick="slideFunc()"><img src="../images/business/main/r_btn.png" alt="btn" /></button>
+            <button onclick="nextFunc()"><img src="../images/business/main/r_btn.png" alt="btn" /></button>
         </div>
     <div>
 </section>

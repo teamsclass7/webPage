@@ -375,7 +375,7 @@ footer>p{
     .util{
         width: 100%; height: 100px;
         position: fixed;
-        background: rgba(0,0,0,0.5);
+        background: #000;
         z-index: 9999;
     }
     #logo{
@@ -394,14 +394,16 @@ footer>p{
     .main_menu{
         display: none;
         position: absolute;
-        top: 100px;
-        width: 100%;
+        top: 100px; right: 0;
+        width: 50%;
         margin-top: 0px;
-        background: rgba(0,0,0,0.6);
+        background: #000;
+        text-align: right;
     }
     .main_menu>li>a{
         display: block;
-        width: 100%;
+        margin: 0 auto;
+        width: 50%;
         padding: 15px 0;
         font-size: 2rem;
         color: #fff;
@@ -410,22 +412,25 @@ footer>p{
     }
     .sub1>li>a{
         display: block;
+        width: 100%;
         font-size: 1.5rem;
-        color: #fff;
+        color: #000;
         box-sizing: border-box;
         text-align: center;
         padding: 10px 0;
-        color: #ddd;
+        background: #fff;
     }
     .sub2>li>a{
         display: block;
+        width: 100%;
         color: #fff;
         font-size: 1.2rem;
         box-sizing: border-box;
         text-align: center;
         padding: 10px 0;
-        color: #f4f4f4;
+        background: #333;
     }
+    .sub1, .sub2{display: none;}
     #menu{
         display:block;
         width:40px;
@@ -585,7 +590,6 @@ footer>p{
     }
     .slideWrap>li>a{
         display: block;
-        transition: all .3s;
     }
     
     .slideWrap>li:nth-child(1)>a{

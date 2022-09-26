@@ -21,7 +21,7 @@ $(function(){
    });
 });
 
-/*
+
 function prevFunc(){
    $(".slideWrap").prepend($(".slideWrap li").last().clone().css("transition","all .3s"));
    $(".slideWrap li").last().remove();
@@ -31,4 +31,4 @@ function nextFunc(){
    $(".slideWrap").append($(".slideWrap li").first().clone().css("transition","all .3s"));
    $(".slideWrap li").first().remove();
 };
-*/
+
