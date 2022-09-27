@@ -105,4 +105,18 @@ if(!agr2.is(":checked")){
 else {
         alert("환영합니다.\n회원가입이 완료되었습니다.");
         }
+
+        
 });
+$(document).ready(function(){
+    $(".j2_agr_wrap>h4").click(function(){  
+    $(".popup_black").show();
+    $(".popup_wrap").show();
+    return false;
+    });
+    
+    $(".close_btn").click(function(){
+        $(".popup_black").hide();
+        $(".popup_wrap").hide();	
+    });
+    });
