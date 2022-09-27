@@ -1,16 +1,16 @@
 $(function(){
    $(".main_menu>li").hover(function(){
-      $(this).children(".sub1").fadeIn(100);
+      $(this).children(".sub1").fadeIn(200);
    },function(){
-      $(this).children(".sub1").fadeOut(100);
+      $(this).children(".sub1").fadeOut(200);
    });
 });
 
 $(function(){
    $(".sub1>li").hover(function(){
-      $(this).children(".sub2").fadeIn(100);
+      $(this).children(".sub2").fadeIn(200);
    },function(){
-      $(this).children(".sub2").fadeOut(100);
+      $(this).children(".sub2").fadeOut(200);
    });
 });
 

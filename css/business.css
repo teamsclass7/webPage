@@ -366,10 +366,10 @@ footer>p{
 }
 }
 
-@media all and (max-width:1020px){
+@media all and (max-width:1024px){
     header{
-        width: 1020px; height: 560px;
-        background: url('../images/business/main/banner.jpg') no-repeat center top/1020px 560px;
+        width: 1024px; height: 560px;
+        background: url('../images/business/main/banner.jpg') no-repeat center top/1024px 560px;
 
     }
     .util{
@@ -647,7 +647,7 @@ footer>p{
     
     /*story*/
     #story{
-        width: 1020px; height: 420px;
+        width: 1024px; height: 420px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -700,7 +700,7 @@ footer>p{
     /*footer*/
     
     footer{
-        width: 1020px; height: 100px;
+        width: 1024px; height: 100px;
         background: #ddd;
         position: relative;
     }
