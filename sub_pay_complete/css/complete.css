@@ -1,0 +1,613 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("./mobile.css");
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+html {
+  font-size: 12px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+img {
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+h2 {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+
+/*헤더영역*/
+#header {
+  width: 85%;
+  height: 200px;
+  margin: 0 auto;
+}
+#m_header {
+  display: none;
+}
+#logo {
+  width: 250px;
+  height: 70px;
+  display: inline-block;
+  margin-top: 40px;
+}
+#util {
+  float: right;
+  margin-top: 30px;
+}
+.util_right > li {
+  float: left;
+}
+.util_right > li:nth-child(2),
+.util_right > li:nth-child(4),
+.util_right > li:nth-child(6),
+.util_right > li:nth-child(8),
+.util_right > li:nth-child(10) {
+  margin: 0 20px 0 20px;
+}
+.util_right::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.util_right > li > a {
+  font-size: 1.2rem;
+}
+.gnb {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 720px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.gnb > li {
+  float: left;
+  text-align: center;
+}
+.gnb > li > a {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: all 0.4s;
+  width: 240px;
+  position: relative;
+  color: #5d5d5d;
+}
+.gnb > li > a:hover {
+  font-size: 1.9rem;
+  color: #156037;
+  transition: all 0.4s;
+}
+.gnb > li:nth-child(3) > a {
+  font-size: 1.9rem;
+  color: #156037;
+}
+
+.gnb > li > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb > li > a:hover::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  background: #156037;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.gnb > li:nth-child(3) > a::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  position: absolute;
+  background: #156037;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.gnb > li:nth-child(1) > a:first-child:hover::after,
+.gnb > li:nth-child(2) > a:first-child:hover::after {
+  width: 60%;
+}
+/*메인영역*/
+
+.complete_bg {
+  width: 100%;
+  height: 1100px;
+  padding: 50px 200px 30px 150px;
+  box-sizing: border-box;
+}
+
+.complete_bg > ul {
+  width: 100%;
+  height: 100%;
+}
+.complete_bg > ul > li {
+  float: left;
+}
+
+/*섹션01*/
+.sec01 {
+  width: 290px;
+  height: 100%;
+  margin-right: 50px;
+}
+
+#mypage {
+  width: 100%;
+ 
+  height: 100%;
+
+  border: 2px solid #156037;
+}
+
+#mypage > li {
+  width: 100%;
+  height: 100px;
+  font-size: 1.5rem;
+  color: #595959;
+  padding-left: 15%;
+  box-sizing: border-box;
+  line-height: 100px;
+  border-bottom: 1px solid #d7d7d7;
+}
+#mypage > li:first-child {
+  height: 130px;
+  padding-bottom: 30px;
+  line-height: 130px;
+  box-sizing: border-box;
+  color: #156037;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 0;
+}
+#mypage > li:last-child {
+  border: 0;
+}
+
+.sec02 {
+  width: 1213px;
+  height: 100%;
+}
+
+.sec02 > ul {
+  width: 100%;
+  height: 100%;
+}
+.sec02 > ul > li {
+  float: left;
+}
+.sec02 > ul > li:first-child {
+  width: 59%;
+  height: 95%;
+}
+.sec02 > ul > li:last-child {
+  width: 39%;
+  height: 95%;
+  margin: 54px 0 0 10px;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+}
+
+/*sec02 */
+
+/*f_receipt*/
+
+.f_receipt > {
+  width: 100%;
+  height: 100%;
+}
+.f_receipt > li {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.f_receipt > li:nth-child(1) {
+  height: 100px;
+  color: #595959;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 3px solid #156037;
+  height: 54px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.f_receipt > li:nth-child(2) {
+  height: 150px;
+  line-height: 150px;
+  font-size: 2rem;
+  padding-left: 5%;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.f_receipt > li:nth-child(2) > span {
+  color: #156037;
+  font-weight: bold;
+}
+.f_receipt > li:nth-child(3) {
+  height: 380px;
+  padding: 40px 0 65px 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.receipt_table01 {
+  width: 100%;
+  height: 100%;
+}
+.receipt_table01 > tr:nth-child(1) {
+  width: 100%;
+  height: 15%;
+}
+.receipt_table01 > tr:nth-child(3) {
+  width: 100%;
+  height: 35%;
+}
+.receipt_table01 > tr:nth-child(2) {
+  width: 100%;
+  height: 40%;
+}
+
+.receipt_table01 th {
+  width: 20%;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.receipt_table01 td {
+  width: 80%;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #595959;
+}
+
+.receipt_table01 > tbody > tr:first-child > td {
+  color: #156037;
+  font-weight: bold;
+}
+
+.f_receipt > li:nth-child(4) {
+  height: 250px;
+  padding: 20px 0 30px 15px;
+  border-bottom: 3px solid #d6d6d6;
+}
+.receipt_table02 > {
+  width: 100%;
+  height: 100%;
+}
+.receipt_table02 > caption {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.receipt_table02 > tbody {
+  width: 100%;
+}
+.receipt_table02 > tbody > tr {
+  width: 650px;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #595959;
+  font-size: 1.3rem;
+}
+.receipt_table02 > tbody > tr > td:first-child {
+  width: 20%;
+}
+.receipt_table02 > tbody > tr > td:last-child {
+  width: 80%;
+  text-align: right;
+}
+.f_receipt > li:nth-child(5) {
+  height: 100px;
+  line-height: 100px;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.f_receipt > li:nth-child(5) > span {
+  color: red;
+  padding-left: 75%;
+}
+
+/*item_list*/
+.item_list {
+  padding: 5% 5% 0 15%;
+  box-sizing: border-box;
+}
+.item_list > li {
+  width: 90%;
+  height: 20%;
+  margin-bottom: 5%;
+}
+
+.item_list > li > figure {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item_list > li > figure > figcaption {
+  width: 80%;
+  height: 100%;
+  text-align: right;
+  line-height: 2;
+}
+.item_list > li > figure > figcaption > p {
+  color: #595959;
+  font-size: 1.5rem;
+}
+
+.item_list a {
+  width: 15%;
+}
+.item_list img {
+  width: 100%;
+}
+
+.item_list > li > figure > figcaption > p:first-child {
+  margin-bottom: 10px;
+}
+
+/*푸터영역*/
+footer {
+  background: #d7d7d7;
+  height: 150px;
+}
+footer > .wrap {
+  position: relative;
+  padding: 0;
+}
+footer > div > .logo {
+  float: left;
+  margin-top: 65px;
+}
+footer > div > address {
+  position: absolute;
+  left: 300px;
+  top: 55px;
+}
+footer > div > address > p {
+  line-height: 25px;
+  font-size: 1.2rem;
+  color: #5d5d5d;
+}
+footer > div > .ft_01 {
+  float: right;
+  margin-top: 55px;
+}
+footer > div > .ft_01 > li {
+  padding: 5px;
+}
+footer > div > .ft_01 > li:nth-child(1) {
+  text-align: right;
+}
+footer > div > .ft_01 > li:nth-child(2) {
+  font-size: 1.2rem;
+  color: #5d5d5d;
+}
+footer > div > .ft_01 > li > a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5d5d5d;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .wrap {
+    width: 100%;
+  }
+  /*모바일 헤더영역 */
+  #header {
+    display: none;
+  }
+  #util,
+  .gnb {
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #m_header {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100px;
+    z-index: 99999;
+    position: fixed;
+    background: #fff;
+  }
+  #logo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+
+  #logo img {
+    width: 50%;
+  }
+
+  input[id="m_btn"] {
+    display: none;
+  }
+
+  input[id="m_btn"] + label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    float: right;
+    right: 5%;
+    top: 20%;
+  }
+
+  input[id="m_btn"] + label > span {
+    display: block;
+
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: black;
+    position: absolute;
+  }
+
+  input[id="m_btn"] + label > span:nth-child(1) {
+    top: 0;
+  }
+
+  input[id="m_btn"] + label > span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[id="m_btn"] + label > span:nth-child(3) {
+    bottom: 0;
+  }
+  #m_popup {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  .m_gnb {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .m_gnb > li > a {
+    display: block;
+    color: #f2f2f2;
+    font-size: 3rem;
+    line-height: 1.8;
+  }
+  .m_gnb > li:last-child {
+    border-bottom: 3px solid #156037;
+    padding-bottom: 30px;
+  }
+
+  .m_util {
+    width: 90%;
+  }
+  .m_util > li > a {
+    display: block;
+    color: #f2f2f2;
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .m_gnb > li > a:hover,
+  .m_util > li > a:hover {
+    font-weight: bold;
+    color: #156037;
+  }
+
+  input[id="m_btn"]:checked + label > span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.4s;
+    background: #fff;
+  }
+
+  input[id="m_btn"]:checked + label > span:nth-child(2) {
+    display: none;
+  }
+
+  input[id="m_btn"]:checked + label > span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+    transition: all 0.4s;
+    background: #fff;
+  }
+
+  input[id="m_btn"]:checked ~ #m_popup {
+    visibility: visible;
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+    text-indent: 0;
+    right: 0;
+    background: #000;
+    transition: all 0.4s;
+    position: fixed;
+    padding: 60px 25px 25px 25px;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
