@@ -166,7 +166,7 @@ h2 {
 .complete_bg {
   width: 1903px;
   height: 1100px;
-  padding: 50px 200px 30px 150px;
+  padding: 100px 200px 50px 150px;
   box-sizing: border-box;
 }
 
@@ -189,7 +189,7 @@ h2 {
   width: 100%;
  
   height: 100%;
-
+  box-sizing: border-box;
   border: 2px solid #156037;
 }
 
@@ -223,6 +223,7 @@ h2 {
 .sec02 {
   width: 1213px;
   height: 100%;
+  margin:0 auto;
 }
 
 .sec02 > ul {
@@ -240,7 +241,7 @@ h2 {
   width: 39%;
   height: 95%;
   margin: 54px 0 0 10px;
-  border: 1px solid #d6d6d6;
+  
   box-sizing: border-box;
 }
 /*f_receipt*/
@@ -252,7 +253,7 @@ h2 {
 .f_receipt > li {
   width: 100%;
   box-sizing: border-box;
-  padding-left: 15px;
+  
 }
 .f_receipt > li:nth-child(1) {
   height: 100px;
@@ -261,7 +262,7 @@ h2 {
   font-weight: bold;
   border-bottom: 3px solid #156037;
   height: 54px;
-  padding-left: 15px;
+ 
   box-sizing: border-box;
 }
 .f_receipt > li:nth-child(2) {
@@ -270,6 +271,7 @@ h2 {
   font-size: 2rem;
   padding-left: 5%;
   border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
 }
 
 .f_receipt > li:nth-child(2) > span {
@@ -377,8 +379,9 @@ h2 {
 
 /*item_list*/
 .item_list {
-  padding: 5% 5% 0 15%;
+  padding: 10%;
   box-sizing: border-box;
+  border: 1px solid #d6d6d6;
 }
 .item_list > li {
   width: 90%;
@@ -420,20 +423,21 @@ h2 {
 /*푸터영역*/
 footer {
   background: #d7d7d7;
-  height: 150px;
+  height: 100px;
 }
 footer > .wrap {
   position: relative;
+  height:100px;
   padding: 0;
 }
 footer > div > .logo {
   float: left;
-  margin-top: 65px;
+  margin-top: 35px;
 }
 footer > div > address {
   position: absolute;
   left: 300px;
-  top: 55px;
+  top: 25px;
 }
 footer > div > address > p {
   line-height: 25px;
@@ -442,7 +446,7 @@ footer > div > address > p {
 }
 footer > div > .ft_01 {
   float: right;
-  margin-top: 55px;
+  margin-top: 25px;
 }
 footer > div > .ft_01 > li {
   padding: 5px;
@@ -462,10 +466,10 @@ footer > div > .ft_01 > li > a {
 
 @media all and (max-width: 1024px) {
   body {
-    width: 100%;
+    width:100%;
   }
   .wrap {
-    width: 100%;
+    width: 1024px;
   }
   /*모바일 헤더영역 */
   #header {
@@ -502,7 +506,7 @@ footer > div > .ft_01 > li > a {
   }
 
   #logo img {
-    width: 125px;
+    width: 180px;
   }
 
   input[id="m_btn"] {
@@ -518,13 +522,13 @@ footer > div > .ft_01 > li > a {
     z-index: 2;
     float: right;
     right: 5%;
-    top: 20%;
+    top: 30%;
   }
 
   input[id="m_btn"] + label > span {
     display: block;
 
-    height: 5px;
+    height: 7px;
     width: 100%;
     border-radius: 30px;
     background: black;
@@ -620,8 +624,8 @@ footer > div > .ft_01 > li > a {
 
   /* 메인영역*/
   .complete_bg{
-    width:100%; height:100%;
-    padding: 105px 5% 5% 5%;
+    width:740px; height:100%;  margin: 0 auto;
+    padding: 105px 0  5% 0;
   }
   .complete_bg > ul > li,.sec02 > ul > li {float:unset; }
  
@@ -671,7 +675,7 @@ footer > div > .ft_01 > li > a {
   /*모바일 푸터*/
 
 footer{
-  width:100%; height:100%;
+  width:100%; height:100%; margin:0 auto;
 }
 
 footer>.wrap{width:100%; height:200px; 
