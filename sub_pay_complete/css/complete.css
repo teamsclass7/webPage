@@ -314,7 +314,7 @@ h2 {
   color: #595959;
 }
 
-.receipt_table01 > tbody > tr:first-child > td {
+.receipt_table01 > tbody > tr:first-child > td > a {
   color: #156037;
   font-weight: bold;
 }
@@ -502,7 +502,7 @@ footer > div > .ft_01 > li > a {
   }
 
   #logo img {
-    width: 50%;
+    width: 125px;
   }
 
   input[id="m_btn"] {
