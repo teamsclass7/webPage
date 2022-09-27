@@ -56,6 +56,8 @@ $("#j2_allchk").change(function(){
 
 });
 
+
+
 /*미입력 시 alert창*/
 $(".joina").click(function(){
 var u_id = $("input[name='id']").val();
@@ -108,6 +110,7 @@ else {
 
         
 });
+
 $(document).ready(function(){
     $(".j2_agr_wrap>h4").click(function(){  
     $(".popup_black").show();
