@@ -371,9 +371,11 @@ h2 {
   align-items: center;
 }
 
+.f_receipt > li:nth-child(5) > span:first-child{margin-left: 10px;}
+
 .f_receipt > li:nth-child(5) > span:last-child {
   color: red;
- margin-right: 5%;
+ margin-right: 10px;
   font-size: 1.8rem;
 }
 
@@ -420,6 +422,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+#list_btn{display: none;}
 /*푸터영역*/
 footer {
   background: #d7d7d7;
@@ -466,7 +469,7 @@ footer > div > .ft_01 > li > a {
 
 @media all and (max-width: 1024px) {
   body {
-    width:100%;
+    width:1024px;
   }
   .wrap {
     width: 1024px;
@@ -625,7 +628,7 @@ footer > div > .ft_01 > li > a {
   /* 메인영역*/
   .complete_bg{
     width:740px; height:100%;  margin: 0 auto;
-    padding: 105px 0  5% 0;
+    padding: 100px 0  50px 0; box-sizing: border-box;
   }
   .complete_bg > ul > li,.sec02 > ul > li {float:unset; }
  
@@ -634,7 +637,7 @@ footer > div > .ft_01 > li > a {
   /*섹션01*/
   .sec01{display:none;}
   /*섹션02*/
-  .sec02{width:100%;}
+  .sec02{width:100%; margin: 0 auto;}
   .sec02>li{width:100%;}
   .sec02 > ul > li:first-child {
     width: 100%;
@@ -643,7 +646,7 @@ footer > div > .ft_01 > li > a {
   .sec02 > ul > li:last-child {
     width: 100%;
     
-    margin: 54px 0 0 10px;
+    margin: 54px 0 0 0;
    border:0;
   
   }
@@ -662,7 +665,7 @@ footer > div > .ft_01 > li > a {
  
 
   /*item_list*/
-  .item_list{width:100%; padding: 0 ; margin-bottom:10px; border: 1px solid #595959;}
+  .item_list{width:100%; padding: 5% ; box-sizing: border-box; margin:0 auto; border: 1px solid #595959;}
   .item_list::after{
     content:'';
     width:0; height:0;
@@ -670,19 +673,33 @@ footer > div > .ft_01 > li > a {
     clear:both;
     visibility:hidden;
  }
+#list_btn{display: flex;
+  flex-flow: row wrap; 
+ justify-content: space-around;
+ align-items :center; width:100%; height:100%;
+ margin:0 auto;
+
+}
+ #list_btn>a{width:300px; height:100px; line-height: 100px; text-align: center; display:block; color:#fff; font-size: 2.0rem; margin-top: 50px; }
  
-  .item_list>li{float:left; width:50%; box-sizing: border-box; padding: 0 5%;}
+
+#list_btn>a:first-child{background: #156037;}
+#list_btn>a:last-child{background: #8dc270;}
+
+  .item_list>li{float:left; width:50%; box-sizing: border-box; padding:  0 5%;}
+ 
+ 
   /*모바일 푸터*/
 
 footer{
-  width:100%; height:100%; margin:0 auto;
+  width:1024px; height:100px; margin:0 auto;
 }
-
-footer>.wrap{width:100%; height:200px; 
+footer div.wrap {width:740px; height:100px;
   position:relative;
   padding:0;
 
 }
+
 footer>div>.logo{
   position: absolute; left:0; width:30%; height:50%; line-height: 100%; margin: 25px 0; top:50%; transform: translateY(-50%); text-align: center;
 }
