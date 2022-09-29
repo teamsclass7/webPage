@@ -60,7 +60,7 @@ a:active{color:#333;}
 #s_box_btn{text-align: center; padding: 5px 0 65px;}
 #s_box_btn>button{width:80px;}
 
-
+.btn_list>button:last-child{color:red; float:right;}
 
 /*상품리스트*/
 #item_box{width:1490px; height:100%; margin-top: 10px;}
