@@ -63,6 +63,7 @@ header{
     float: left;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .main_menu::after{
@@ -400,6 +401,7 @@ footer>p{
         background: #000;
         text-align: right;
     }
+    .main_menu>li{cursor: pointer;}
     .main_menu>li>a{
         display: block;
         margin: 0 auto;
@@ -471,7 +473,7 @@ footer>p{
     
     #menu.aniMenu>span{
         background: transparent;
-        transition: all .3s;
+        transition: all .1s;
     }
 
     /*배너영역*/
