@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
 /*font-family: 'Noto Sans KR', sans-serif;*/
 /*font-family: '양진체'*/
 html {
@@ -300,16 +299,36 @@ h2 {
     justify-content: left;
 }
 .add>p:first-child{
-    display: inline-block;
-    width: 120px; height: 20px;
+    display:block;
+    width: 120px; height: 30px;
     line-height: 20px;
     font-size: 16px;
     margin: 0px 23px 20px 50px;
 }
-.add>p:last-child{position: relative;}
-.add>p:last-child input{width: 367px; margin-bottom: 20px;}
-.add>p:last-child>input:first-child{width: 150px; margin-right: 10px;}
-.add>p:last-child button{height: 26px; position: absolute; top: 0px;} 
+.add>p:last-child{
+  width: 400px; height: 120px;
+  position: relative;
+}
+.add>p:last-child input{
+  width: 367px; 
+}
+#sample6_postcode{
+  width: 150px; margin-right: 10px;
+  position: absolute;
+}
+#sample6_search{
+  width: 100px; height: 26px; 
+  position: absolute; 
+  top: 0px; left: 170px;
+}
+#sample6_address{
+  position: absolute;
+  top: 40px
+}
+#sample6_detailAddress{
+  position: absolute;
+  top: 80px;
+}
 .a_info select{
     width: 70px; height: 26px;
     margin-right: 5px;

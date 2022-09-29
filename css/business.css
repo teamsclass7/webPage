@@ -17,7 +17,7 @@ body h2{
     overflow:hidden;
     text-indent:-9999px;
 }
-@media all and (min-width:1021px){
+@media all and (min-width:1025px){
 /*헤더영역*/
 #wrap{
     width: 1920px;
