@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -15,10 +15,10 @@
             <h2>아이디/비밀번호 찾기</h2>
             <h3>비밀번호 찾기</h3>
             <hr/>                
-<section id="l2_tabs"><!--탭영역-->
+<div id="l2_tabs"><!--탭영역-->
     <a href="./id_search.html"><div class="tab_b01">아이디 찾기</div></a>
     <a href="./pw_search.html"><div class="tab_b02">비밀번호 찾기</div></a>
-</section>        
+</div>        
         
    
 
@@ -35,7 +35,7 @@
 </form>
 
 
-<section class="l2_findid">
+<div class="l2_findid">
 
 <form method="post" action="./login.html" id="find">
     <p class="findarea">
@@ -66,18 +66,17 @@
     </div>
 </form>	
 
-</section>
+</div>
             </section>
             <div class="popup_black"></div>
             <div class="popup_wrap">
-                <h3>비밀번호 찾기</h3>
+                <h3>아이디 찾기</h3>
                 <div class="pop_line"></div>
-                <p><img src="./images/img/popup_icon.png" alt="" /></p>
-                <p>비밀번호는 class7입니다.</p>
-                
-                <div type='button' class="close_btn">닫기</div>
-                <div type='button' onclick="location.href='./login.html'"
-                class="close_btn2">로그인</div>
+                <p><img src="./images/img/popup_icon.png" alt="popup_icon" /></p>
+                <p>아이디는 class7입니다.</p>
+                <button type='button' class="close_btn" >닫기</button>
+                <button type='button' onclick="location.href='./login.html'"
+                class="close_btn2" >로그인</button>
             </div>
       </div> 
 

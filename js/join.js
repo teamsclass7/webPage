@@ -112,14 +112,12 @@ else {
 });
 
 $(document).ready(function(){
-    $(".j2_agr_wrap>h4").click(function(){  
-    $(".popup_black").show();
+    $(".detail").click(function(){  
     $(".popup_wrap").show();
     return false;
     });
     
     $(".close_btn").click(function(){
-        $(".popup_black").hide();
         $(".popup_wrap").hide();	
     });
     });

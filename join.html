@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="css/join.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
 </head>
 <body>
     
@@ -18,76 +15,74 @@
         </a>
     </div>
     <form action="./login.html">
+
     <section id="sec01_wrap">
         <h2>회원가입</h2>
         <h3>정보 입력</h3><span>*표시는 필수 입력 사항입니다.</span>
         <hr/>
-      <div class="form_wrap">
-    <div class="userInput">
-        <a class="list">아이디 *</a>
-        <span class="int_id" >
-            <input type="text" id="id" name="id" class="int check"maxlength="20" autocomplete="off">
-        </span>
-    </div>
-   <div class="userInput">
-        <a class="list">비밀번호 *</a>
-        <span class="int_id">
-            <input type="password" id="pw"  name="pw" class="int check"maxlength="20" autocomplete="off">
-        </span>
-    </div>
-    <div class="userInput">
-        <a class="list">비밀번호 재확인 *</span></a>
-        <span class="int_id">
-            <input type="password" id="pwCheck" name="pwCheck" class="int check" maxlength="20" autocomplete="off">
-        </span>
-    </div>
-    <div class="userInput">
-        <a class="list">이름 *</a>
-        <span class="int_id" >
-            <input type="text" id="name" class="int check" name="m_id" maxlength="20" autocomplete="off">
-        </span>
-    </div>     
-    <div class="userInput">
-        <a class="list">전화번호 *</a>
-        <span class="int_id">
-            <select id="phone_select">
-                <option>010</option>
-                <option>011</option>
-            </select>
-            <input type="text" id="phoneNum" name="phoneNum" class="int check" maxlength="8" autocomplete="off">
-           
-        </span>
-     </div>
-    <div class="userInput uesrInput_wrap">
-        <a class="list">E-mail</a>
-        <span class="emailInt" id="emailBox">
-            <input type="text" id="email" maxlength="20" class="int check" autocomplete="off"> 
-           <span>&nbsp;@&nbsp;</span> 
-              
-              <select id="mail_Select">
-                 <option>naver.com</option>
-                 <option>gmail.com</option>
-                 <option>daum.net</option>
-                 <option>hanmail.net</option>
-              </select>
-        </span>
-     </div>
-
-
- <!-- 주소 입력 -->
- <div class="userInput adress_input">
-    <a class="list address_list">자택주소</a>
-    <div class="postwrap">
-            <input type="text" id="sample6_postcode" class="int check" placeholder="우편번호" autocomplete="off">
-            <input type="button" id="post_btn"onclick="sample6_execDaumPostcode()" value="우편번호 찾기" autocomplete="off"><br>
+    <div class="form_wrap">
+        <div class="form_input">
+            <a class="list">아이디 <span>*</span></a>
+            <span class="int_id" >
+                <input type="text" id="id" name="id" class="int" maxlength="20" autocomplete="off">
+            </span>
+        </div>
+        <div class="form_input">
+            <a class="list">비밀번호 <span>*</span></a>
+            <span class="int_id">
+                <input type="password" id="pw"  name="pw" class="int" maxlength="20" autocomplete="off">
+            </span>
+        </div>
+        <div class="form_input">
+            <a class="list">비밀번호 재확인 <span>*</span></a>
+            <span class="int_id">
+                <input type="password" id="pwCheck" name="pwCheck" class="int" maxlength="20" autocomplete="off">
+            </span>
+        </div>
+        <div class="form_input">
+            <a class="list">이름 <span>*</span></a>
+            <span class="int_id" >
+                <input type="text" id="name" class="int" name="m_id" maxlength="20" autocomplete="off">
+            </span>
+        </div>     
+        <div class="form_input">
+            <a class="list">전화번호 <span>*</span></a>
+            <span class="int_id">
+                <select id="phone_select">
+                    <option>010</option>
+                    <option>011</option>
+                </select>
+                <input type="text" id="phoneNum" name="phoneNum" class="int" autocomplete="off">
             
-            <input type="text" id="sample6_address" class="int check" placeholder="주소" autocomplete="off"><br>
-            <input type="text" id="sample6_extraAddress" class="int check" placeholder="참고항목" autocomplete="off">
-            <input type="text" id="sample6_detailAddress" class="int check" placeholder="상세주소" autocomplete="off">
+            </span>
+        </div>
+        <div class="form_input">
+            <a class="list">E-mail</a>
+            <span class="emailInt" id="emailBox">
+                <input type="text" id="email" maxlength="20" class="int" autocomplete="off"> 
+                <span>&nbsp;@&nbsp;</span> 
+                <select id="mail_Select" >
+                    <option>naver.com</option>
+                    <option>gmail.com</option>
+                    <option>daum.net</option>
+                    <option>hanmail.net</option>
+                </select>
+            </span>
+        </div>
+        <!-- 주소 입력 -->
+        <div class="form_input adress_input">
+            <a class="list address_list">자택주소</a>
+            <div class="postwrap">
+                    <input type="text" id="sample6_postcode" class="int" placeholder="우편번호" autocomplete="off">
+                    <button type="button" id="post_btn" onClick="sample6_execDaumPostcode()">우편번호 찾기<br></button>
+                    <div>
+                    <input type="text" id="sample6_address" class="int" placeholder="주소" autocomplete="off"><br>
+                    <input type="text" id="sample6_extraAddress" class="int" placeholder="참고항목" autocomplete="off">
+                    </div>
+                    <input type="text" id="sample6_detailAddress" class="int" placeholder="상세주소" autocomplete="off">
             </div>
-</div>
-
-</div>
+        </div>
+    </div>
     </section>
     <section id="sec02_wrap">
 
@@ -97,7 +92,7 @@
     <div class="j2_alck"><input type="checkbox" id="j2_allchk"><label for="j2_allchk">모든 약관 동의</label></div>
     <div class="j2_agr_wrap">
         <h4>홈페이지 이용약관<span>(필수)</span></h4>
-        
+        <a class="detail">(전문보기)</a>
         <div class="j2_agr">
             <pre>
     제 1 장 총칙
@@ -128,11 +123,13 @@
     </pre>
         </div>
         <div class="agr_chk_wrap">
-        <input type="checkbox" class="agr_chk" name="agr1" id="j2_agr1"><label for="j2_agr1" required>동의합니다</label>
+        <input type="checkbox" class="agr_chk" name="agr1" id="j2_agr1">
+        <label for="j2_agr1">동의합니다</label>
         </div>
     </div>
     <div class="j2_agr_wrap">
         <h4>전자상거래 이용약관<span>(필수)</span></h4>
+        <a class="detail">(전문보기)</a>
         <div class="j2_agr">
                 <pre>
                     제1조(목적) 이 약관은 동화약품(주)이 운영하는 동화약품 사이버 몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스이하 "서비스"라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리,의무 및 책임사항을 규정함을 목적으로 합니다.
@@ -158,7 +155,7 @@
 
     <div class="j2_agr_wrap">
         <h4 >이벤트 프로모션 알림 안내(선택)</h4>
-
+        <a class="detail">(전문보기)</a>
         <div class="j2_agr">
             <pre>
                 1. 개인정보의 수집 및 이용목적
@@ -182,19 +179,13 @@
         <input type="checkbox" class="agr_chk" name="agr3" id="j2_agr3" /><label for="j2_agr3">동의합니다</label>
         </div>
     </div>
-
-
     </section>
 
 
-</section>
     <div class="btn">
         <button type="submit" class="logbtn joina">회원가입</button>
     </div>
 
-</form>
-
-<div class="popup_black"></div>
 <div class="popup_wrap">
     <h3>이용 약관 동의</h3>
     <div class="pop_line"></div>
@@ -206,16 +197,15 @@
             ④ '비회원'이라 함은 회원에 가입하지 않고 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.<br/>
             ⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 「전자상거래 등에서의 소비자 보호지침」 및 관계법령 또는 상관례에 따릅니다.
         </p>
-    <div class="close_btn"><img src="./images/img/x_icon.png" /></div>
-
+    <div class="close_btn"><img src="./images/img/x_icon.png" alt="x_icon" /></div>
 
  </div>
 
-</div> 
 
+</form>
+</div>
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script src="./js/join.js"></script>
-
 
 </body>
 </html>

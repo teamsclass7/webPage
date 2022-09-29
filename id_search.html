@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="css/id_search.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
 </head>
 <body>
     <div class="wrap">    
@@ -16,15 +13,11 @@
             <h3>아이디 찾기</h3>
            
             <hr/>                
-<section id="l2_tabs"><!--탭영역-->
+<div id="l2_tabs">
     <a href="./id_search.html"><div class="tab_b01">아이디 찾기</div></a>
     <a href="./pw_search.html"><div class="tab_b02">비밀번호 찾기</div></a>
-</section>        
-        
-   
-
+</div>        
            
-               
 <form class="log_sch_form">
     <div class="radio_sch">
         <p><label><input type="radio" id="findphone" name="log_sch" checked="checked">휴대폰 번호로 찾기</label></p>
@@ -32,56 +25,53 @@
         <p><label><input type="radio" id="findmail" name="log_sch" >이메일로 찾기</label></p>
     </div>
    
-    
 </form>
 
 
-<section class="l2_findid">
+<div class="l2_findid">
+    <form method="post" action="./login.html" id="find">
+        <p class="findarea">
+            <input type="text" name="name" placeholder="이름을 입력해주세요." autocomplete="off"/>
+        </p>
+        <p class="findarea">
+            <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요." autocomplete="off"/>
+        </p>	
+        <div class="confir_btn">
+            <input type="submit" value="확인">
+        </div>		
+    </form>	
+    <form action="./login.html" id="find2">	
+        <p class="findarea">
+            <input type="text" name="name2" placeholder="이름을 입력해주세요." autocomplete="off" />
+        </p>
+        <p class="findarea email">
+            
+            <input type="text" name="email" placeholder="이메일주소를 입력해주세요." autocomplete="off" />	@
+            <select name="bank">
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+                <option>hanmail.net</option>
+            </select>
+        </p>
+        <div class="confir_btn">
+            <input type="submit" value="확인">
+        </div>
+    </form>	
 
-<form method="post" action="./login.html" id="find">
-    <p class="findarea">
-        <input type="text" name="name" placeholder="이름을 입력해주세요." autocomplete="off"/>
-    </p>
-    <p class="findarea">
-        <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요." autocomplete="off"/>
-    </p>	
-    <div class="confir_btn">
-        <input type="submit" value="확인">
-    </div>		
-</form>	
-<form action="./login.html" id="find2">	
-    <p class="findarea">
-        <input type="text" name="name2" placeholder="이름을 입력해주세요." autocomplete="off" />
-    </p>
-    <p class="findarea email">
-        
-        <input type="text" name="email" placeholder="이메일주소를 입력해주세요." autocomplete="off" />	@
-        <select name="bank">
-            <option>naver.com</option>
-            <option>gmail.com</option>
-            <option>daum.net</option>
-            <option>hanmail.net</option>
-        </select>
-    </p>
-    <div class="confir_btn">
-        <input type="submit" value="확인">
-    </div>
-</form>	
-
+</div>
 </section>
-            </section>
-            <div class="popup_black"></div>
+    <div class="popup_black"></div>
             <div class="popup_wrap">
                 <h3>아이디 찾기</h3>
                 <div class="pop_line"></div>
-                <p><img src="./images/img/popup_icon.png" alt="" /></p>
+                <p><img src="./images/img/popup_icon.png" alt="popup_icon" /></p>
                 <p>아이디는 class7입니다.</p>
-                
-                <div type='button' class="close_btn">닫기</div>
-                <div type='button' onclick="location.href='./login.html'"
-                class="close_btn2">로그인</div>
+                <button type='button' class="close_btn" >닫기</button>
+                <button type='button' onclick="location.href='./login.html'"
+                class="close_btn2" >로그인</button>
             </div>
-      </div> 
+    </div> 
 
 <script>
 $(document).ready(function(){
@@ -144,11 +134,6 @@ $(document).ready(function(){
 
 });
 
-
- </script>
-
-
- 
-
+</script>
 </body>
 </html>
