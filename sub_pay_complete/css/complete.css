@@ -489,7 +489,7 @@ footer > div > .ft_01 > li > a {
 
   #m_header {
     display: block;
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     height: 100px;

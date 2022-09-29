@@ -420,8 +420,7 @@ footer>div>.ft_01>li>a{
     
       #m_header {
         display: block;
-        width: 1024px;
-        margin: 0 auto;
+        width: 100%;        margin: 0 auto;
         box-sizing: border-box;
         height: 100px;
         z-index: 99999;
@@ -559,12 +558,7 @@ footer>div>.ft_01>li>a{
     /*모바일 page영역 공통 */
 
     h3{padding:  10px 0;}
-    #page1,#page1_1,#page2,#page3,#page4,footer{width:1024px;}
-    #page1>div,#page1_1>div,#page2>div,#page3>div,#page4>div,footer>div
-    {width:1024px;}
-  
-
-
+    
 
   
 
