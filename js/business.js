@@ -14,10 +14,10 @@ if(wid <= 1025){
     });
     $(".sub1>li").on("click", function(){
          if($(this).hasClass("sub2_chk")){
-            $(this).children(".sub2").fadeIn(200);
+            $(this).children(".sub2").fadeOut(200);
             $(this).removeClass("sub2_chk");
          }else {
-            $(this).children(".sub2").fadeOut(200);
+            $(this).children(".sub2").fadeIn(200);
             $(this).addClass("sub2_chk");
   
       }
