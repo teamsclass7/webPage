@@ -27,3 +27,13 @@ function sample6_execDaumPostcode() {
     }).open();
 }
 
+$(document).ready(function(){
+    $(".menu").each(function(index){
+        $(this).attr("menu-index", index);
+    }).click(function(){
+        var index = $(this).attr("menu-index");
+        $(".menu[menu-index=" + index + "]").addClass("clicked_menu"); 
+        $(".menu[menu-index!=" + index + "]").removeClass("clicked_menu");
+    });
+});
+
