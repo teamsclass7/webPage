@@ -339,7 +339,7 @@ span{
     line-height:2;  
     text-align: left;
     align-items: center;
-    box-shadow: inset #ddd 0px 0px 20px;
+    box-shadow: inset #ddd 0px 0p1x 20px;
     border-radius: 10px;
 }
 
@@ -350,7 +350,7 @@ span{
 #page4 h3{color:#156037; font-size:84px; font-family: '양진체'}
 #page4 h4{font-size:41px; margin:20px;}
 #page4 h4>span{color:#156037; font-size:68px; font-weight:600;}
-#page4 figure>img{display: none;}
+#page4 figure{display: none;}
 
 
 /*푸터영역*/
@@ -399,9 +399,12 @@ footer {
   
 @media all and (max-width:1024px){
 
-  
-    body{width: 100%;}
-    .wrap{width:100%;}
+  body {
+    width:1024px;
+  }
+  .wrap {
+    width: 1024px;
+  }
   /*모바일 헤더영역 */
   #header {
     display: none;
@@ -417,7 +420,7 @@ footer {
 
   #m_header {
     display: block;
-    width: 100%;
+    width: 1024px;
     margin: 0 auto;
     box-sizing: border-box;
     height: 100px;
@@ -551,8 +554,6 @@ footer {
     right: 0;
     z-index: 1;
   }
-
-
     /*모바일 page영역 공통 */
 
     h3{padding:  10px 0;}
@@ -575,8 +576,8 @@ footer {
     }
     #page1>div>div>ul>li:nth-child(2)
     {text-align: center;}
-    #page1>div>div>img{width:50%; height:auto;}
-    #page1 h3>figure>img{width:100%;}
+    #page1>div>div>img{width:30%; height:auto;}
+    #page1 h3>figure>img{width:50%;}
   
     #page1 figcaption{font-size: 0.8em;}
 
@@ -651,7 +652,8 @@ footer {
 
 /*모바일 page2 영역*/
    #page2>div>div>figure>img{margin-bottom: 50px;}
-    .page2_gal img{ width:45%;
+   .page2_gal{justify-content: space-around;}
+    .page2_gal img{ width:35%;
         margin: 10px 0;
     }
 
@@ -661,7 +663,7 @@ footer {
 
 /*모바일 page3 영역*/
 
-.page3_gal{width:90%;}
+.page3_gal{width:90%; justify-content: space-around;}
 #page3 p{width:80%; height:100%; text-align: left; line-height:1.5; box-sizing: border-box;}
 
 
@@ -671,8 +673,8 @@ footer {
 
 
 #page4>div>*{display: none;}
-#page4>div>figure{display: block; margin: 0 auto;   width:80%; }
-#page4 figure>img{display: block; width:100%;  padding-top: 40px;} 
+#page4>div>figure{display: block;   width:80%; margin: 0 auto; }
+#page4 figure>img{width:500px;  text-align: center;   padding-top: 40px; }  
 
 
 
