@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html lang="kr">
+   <head>
+      <meta charset="utf-8">
+      <title>FullScreen Search Box Example</title>
+      <link rel="stylesheet" href="./css/search.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   
+   <body>
+    <div>
+      <section id="m_header">
+
+      <h1 id="logo"><a href="#"><img src="./images/brand_main/logo.jpg"/></a></h1>    
+      <input type="checkbox" id="m_btn">
+      <label for="m_btn">  <!--label은 인라인 스타일-->
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+      <ul id="m_popup">
+          <li>
+              <ul class="m_gnb">
+                  <li><a href="">브랜드 이야기</a></li>
+                  <li><a href="">제품 소개</a></li>
+                  <li><a href="">제품 구매</a></li>
+              </ul>
+          </li>
+          <li>
+              <ul class="m_util">
+                  <li><a href="./login.html">로그인</a></li>
+                  <li><a href="./join.html">회원가입</a></li>
+                  <li><a href="">1:1문의</a></li>
+                  <li><a href="">Language</a></li>
+                  <li><a href="">관리자페이지</a></li>
+              </ul>
+          </li>
+
+          
+
+      </ul>
+  </section>
+  </div>
+  <header id="header">
+      <h2>헤더영역</h2>
+          <h1 id="logo"><a href="#"><img src="./images/brand_main/logo.jpg"/></a></h1>     
+          
+      
+          <div id="util">
+              <ul class="util_right">
+                  <li><a href="./login.html">로그인</a></li>
+                  <li>|</li>
+                  <li><a href="./join.html">회원가입</a></li>
+                  <li>|</li>
+                  <li><a href="#">1:1 문의</a></li>
+                  <li>|</li>
+                  <li><a href="#">Language</a></li>
+                  <li>|</li>
+                  <li><a href="#">관리자 페이지</a></li>
+                  <li>|</li>
+                
+              
+                </ul>
+                <div class="close-btn">
+                  <span class="fas fa-times"></span>
+               </div>
+               <div class="wrapper">
+                  <div class="search-btn">
+                     <span class="fas fa-search"></span>
+                  </div>
+                  <div class="search-data">
+                     <input type="text" required>
+                     <div class="line"></div>
+                     <label>Type to search..</label>
+                     <span class="fas fa-search"></span>
+                  </div>
+               </div>
+              </div>
+          <div>
+              <ul class="gnb">
+                  <li><a href="./br.html">브랜드 이야기</a></li>
+                  <li><a href="#">제품 소개</a></li>
+                  <li><a href="#">제품 구매</a></li>
+              </ul>
+          </div>
+      </header>
+
+
+    </body>      
+      <script>
+         $(".search-btn").click(function(){
+           $(".wrapper").addClass("active");
+           $(this).css("display", "none");
+           $(".search-data").fadeIn(500);
+           $(".close-btn").fadeIn(500);
+           $(".search-data .line").addClass("active");
+           setTimeout(function(){
+             $("input").focus();
+             $(".search-data label").fadeIn(500);
+             $(".search-data span").fadeIn(500);
+           }, 800);
+         });
+         $(".close-btn").click(function(){
+           $(".wrapper").removeClass("active");
+           $(".search-btn").fadeIn(800);
+           $(".search-data").fadeOut(500);
+           $(".close-btn").fadeOut(500);
+           $(".search-data .line").removeClass("active");
+           $("input").val("");
+           $(".search-data label").fadeOut(500);
+           $(".search-data span").fadeOut(500);
+         });
+      </script>
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+   
+</html>
