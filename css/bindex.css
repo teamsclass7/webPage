@@ -514,7 +514,6 @@ input[id="s_btn"]:checked ~ #search_popup {
   z-index: 1;
 }
 
-#search_insert{width:240px; border:0;  background: rgba(0,0,0,0.1);}
 
 
 @media all and (max-width:1024px){

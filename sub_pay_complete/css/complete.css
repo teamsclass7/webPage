@@ -467,6 +467,128 @@ footer > div > .ft_01 > li > a {
   color: #5d5d5d;
 }
 
+#search_popup{
+  font-weight: 700;
+ 
+ 
+
+}
+.search_bar_bg{width:83%; margin:2% auto 1%;
+  height:10%;}
+.search_bar1{
+  border:3px solid #156037;
+  width: 90%;
+  height:100%;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+
+.search_bar_bg img{width:5%;  margin-top: 1%; }
+#search_bg{
+  margin-top:2%;
+  width:83%;
+  height:82%;
+  border:3px solid #156037;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#search_bg>div{
+  width:45%;
+  height:6.25%;
+}
+#search_icon>div:nth-child(1)>a img{
+  padding: 2px 0 0;
+}
+#search_icon>div:nth-child(1)>a{
+      width:270px; height:30px;
+}
+#search_bg:nth-child(2)>a img{
+  padding: 5px 0 0;
+}
+#search_r>li>a,#search_l>li>a{ line-height: 2;
+  color:#333;
+  font-size: 16px;
+}
+
+#search_bg{margin:0 auto;}
+#search_r>li:first-child{display: flex;
+  flex-flow: row wrap; 
+ justify-content: space-around;
+ align-items :center}
+#search_l>li:last-child{margin:140px 0 0 20px; }
+#search_bg>ul{
+  width:50%;
+  height:100%;
+}
+#search_l>li>a{padding-left: 10px;}
+#search_bg>ul:nth-child(1){
+  position: absolute;
+  left: 0; 
+  border-right: 2px solid rgba(21, 96, 55,0.1);
+  
+ 
+}
+#search_r>li{padding-left: 5%;}
+#search_bg>ul:nth-child(1)>li:first-child{text-align: center; }
+#search_bg>ul>li:first-child>a{color: #156037; font-size: 20px;}
+#search_bg>ul:nth-child(2){
+  position: absolute;
+  right:0 ;
+}
+#search_bg>ul:nth-child(2)>li:nth-child(5){
+  top:30px;
+}
+
+
+
+
+input[id="s_btn"] {
+  display: none;
+}
+
+input[id="s_btn"] + label {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  text-align: right;
+ 
+}
+#x_icon{width:35px; height: 35px;}
+#search_popup{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+
+
+input[id="s_btn"]:checked ~ #search_popup {
+  visibility: visible;
+  width: 600px;
+  height: 400px;
+  
+  overflow: hidden;
+  text-indent: 0;
+  right: 0;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.4s;
+  position: fixed;
+  
+  box-sizing: border-box;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+
+
 @media all and (max-width: 1024px) {
   html{min-width: 100px;}
   body {
