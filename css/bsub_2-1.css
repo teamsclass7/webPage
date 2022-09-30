@@ -169,6 +169,7 @@ h2{
 .sel_opt>ul:nth-child(2)>li:nth-child(4) dd{display:flex;}
 .sel_opt>ul:nth-child(2)>li:nth-child(4) dd>span{padding:0 20px;}
 .sel_opt>ul:nth-child(2)>li:nth-child(5){padding:10px 0;}
+input[type=text]:focus{outline: none;}
 input[type=text]{
     border:0;
     width:100px;
@@ -388,6 +389,7 @@ footer>div>.ft_01>li>a{
 
     .opt_sec,.sel_opt>ul:last-child{display:flex; flex-flow: row wrap; justify-content: space-between;}
     .btn{width:360px; height:120px;}
+    .btn a{width:360px; height:120px;left:0; top:0; line-height: 120px;} 
     .thumbnail{width:740px; height:550px; margin-top: 100px;}
     .thumbnail img{height:108px;}
     .bigthumb>img{height:544px;}
@@ -403,7 +405,6 @@ footer>div>.ft_01>li>a{
     .detail{width:100%;}
 
 
-    /*모바일 푸터*/
 
  /*모바일 푸터*/
 
