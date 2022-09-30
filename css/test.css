@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+
+html{width:100%;height:100%;margin:0 auto;font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#333;}
+
+p{ position:absolute; top:50%; left:50%;
+    width:120px; height:30px; margin-top:-15px; margin-left:-60px;
+    line-height:15px; cursor:pointer;
+  }
+  
+  .modal{ 
+    cursor: pointer;
+    position:absolute; width:100%; height:100%;   top:-70px; left:-140px; display:none;
+  }
+  
+  .modal_content{
+    border:1px solid #333;
+    width:300px;
+    background:#fff; border-radius:10px;
+    position:relative; top:600px; left:350px;
+    text-align:center;
+    box-sizing:border-box; padding:20px 0;
+    line-height:23px; cursor:pointer;
+  }

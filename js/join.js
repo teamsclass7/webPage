@@ -59,7 +59,7 @@ $("#j2_allchk").change(function(){
 
 
 /*미입력 시 alert창*/
-$(".joina").click(function(){
+$(".join").click(function(){
 var u_id = $("input[name='id']").val();
 if(!u_id){
     alert("아이디를 입력하세요.");
