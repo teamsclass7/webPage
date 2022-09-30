@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>결제완료</title>
     <link href="../css/order.css" rel="stylesheet" type="text/css" >
 </head>
@@ -118,22 +119,30 @@
         </div>
     </div>
 </section>
+<form name="form" id="abc" method="post">
 <section id="consumer">
     <div class="title">
         <h3>주문자 정보</h3>
         <h4>* 표시는 필수 입력 항목입니다.</h4>
     </div>
     <div class="c_info">
-        <p><span>이름 *</span> <input type="text"></p>
+        <p><span>이름 *</span> <input type="text" name="name" placeholder="이름을 입력해주세요."></p>
         <p><span>휴대 전화 *</span> 
             <select>
                 <option>010</option>
                 <option>011</option>
             </select>&nbsp;ㅡ&nbsp;&nbsp;
-            <input type="text">
+            <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요." id="phonenumber">
         </p>
-        <p><span>이메일 *</span> <input type="text"> &nbsp;@&nbsp; <input type="text"></p>
-    </div>  
+        <p>
+            <span>이메일 *</span> <input type="text" name="email" placeholder="이메일을 입력해 주세요."> &nbsp;@&nbsp;   
+            <select>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+            </select>
+        </p>
+    </div>
 </section>
 <section id="address">
     <div class="title">
@@ -141,26 +150,25 @@
         <h4>* 표시는 필수 입력 항목입니다.</h4>
     </div>
     <div class="a_info">
-        <p><span>받는 분 *</span> <input type="text"></p>
+        <p><span>받는 분 *</span> <input type="text"  name="name2" placeholder="이름을 입력해주세요."></p>
         <p><span>휴대 전화 *</span> 
             <select>
                 <option>010</option>
                 <option>011</option>
             </select>&nbsp;ㅡ&nbsp;&nbsp;
-            <input type="text">
+            <input type="text" name="phonenumber2" placeholder="휴대폰 번호를 입력해주세요.">
         </p>
         <div class="add">
             <p>주소 *</p>
             <p>
-                <input type="text" id="sample6_postcode" placeholder="우편번호">
+                <input type="text" name="postcode" id="sample6_postcode" placeholder="우편번호">
                 <input type="button" id="sample6_search" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
-                <input type="text" id="sample6_address" placeholder="주소">
-                <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+                <input type="text" name="address" id="sample6_address" placeholder="주소">
+                <input type="text" id="sample6_detailAddress" name="address2" placeholder="상세주소">
             </p>
         </div>
         <p><span>배송시 요청사항</span> <input type="text"></p>
     </div>
-
 </section>
 <section id="pay">
     <div class="title">
@@ -220,9 +228,10 @@
         <a href="#">취소하기</a>
     </div>
     <div class="p_btn">
-        <a href="#">결제하기</a>
+        <a href="#"><input type="submit" value="결제하기"></a>
     </div>
 </section>
+</form>
 </div>
 <footer>
     <div class="wrap clear">
@@ -239,6 +248,7 @@
         </ul>    
     </div>
 </footer>
+
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script src="../js/order.js"></script>
 

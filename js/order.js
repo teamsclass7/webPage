@@ -27,3 +27,62 @@ function sample6_execDaumPostcode() {
     }).open();
 }
 
+$(document).ready(function(){
+    $("#abc").submit(function(){
+        var name = $("input[name='name']").val();
+        var phonenumber = $("#phonenumber").val();
+        var email = $("input[name='email']").val();
+        var name2 = $("input[name='name2']").val();
+        var phonenumber2 = $("input[name='phonenumber2']").val();
+        var postcode = $("input[name='postcode']").val();
+        if(!name){
+            alert("이름을 입력해주세요");
+            $("input[name='name']").focus();
+            return false;
+        }
+        if(!phonenumber){
+            alert("22222222휴대폰 번호를 입력해주세요");
+            $("#phonenumber").focus();	
+            return false;
+        }
+        if(!email){
+            alert("이메일 주소를 입력해주세요");
+            $("input[name='email']").focus();
+            return false;
+            }
+        if(!name2){
+            alert("이름을 입력해주세요");
+            $("input[name='name2']").focus();
+            return false;
+        }
+        if(!phonenumber2){
+            alert("휴대폰 번호를 입력해주세요");
+            $("input[name='phonenumber2']").focus();	
+            return false;
+            }	
+        if(!postcode){
+            alert("주소를 입력해주세요");
+            $("input[name='postcode']").focus();
+            return false;
+            }	
+        var address = $("input[name='address']").val();
+        if(!address){
+            alert("주소를 입력해주세요");
+            $("input[name='address']").focus();
+            return false;
+            }	
+        var address2 = $("input[name='address2']").val();
+        if(!address2){
+            alert("주소를 입력해주세요");
+            $("input[name='address2']").focus();
+            return false;
+            }	
+    });
+});
+
+
+
+
+
+
+

@@ -278,12 +278,15 @@ h2 {
     margin: 20px 20px 20px 50px;
 }
 .c_info input{height: 20px;}
-.c_info select{
+.c_info>p:nth-child(2) select{
     width: 70px; height: 26px;
     margin-right: 5px;
 }
-.c_info>p:nth-child(1) input{width: 368px;}
-.c_info>p:nth-child(2) input{width: 268px;}
+.c_info>p:nth-child(3) select{
+  width: 120px; height: 26px;
+}
+.c_info>p:nth-child(1) input{width: 311px;}
+.c_info>p:nth-child(2) input{width: 211px;}
 
 /*address*/
 .a_info{margin-bottom: 60px;}
@@ -310,7 +313,7 @@ h2 {
   position: relative;
 }
 .add>p:last-child input{
-  width: 367px; 
+  width: 311px; 
 }
 #sample6_postcode{
   width: 150px; margin-right: 10px;
@@ -335,10 +338,10 @@ h2 {
 }
 
 .a_info input{height: 20px;}
-.a_info>p:nth-of-type(1) input{width: 368px;}
+.a_info>p:nth-of-type(1) input{width: 311px;}
 .a_info>p:nth-of-type(2){margin-bottom: 25px;}
-.a_info>p:nth-of-type(2) input{width: 268px;}
-.a_info>p:nth-of-type(3) input{width: 368px;}
+.a_info>p:nth-of-type(2) input{width: 211px;}
+.a_info>p:nth-of-type(3) input{width: 311px;}
 
 /*pay*/
 
@@ -351,10 +354,12 @@ h2 {
 .choise>label{
   width: 120px; height: 120px;
   margin: 20px 20px 80px;
-  background: red;
+  position: relative;
 }
 .choise>label img{width: 100%; height: 100%;}
 .choise>label:first-child{margin-left: 50px;}
+
+
 
 /* HIDE RADIO */
 [type=radio] { 
@@ -414,6 +419,7 @@ h2 {
     line-height: 60px;
     padding-left: 20px;
     font-size: 1.8rem;
+    font-weight: bold;
     color: #fff;
     background: #156037;
     box-sizing: border-box;
@@ -426,22 +432,24 @@ h2 {
 .c_btn>a:active{
     background: #0f4025;
 }
-.p_btn>a{
+.p_btn>a>input{
     display: block;
     width: 120px; height: 60px;
     line-height: 60px;
-    padding-left: 20px;
     font-size: 1.8rem;
+    font-weight: bold;
     color: #fff;
     background: #8dc270;
     box-sizing: border-box;
     position: absolute;
     right: 0px; bottom: 0px;
+    border: 0;
+    cursor: pointer;
 }
-.p_btn>a:hover{
+.p_btn>a>input:hover{
     background: #89bc6e;
 }
-.p_btn>a:active{
+.p_btn>a>input:active{
     background: #7ba962;
 }
 
@@ -669,7 +677,7 @@ footer>div>.ft_01>li>a{
     .c_info{
       width: 100%;
       margin: 0 auto 60px;
-      padding-left: 55px;
+      padding-left: 80px;
       box-sizing: border-box;
     }
 
@@ -677,7 +685,7 @@ footer>div>.ft_01>li>a{
     .a_info{
       width: 100%;
       margin: 0 auto 60px;
-      padding-left: 55px;
+      padding-left: 80px;
       box-sizing: border-box;
     }
 
@@ -725,7 +733,7 @@ footer>div>.ft_01>li>a{
     line-height: 90px;
     padding-left: 34px;
    }
-   .p_btn>a{
+   .p_btn>a>input{
     width: 180px; height: 90px;
     position: absolute;
     right: 24%;
