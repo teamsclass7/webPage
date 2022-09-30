@@ -9,7 +9,7 @@
 }
 /*font-family: 'Noto Sans KR', sans-serif;*/
 /*font-family: '양진체'*/
-html{font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+html{font-size:12px; font-family: 'Noto Sans KR', sans-serif; min-width: 1700px;}
 img{vertical-align:top;}
 a{text-decoration:none;}
 a,a:link,a:visited,a:hover,a:active{color:#333;}
@@ -130,12 +130,14 @@ ul.util_right{margin:0;}
     background:#d8e4de;
 }
 h4{
-    position:absolute;
+    position:relative;
     right:0;
 }
 h4 img{
     height:790px;
     opacity:0.6;
+    position: absolute;
+    right:0;
 }
 #page01{position:relative;
 padding-top:20px;}
@@ -148,8 +150,8 @@ padding-top:20px;}
     font-size:4rem;
 }
 .main_title>dt img{
-    width:320px;
-    height:50px;
+    width:380px;
+    height:45px;
 }
 #images>ul{
     position:relative;
@@ -367,11 +369,168 @@ footer>div>.ft_01>li>a{
 
 @media all and (max-width:1024px){
     /*가로사이즈가 1024px 이하 :: MOBILE모드*/
+    html{min-width: 100px;}
+    body {
+        width:1024px;
+      }
+      .wrap {
+        width: 740px;
+      }
+      /*모바일 헤더영역 */
+      #header {
+        display: none;
+      }
+      #util,
+      .gnb {
+        display: none;
+      }
+    
+      #menu {
+        display: none;
+      }
+    
+      #m_header {
+        display: block;
+        width: 100%;        margin: 0 auto;
+        box-sizing: border-box;
+        height: 100px;
+        z-index: 99999;
+        position: fixed;
+        background: #fff;
+        right:0;
+      }
+      #m_logo {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+        text-align: center;
+      }
+    
+      #m_logo img {
+        width: 180px;
+      }
+    
+      input[id="m_btn"] {
+        display: none;
+      }
+    
+      input[id="m_btn"] + label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        float: right;
+        right: 5%;
+        top: 30%;
+      }
+    
+      input[id="m_btn"] + label > span {
+        display: block;
+    
+        height: 7px;
+        width: 100%;
+        border-radius: 30px;
+        background: black;
+        position: absolute;
+      }
+    
+      input[id="m_btn"] + label > span:nth-child(1) {
+        top: 0;
+      }
+    
+      input[id="m_btn"] + label > span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    
+      input[id="m_btn"] + label > span:nth-child(3) {
+        bottom: 0;
+      }
+      #m_popup {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        text-indent: -9999px;
+      }
+      .m_gnb {
+        width: 90%;
+        margin-bottom: 30px;
+      }
+      .m_gnb > li > a {
+        display: block;
+        color: #f2f2f2;
+        font-size: 3rem;
+        line-height: 1.8;
+      }
+      .m_gnb > li:last-child {
+        border-bottom: 3px solid #156037;
+        padding-bottom: 30px;
+      }
+    
+      .m_util {
+        width: 90%;
+      }
+      .m_util > li > a {
+        display: block;
+        color: #f2f2f2;
+        font-size: 2rem;
+        line-height: 2;
+      }
+    
+      .m_gnb > li > a:hover,
+      .m_util > li > a:hover {
+        font-weight: bold;
+        color: #156037;
+      }
+    
+      input[id="m_btn"]:checked + label > span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        transition: all 0.4s;
+        background: #fff;
+      }
+    
+      input[id="m_btn"]:checked + label > span:nth-child(2) {
+        display: none;
+      }
+    
+      input[id="m_btn"]:checked + label > span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+        transition: all 0.4s;
+        background: #fff;
+      }
+    
+      input[id="m_btn"]:checked ~ #m_popup {
+        visibility: visible;
+        width: 50%;
+        height: 100%;
+    
+        overflow: hidden;
+        text-indent: 0;
+        right: 0;
+        background: #000;
+        transition: all 0.4s;
+        position: fixed;
+        padding: 60px 25px 25px 25px;
+        box-sizing: border-box;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+
     .wrap{width:740px;}
     /*페이지1 Mver*/
     #sec01>div>h4 img{
-        width:740px;
-        height:1005px;
+        height:1035px;
+        padding-top: 100px;;
     }
     .main_title{
         position:relative;
@@ -382,7 +541,7 @@ footer>div>.ft_01>li>a{
     }
     .main_title>dd span{
         position:absolute;
-        top:130px;
+        top:150px;
         left:37%;
     }
     #images{
@@ -402,6 +561,9 @@ footer>div>.ft_01>li>a{
     }
     .img01{
         margin-left:17.5px;
+    }
+    #page01{
+        padding-top:150px;
     }
 
 
@@ -501,4 +663,53 @@ footer>div>.ft_01>li>a{
         padding:5px 0;
         box-sizing:border-box;
     }
+     /*모바일 푸터*/
+
+footer{
+    width:1024px; height:100px; margin:0 auto;
+  }
+  footer div.wrap {width:740px; height:100px;
+    position:relative;
+    padding:0;
+  
+  }
+  
+  footer>div>.logo{
+    position: absolute; left:0; top:50%; transform: translateY(-50%); width:250px; height:30px; line-height: 30px; text-align: center; margin: 0;
+  }
+  footer>div>.logo img{width:244px; height:25px; vertical-align: middle;}
+  footer>div>address{ 
+    text-align: left;
+    position:absolute;
+    
+    top:15px;
+    left:35%;
+  }
+  footer>div>address>p{
+    
+    font-size:1rem;
+    color:#5d5d5d;
+  }
+  footer>div>.ft_01{
+    text-align: left;
+    width:450px;
+    margin:0;
+    
+   position: absolute;
+   top:70px;
+   left:35%;
+   display: flex;
+    flex-flow: row wrap; 
+   justify-content:space-between;
+   align-items:flex-end;
+  }
+  footer>div>.ft_01>li{ display: block; padding:0; height:20px; line-height: 20px; }
+  footer>div>.ft_01>li:first-child{width:135px;  text-align: left; }
+  footer>div>.ft_01>li:last-child{width:315px; text-align: right; }
+  footer>div>.ft_01>li:nth-child(2){
+    font-size:1rem;
+  }
+  footer>div>.ft_01>li>a{
+    font-size:1.4rem;
+  }
 }
