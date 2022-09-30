@@ -400,7 +400,7 @@ footer>div>.ft_01>li>a{
  
 
 }
-.search_bar_bg{width:88%;
+.search_bar_bg{width:83%; margin:2% auto 1%;
   height:10%;}
 .search_bar1{
   border:3px solid #156037;
@@ -408,6 +408,7 @@ footer>div>.ft_01>li>a{
   height:100%;
   background: #f2f2f2;
   box-sizing: border-box;
+  margin-right: 15px;
 }
 
 .search_bar_bg img{width:5%;  margin-top: 1%; }
@@ -438,7 +439,7 @@ footer>div>.ft_01>li>a{
   font-size: 16px;
 }
 
-
+#search_bg{margin:0 auto;}
 #search_r>li:first-child{display: flex;
   flex-flow: row wrap; 
  justify-content: space-around;
@@ -446,15 +447,17 @@ footer>div>.ft_01>li>a{
 #search_l>li:last-child{margin:140px 0 0 20px; }
 #search_bg>ul{
   width:50%;
-  height:50%;
+  height:100%;
 }
 #search_l>li>a{padding-left: 10px;}
 #search_bg>ul:nth-child(1){
   position: absolute;
   left: 0; 
+  border-right: 2px solid rgba(21, 96, 55,0.1);
   
  
 }
+#search_r>li{padding-left: 5%;}
 #search_bg>ul:nth-child(1)>li:first-child{text-align: center; }
 #search_bg>ul>li:first-child>a{color: #156037; font-size: 20px;}
 #search_bg>ul:nth-child(2){
@@ -497,14 +500,14 @@ input[id="s_btn"]:checked ~ #search_popup {
   visibility: visible;
   width: 600px;
   height: 400px;
-
+  
   overflow: hidden;
   text-indent: 0;
   right: 0;
   background: rgba(0,0,0,0.1);
   transition: all 0.4s;
   position: fixed;
-  padding: 60px 25px 25px 25px;
+  
   box-sizing: border-box;
   top: 50px;
   right: 50px;
