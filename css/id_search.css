@@ -89,7 +89,6 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 #find2{display:none;}
 .confir_btn{text-align:center;}
 .confir_btn input{
-	background:0;
 	border:0;
 	color:#fff;
 	font-size:20px;
@@ -98,8 +97,19 @@ a,a:link,a:visited,a:hover,a:active{color:#333;}
 	background:#156037;
 	cursor:pointer;
 	line-height:50px;
-	margin:50px auto 0;
+	margin:50px 20px 0;
 }
+.confir_btn a{
+	display: inline-block;
+	color:#fff;
+	font-size:20px;
+	width:200px; height:50px;
+	background:#156037;
+	cursor:pointer;
+	line-height:50px;
+	margin:50px 20px 0;
+}
+
 .email input{
 	width:278px;
 	vertical-align:middle;
