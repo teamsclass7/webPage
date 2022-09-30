@@ -8,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("./mobile.css");
+
 
 /*font-family: 'Noto Sans KR', sans-serif;*/
 /*font-family: '양진체'*/
@@ -95,16 +95,14 @@ h2 {
 .util_right > li > a {
   font-size: 1.2rem;
 }
-.gnb {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  width: 720px;
-  display: flex;
-  flex-flow: row wrap;
+.gnb{
+  position:absolute;
+  left:590px;
+  width:720px;
+  display:flex;
+  flex-flow:row wrap;
   justify-content: space-between;
-  margin-top: 40px;
-}
+  margin-top:40px;}
 .gnb > li {
   float: left;
   text-align: center;
@@ -470,7 +468,7 @@ footer > div > .ft_01 > li > a {
 }
 
 @media all and (max-width: 1024px) {
- 
+  html{min-width: 100px;}
   body {
     width:1024px;
   }
@@ -498,8 +496,11 @@ footer > div > .ft_01 > li > a {
     z-index: 99999;
     position: fixed;
     background: #fff;
+   
+    right:0;
+    
   }
-  #logo {
+  #m_logo {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -510,7 +511,7 @@ footer > div > .ft_01 > li > a {
     text-align: center;
   }
 
-  #logo img {
+  #m_logo img {
     width: 180px;
   }
 
@@ -532,7 +533,6 @@ footer > div > .ft_01 > li > a {
 
   input[id="m_btn"] + label > span {
     display: block;
-
     height: 7px;
     width: 100%;
     border-radius: 30px;
