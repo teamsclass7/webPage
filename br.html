@@ -6,6 +6,9 @@
     <title>쪼요쪼요</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="./js/br_main.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
     <link href="css/bindex.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -113,16 +116,22 @@
         </div>
         
     <section id="page1">
-        <div class="wrap">
+        <div class="wrap fx animation01">
             <h2>제품소개 영역</h2>
            
                 <figure>
                     <img src="./images/brand_main/water_logo.png" alt="logo">
-                    <figcaption>소화엔 역시 <span>까스 활명수</span></figcaption>
+                    <figcaption class="test_obj">소화엔 역시
+                        <span>까</span>
+                        <span>스</span>
+                        <span>활</span>
+                        <span>명</span>
+                        <span>수</span>
+                    </figcaption>
                 </figure>
           
             <div>
-                <img src="./images/brand_main/drink_14.jpg" alt="drink">
+                <img class="ui-shake" src="./images/brand_main/drink_14.jpg" alt="drink">
                 <ul>
                     <li>
                         우리나라 사람들<br>
@@ -141,7 +150,7 @@
 	<section id="page1_1">
 		<div class="wrap">
             <h2>활명수 발자취</h2>
-            <h3>생명을 살리는 물,<br/><span>활명수</span>의 발자취를 만나보세요.</h3>
+            <h3 class="fd">생명을 살리는 물,<br/><span>활명수</span>의 발자취를 만나보세요.</h3>
             <hr class="line1">
             <ul class="origin">
 
@@ -287,7 +296,10 @@
         </div>
 </section>
     <section id="page2">
-        <div class="wrap">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+        <div class="wrap abc">
             <h2>아프리카어린이영역</h2>
             <h3>생명을 살리는 물</h3>
             <div>
@@ -318,13 +330,8 @@
         </div>
     </section>
 
-
-
-
-
-
     <section id="page3">
-        <div class="wrap">
+        <div class="wrap animation02">
         <h2>역대노인영역</h2>
         <h3>소비자의 중심의 사고와<br>끊없는 연구 노력으로 진화하는 <span>활명수</span></h3>
         <div class="page3_gal">
@@ -359,16 +366,6 @@
     </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
     <section id="page4">
         <div class="wrap">
             <h2>브랜드1위자랑영역</h2>
@@ -377,12 +374,7 @@
             <img src="./images/brand_main/brandrank.jpg" alt="rank1"> 
             <figure><img src="./images/brand_main/m_rank.png" alt="m_rank1"/></figure>  
         </div>
-      
     </section>
-
-
-
-
 
     <footer>
         <div class="wrap clear">
@@ -404,6 +396,27 @@
             $.scrollTo(this.hash,1000);
             evt.preventDefault();
         });
+        $(".fx").hide();
+		$(".animation01").toggle("slide",{
+			direction:"down",
+            distance:5
+        },1000);
+        $(document).ready(function() {
+            $(window).scroll( function(){
+                $('#page3').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element/2){
+                        $(this).animate({'opacity':'1','margin-left':'0px'},2500);
+                    }
+                    
+                }); 
+            });
+        });
+
+ 
     </script>
 
 </body>
