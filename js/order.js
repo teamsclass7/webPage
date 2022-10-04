@@ -30,7 +30,7 @@ function sample6_execDaumPostcode() {
 $(document).ready(function(){
     $("#abc").submit(function(){
         var name = $("input[name='name']").val();
-        var phonenumber = $("#phonenumber").val();
+        var phonenumber = $("input[name='phonenumber']").val();
         var email = $("input[name='email']").val();
         var name2 = $("input[name='name2']").val();
         var phonenumber2 = $("input[name='phonenumber2']").val();
@@ -41,8 +41,8 @@ $(document).ready(function(){
             return false;
         }
         if(!phonenumber){
-            alert("22222222휴대폰 번호를 입력해주세요");
-            $("#phonenumber").focus();	
+            alert("휴대폰 번호를 입력해주세요");
+            $("input[name='phonenumber']").focus();	
             return false;
         }
         if(!email){
