@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div>
+        <section id="m_header">
+
+        <h1 id="m_logo"><a href="#"><img src="./images/brand_main/logo.jpg" alt="m_logo"/></a></h1>    
+        <input type="checkbox" id="m_btn">
+        <label for="m_btn">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul id="m_popup">
+            <li>
+                <ul class="m_gnb">
+                    <li><a href="">브랜드 이야기</a></li>
+                    <li><a href="">제품 소개</a></li>
+                    <li><a href="">제품 구매</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="m_util">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">1:1문의</a></li>
+                    <li><a href="">Language</a></li>
+                    <li><a href="">관리자페이지</a></li>
+                </ul>
+            </li>
+
+            
+
+        </ul>
+    </section>
+    </div>
+    <header id="header">
+        <h2>헤더영역</h2>
+            <h1 id="logo"><a href="#"><img src="./images/brand_main/logo.jpg" alt="logo"/></a></h1>     
+            
+        
+            <div id="util">
+                <ul class="util_right">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">1:1 문의</a></li>
+                    <li>|</li>
+                    <li><a href="#">Language</a></li>
+                    <li>|</li>
+                    <li><a href="#">관리자 페이지</a></li>
+                    <li>|</li>
+                    <li><a href="#"><img src="./images/brand_main/검색아이콘.png" alt="search"/></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="gnb">
+                    <li><a href="./br.html">브랜드 이야기</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                    <li><a href="#">제품 구매</a></li>
+                </ul>
+            </div>
+        </header>
+</div>
+<div class="b_wrap">
+    <section id="login">
+    <h3>로그인</h3>
+    <form action="./br.html" class="login_form">
+        <div class="txtb"> 
+            <input type="text" name="id" id="id" autocomplete="off" required>
+            <span data-placeholder="아이디"></span>
+        </div>
+        <div class="txtb">
+            <input type="password" name="pw" id="pw" autocomplete="off" required>
+            <span data-placeholder="비밀번호"></span>
+        </div>
+		<div class="btn">
+            <button type="submit" class="logbtn">로그인</button>
+		
+        </div>
+
+        <div class="bottom">
+            <ul class="bottom_text">
+            <li><a href="./id_search.html">아이디 찾기</a></li>
+                <li><a href="./pw_search.html">비밀번호 찾기</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+            </ul>
+		</div>
+    </form> 
+    </section>
+</div>
+
+<footer>
+        
+        
+    <div class="wrap clear">
+        <ul class="logo clear">
+            <li><a href="#"><img src="./images/brand_main/footer_logo.png" alt="footer_logo"/></a></li>
+        </ul>
+        <address>
+            <p>04522 서울 특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층 대표이사:유준하,한종현</p>
+           <p> Tel:02-2021-9300 Mail:dongwha@dong-wha.co.kr 사업자등록번호:110-81-00102</p>
+            </address>
+        <ul class="ft_01">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li>Copyright(c) DONG WHA PHARM. CO., LTD</li>
+        </ul>    
+    </div>
+   
+</footer>
+<script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+            if($(this).val() == "")
+            $(this).removeClass("focus");
+        })
+
+</script>
+
+
+</body>
+</html>

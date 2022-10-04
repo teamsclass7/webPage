@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>간짜장먹고싶니?</title>
+    <link href="css/bsub_2-1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div>
+        <section id="m_header">
+
+        <h1 id="m_logo"><a href="#"><img src="./images/brand_main/logo.jpg" alt="m_logo"/></a></h1>    
+        <input type="checkbox" id="m_btn">
+        <label for="m_btn">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul id="m_popup">
+            <li>
+                <ul class="m_gnb">
+                    <li><a href="">브랜드 이야기</a></li>
+                    <li><a href="">제품 소개</a></li>
+                    <li><a href="">제품 구매</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="m_util">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">1:1문의</a></li>
+                    <li><a href="">Language</a></li>
+                    <li><a href="">관리자페이지</a></li>
+                </ul>
+            </li>
+
+            
+
+        </ul>
+    </section>
+    </div>
+    <header id="header">
+        <h2>헤더영역</h2>
+            <h1 id="logo"><a href="#"><img src="./images/brand_main/logo.jpg" alt="logo"/></a></h1>     
+            
+        
+            <div id="util">
+                <ul class="util_right">
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">1:1 문의</a></li>
+                    <li>|</li>
+                    <li><a href="#">Language</a></li>
+                    <li>|</li>
+                    <li><a href="#">관리자 페이지</a></li>
+                    <li>|</li>
+                    <li><a href="#"><img src="./images/brand_main/검색아이콘.png" alt="search"/></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="gnb">
+                    <li><a href="./br.html">브랜드 이야기</a></li>
+                    <li><a href="#">제품 소개</a></li>
+                    <li><a href="./bsub_2.html">제품 구매</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+    <section class="opt_sec wrap">
+        <h2>주문구역</h2>
+        <div class="thumbnail">
+            <ul class="clear">
+                <li class="bigthumb"><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+                <li><img src="images/brand_main/double_gas.jpg" alt="thumb"></li>
+            </ul>
+        </div>
+        <div class="sel_opt">
+            <ul>
+                <li>까스 활명수-큐액(75ml)</li>
+                <li>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식, 체함, 구역, 구토</li>
+            </ul>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>배송방법</dt>
+                        <dd>택배</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>배송비</dt>
+                        <dd>무료</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>배송정보</dt>
+                        <dd>평균 배송 : 3일</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>구매수량</dt>
+                        <dd>
+                            <div id="input_div"> 
+                                <input type="button" value="-" onclick="minus()">
+                                <input type="text" size="25" value="1" id="count">
+                                <input type="button" value="+" onclick="plus()">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li><hr></li>
+                <li>
+                    <dl>
+                        <dt>총 상품 금액 : </dt>
+                        <dd>
+                            <input type="text" value="14400" id="total_count" hidden=hidden />
+                            <input type="text" value="14400" id="total_count_view"  readonly/>
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button type="button" class="btn btn_keeb">
+                        <a href="#">장바구니</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn_buy">
+                        <a href="#">바로구매</a>
+                    </button></li>
+            </ul>
+        </div>
+    </section>
+    <section class="wrap">
+        <h2>제품상세정보구역</h2>
+        <nav>
+            <ul class="fix clear">
+                <li class="nav_chk"><a href="#">상세정보</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">반품/교환정보</a></li>
+            </ul>
+        </nav>
+        <div class="con_a con_chk">
+            <img class="detail" src="images/b_sub2/product_gas.png" alt="gas_thumb">
+        </div>
+
+        <div class="con_b con_chk">
+            <div>
+                <h3>포토후기</h3>
+                <ul>
+                    <li><img src="./images/b_sub2/re_1.jpg" alt="review"></li>
+                    <li><img src="./images/b_sub2/re_2.jpg" alt="review"></li>
+                    <li><img src="./images/b_sub2/re_3.jpg" alt="review"></li>
+                    <li><img src="./images/b_sub2/re_4.jpg" alt="review"></li>
+                    <li><img src="./images/b_sub2/re_5.jpg" alt="review"></li>
+                    <li><img src="./images/b_sub2/re_6.jpg" alt="review"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>   
+                        <ul>
+                            <li><img src="./images/b_sub2/profile.png" alt="profile"></li>
+                            <li>★★★★☆</li>
+                            <li>이말*</li>
+                            <li>2022.09.30</li>
+                            <li>방구마려웠는데 이거먹으니까 방구가 잘나와요</li>
+                            <li><img src="./images/b_sub2/re_1.jpg"></li>
+                        </ul>
+                    </li>
+                    <li>   
+                        <ul>
+                            <li><img src="./images/b_sub2/profile.png" alt="profile"></li>
+                            <li>★★★★★</li>
+                            <li>킹병*</li>
+                            <li>2022.09.30</li>
+                            <li>소화가 잘돼서 바지에 똥쌌어요</li>
+                            <li><img src="./images/b_sub2/re_2.jpg"></li>
+                        </ul>
+                    </li>
+                    <li>   
+                        <ul>
+                            <li><img src="./images/b_sub2/profile.png" alt="profile"></li>
+                            <li>★★☆☆☆</li>
+                            <li>허허성*</li>
+                            <li>2022.09.30</li>
+                            <li>택배를 다른집앞에 놔둬서 겨우 찾았네요 ㅡㅡ</li>
+                            <li><img src="./images/b_sub2/re_3.jpg"></li>
+                        </ul>
+                    </li>
+                    <li>   
+                        <ul>
+                            <li><img src="./images/b_sub2/profile.png" alt="profile"></li>
+                            <li>★★★★★</li>
+                            <li>오지*</li>
+                            <li>2022.09.30</li>
+                            <li>전 물대신 활명수를 마셔요 ㅋㅋ 트름 잘나옴 꺼억~~~</li>
+                            <li><img src="./images/b_sub2/re_4.jpg"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+                    
+        </div>
+        
+        <div class="con_c con_chk">
+        </div>
+        
+        <div class="con_d con_chk">
+        </div>
+    </section>
+
+    <footer>
+        
+        
+        <div class="wrap clear">
+            <ul class="logo clear">
+                <li><a href="#"><img src="./images/brand_main/footer_logo.png" alt="footer_logo"/></a></li>
+            </ul>
+            <address>
+                <p>04522 서울 특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층 대표이사:유준하,한종현</p>
+               <p> Tel:02-2021-9300 Mail:dongwha@dong-wha.co.kr 사업자등록번호:110-81-00102</p>
+                </address>
+            <ul class="ft_01">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li>Copyright(c) DONG WHA PHARM. CO., LTD</li>
+            </ul>    
+        </div>
+       
+
+
+        
+  
+
+
+    
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="./js/bsub_2-1.js"></script>
+</body>
+</html>

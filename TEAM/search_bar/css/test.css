@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-famliy: 'Noto Sans KR', sans-serif;*/
+/*
+color
+#156037
+#8dc270
+#c7de76 
+#e7ecd6;
+*/
+/*RESET CSS*/
+html{font-family: 'Noto Sans KR', sans-serif; font-size:14px;}
+*{margin: 0; padding: 0;}
+ul,li{list-style: none; text-decoration: none;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#000000;}
+body h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+
+#layerPopup + label {
+    display:inline-block;
+    padding: 7px 14px;
+    background: #ddd;
+    color:#156037;
+}
+
+#layerPopup{
+    display: none;
+}
+
+#layer_bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+#layer_bg > #popup{
+    padding: 15px;
+    box-sizing:border-box;
+    width:600px;
+    height:400px;
+    background: #fff;
+}
+#layer_bg > #popup > h2{
+    margin-bottom: 25px;
+}
+#layer_bg > #popup > h2 > label{
+    float: right;
+}
