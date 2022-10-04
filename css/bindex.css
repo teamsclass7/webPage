@@ -444,7 +444,7 @@ footer>div>.ft_01>li>a{
   flex-flow: row wrap; 
  justify-content: space-around;
  align-items :center}
-#search_l>li:last-child{margin:140px 0 0 20px; }
+#search_l>li:last-child{margin:185px 0 0 20px; }
 #search_bg>ul{
   width:50%;
   height:100%;
@@ -698,7 +698,7 @@ input[id="s_btn"]:checked ~ #search_popup {
     {text-align: center;}
     #page1>div>div>img{width:auto; height:300px;}
   
-    #page1 figcaption{font-size: 0.8em;}
+    #page1 figcaption{font-size: 43px;}
 
       
     /*모바일 page1_1 영역*/
