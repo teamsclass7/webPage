@@ -191,17 +191,18 @@ color:#5d5d5d;}
 /*page1 구역*/
 #page1{background: url('../images/brand_main/bc_sec01_bg.png')no-repeat center center/cover;
 padding:100px 0 60px 0;}
-#page1 figcaption{font-size:48px;}
+
 #page1 figcaption>span{
     font-size:60px; 
     font-family: '양진체'; 
     color:#156037;
-    text-shadow:-3px 0 #8dc270, 0 3px #8dc270, 3px 0 #8dc270, 0 -3px #8dc270;
+  -webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #8dc270;
     line-height: 2;
 }
 
 @keyframes anime_textup { 0% { top: 0; } 20% { top: -1.2rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
- 
+.test_obj{font-size: 48px;}
 .test_obj span {
     position: relative;
     animation: anime_textup 1.8s infinite;
@@ -669,7 +670,7 @@ footer>div>.ft_01>li>a{
 
 
     /*모바일 page1영역*/
-    #page1{padding-top: 100px;}
+    #page1{padding-top: 160px;}
 
     #page1>div>div{
         display: block;
@@ -678,11 +679,11 @@ footer>div>.ft_01>li>a{
     {text-align: center;}
     #page1>div>div>img{width:auto; height:300px;}
   
-    #page1 figcaption{font-size: 0.8em;}
+    
 
-      
+    .test_obj{font-size: 48px;}
     /*모바일 page1_1 영역*/
-   #page1_1{width:1024px; height:2200px; background: #e7efeb; padding-top:100px;}
+   #page1_1{width:1024px; height:2100px; background: #e7efeb; padding:60px 0;}
    #page1_1>div:first-child{display: none;}
  
     #m_itemlist{display:block; width:1024px; margin:0 auto; height: 2100px;
@@ -750,6 +751,7 @@ footer>div>.ft_01>li>a{
 .item_right>ul>li:last-child>img{width:50%; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); }
 
 /*모바일 page2 영역*/
+#page2{padding: 60px 0;}
     #page2>div{width:740px;}
    #page2>div>div>figure>img{   margin-bottom: 50px;}
    .page2_gal{justify-content: space-around;}
@@ -763,6 +765,7 @@ footer>div>.ft_01>li>a{
     .page2_end>p{font-size:19px !important;}
 
 /*모바일 page3 영역*/
+#page3{padding: 60px 0;}
 #page3 .wrap h3{font-size: 40px;}
 #page3 .wrap,
 .page3_gal{width:740px;}
@@ -773,7 +776,7 @@ footer>div>.ft_01>li>a{
 
 /*모바일 page4 영역*/
 
-
+#page4{padding: 60px;}
 #page4>div>*{display: none;}
 #page4>div>figure{display: block; margin: 0 auto;   width:80%; }
 #page4 figure>img{display: block; width:100%;  padding-top: 40px;} 
