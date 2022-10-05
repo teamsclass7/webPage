@@ -132,8 +132,7 @@ h2{
     .gnb>li:nth-child(3)>a:first-child:hover::after {
         width: 60%;
     }
-
-
+    
 /*콘텐츠*/
 .opt_sec,.sel_opt>ul:last-child{display:flex; flex-flow: row wrap; justify-content: space-between;}
 .btn a{color:#fafafa; width:240px; height:60px; display:block; position:absolute; left:0; top:0; line-height: 60px;} 
@@ -198,10 +197,31 @@ nav>ul>li:nth-child(n+2):before{
   top:50%;
   transform: translateY(-50%);
 }
-nav>ul>li>a{width:100%; height:50px; display:block;}
-nav>ul>li.nav_chk{background:#666;}
-nav>ul>li.nav_chk>a{ color:#fafafa;}
-.con_b h3{text-align: left;margin-left: 50px;font-size: 1.5rem;font-weight: bold;}
+nav>ul>li>a{width:100%; height:50px; display:block; cursor: pointer;}
+nav>ul>li>a#btn_a{background:#666; color:#fafafa;}
+nav.drop {
+  position: fixed;
+  top:0;
+  animation: dropHeader 0.3s;
+  z-index: 1;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+@keyframes dropHeader {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+/*B구역*/
+.con_d,.con_c,.con_b{display:none;}
+.con_d h3,.con_c h3,.con_b h3{text-align: left;margin-left: 50px;font-size: 1.5rem;font-weight: bold; margin-top:20px;
+  padding-bottom: 20px; border-bottom: #000 2px solid;}
 .con_b>div:first-child ul{padding:50px;display:flex; flex-flow: row wrap; justify-content: space-between;}
 .con_b>div:first-child li{
   width:150px; height:150px;
@@ -214,7 +234,7 @@ nav>ul>li.nav_chk>a{ color:#fafafa;}
   width:1100px;
   text-align: left;
   height:100px;
-  border-bottom: #666;
+  border-bottom: #d7d7d7 solid 1px;
   position:relative;
   padding:20px 50px;
   font-size: 14px;
@@ -240,19 +260,48 @@ nav>ul>li.nav_chk>a{ color:#fafafa;}
   cursor: pointer;
 }
 
+/*C 구역*/
+.con_c{margin-left: 50px;}
+.con_c h3{border-bottom: none; margin-left:0;}
+.con_c p{
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: #000 2px solid;
+  margin-bottom: 20px;
+}
+.con_c button{width:120px; height:40px; border:none; background:#666;}
+.con_c button>a{width:100%; height:100%;color:#fafafa;}
+.con_c>ul{display:flex; flex-flow: row wrap; justify-content: space-between; width:1100px; border-bottom: #000 1px solid; align-items:flex-end;}
+.con_c>div>ul{width:1100px; display:block; border-bottom: 1px solid #d7d7d7;}
+.con_c>div>ul>li{float:left; height:30px; line-height: 30px;}
+.con_c>div>ul>li:nth-child(1){width:20%;}
+.con_c>div>ul:first-child{font-size: 14px;}
+.con_c>div>ul:first-child>li:nth-child(2){text-align: center;}
+.con_c>div>ul>li:nth-child(2){width:50%; text-align: left;}
+.con_c>div>ul>li:nth-child(3){width:15%;}
+.con_c>div>ul>li:nth-child(4){width:15%;}
+.con_c>div>ul>li:nth-child(4){width:15%;}
+
+
+/*D 구역*/
+.con_d>table{margin:20px auto;}
+.con_d th, .con_d td{
+  padding:10px 15px; 
+  line-height: 2;
+}
+.con_d th{background:#f4f4f4; width:120px;}
+.con_d tr{text-align: left;
+
+  border-top: 1px #d7d7d7 solid;
+  border-bottom: 1px #d7d7d7 solid;}
+
+
+
 /*.fix {
   position:fixed;
   animation: down 0.5s ease
 }*/
 
-@keyframes down {
-  0%{
-    transform: translateY(-50px)
-  }
-  100%{
-    transform: translateY(0px)
-  }
-}
 
 /*푸터영역*/
 footer{
@@ -460,7 +509,7 @@ footer>div>.ft_01>li>a{
         z-index: 1;
       }
 
-
+      /*콘텐츠*/
     .opt_sec,.sel_opt>ul:last-child{display:flex; flex-flow: row wrap; justify-content: space-between;}
     .btn{width:360px; height:120px;}
     .btn a{width:360px; height:120px;left:0; top:0; line-height: 120px;} 
@@ -477,7 +526,39 @@ footer>div>.ft_01>li>a{
     .thumbnail>ul>li:first-child{width:580px; height:550px;}
     .sel_opt>ul{width:740px; margin-top:60px;}
     .detail{width:100%;}
+      
 
+    nav{width:100%}
+    nav>ul{width:100%; height:50px; border-bottom: 1px solid black;}
+nav>ul>li{
+  float:left; 
+  width:25%; height:50px; 
+  background:#f1f1f1; 
+  position:relative; 
+  font-size: 1.5rem;
+  line-height:50px;
+}
+nav>ul>li:nth-child(n+2):before{
+  content: '';
+  width:1px; height:40px;
+  background:#999;
+  position:absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+}
+nav>ul>li>a{width:100%; height:50px; display:block; cursor: pointer;}
+nav>ul>li>a#btn_a{background:#666; color:#fafafa;}
+nav.drop {top:100px;}
+
+@keyframes dropHeader {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100px;
+  }
+}
 
 
  /*모바일 푸터*/
@@ -529,4 +610,5 @@ footer>div>.ft_01>li>a{
   footer>div>.ft_01>li>a{
     font-size:1.4rem;
   }
+  
 }

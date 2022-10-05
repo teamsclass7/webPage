@@ -146,17 +146,17 @@
         <h2>제품상세정보구역</h2>
         <nav>
             <ul class="fix clear">
-                <li class="nav_chk"><a href="#">상세정보</a></li>
-                <li><a href="#">리뷰</a></li>
-                <li><a href="#">Q&A</a></li>
-                <li><a href="#">반품/교환정보</a></li>
+                <li><a id="btn_a">상세정보</a></li>
+                <li><a id="btn_b">리뷰</a></li>
+                <li><a id="btn_c">Q&A</a></li>
+                <li><a id="btn_d">반품/교환정보</a></li>
             </ul>
         </nav>
-        <div class="con_a con_chk">
+        <div class="con_a">
             <img class="detail" src="images/b_sub2/product_gas.png" alt="gas_thumb">
         </div>
 
-        <div class="con_b con_chk">
+        <div class="con_b">
             <div>
                 <h3>포토후기</h3>
                 <ul>
@@ -216,10 +216,139 @@
                     
         </div>
         
-        <div class="con_c con_chk">
+        <div class="con_c">
+            <h3>Q&A</h3>
+            <p>구매하시려는 상품에 대해 궁금한 점이 있으신 경우 문의해주세요.</p>
+            <ul>
+                <li>
+                    <button>
+                        <a href="#">Q&A 작성</a>
+                    </button>
+                </li>
+                <li>
+                    <select>
+                        <option>답변상태</option>
+                        <option>완료</option>
+                        <option>대기중</option>
+                    </select>
+                </li>
+            </ul>
+            <div>
+                <ul class="qa_title clear">
+                    <li>답변상태</li>
+                    <li>제목</li>
+                    <li>작성자</li>
+                    <li>작성일</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>혹시 많이사면 할인 되나요?</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>토할때 먹어도 도요??</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>혹시 많이사면 할인 되나요?</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>토할때 먹어도 도요??</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+                <ul class="clear">
+                    <li>미답변</li>
+                    <li>1빠 ㅋㅋ</li>
+                    <li>박서*</li>
+                    <li>2022-10-10</li>
+                </ul>
+            </div>
+
         </div>
         
-        <div class="con_d con_chk">
+        <div class="con_d">
+            <h3>반품/교환정보</h3>
+            <table cellspacing="0">
+            <tbody>
+                <tr>
+                    <th scope="row">판매자 지정택배사</th>
+                    <td colspan="3">한진택배</td>
+                </tr>
+                <tr>
+                    <th scope="row">반품배송비</th>
+                    <td>편도 7,500원 (최초 배송비 무료인 경우  15,000원 부과)</td>
+                    <th scope="row">교환배송비</th>
+                    <td>15,000원</td>
+                </tr>
+                <tr>
+                    <th scope="row">보내실 곳</th>
+                    <td colspan="3">인천 광역시 서구 대발로 소발길 중발타워 2층
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">반품/교환 사유에 따른 요청 가능 기간</th>
+                    <td colspan="3">구매자 단순 변심은 상품 수령 후 7일 이내
+                        <span>(구매자 반품배송비 부담)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">표시/광고와 상이, 계약 내용과 다르게 이행된 경우 상품 수령 후 3개월 이내 혹은 표시/광고와 다른 사실을 안 날로부터 30일 이내
+                        <span>(판매자 반품 배송비 부담)</span>
+                        <br>둘 중 하나 경과 시 반품/교환 불가</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="7">반품/교환 불가능 사유</th>
+                        <td colspan="3">
+                            <ul>
+                                <li>
+                                    <span>1.</span>반품요청기간이 지난 경우</li>
+                                <li>
+                                    <span>2.</span>구매자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우
+                                    <span>(단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외)</span>
+                                </li>
+                                <li>
+                                    <span>3.</span>구매자의 책임있는 사유로 포장이 훼손되어 상품 가치가 현저히 상실된 경우
+                                    <span>(예: 식품, 화장품, 향수류, 음반 등)</span>
+                                </li>
+                                <li>
+                                    <span>4.</span>구매자의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우
+                                    <span>(라벨이 떨어진 의류 또는 태그가 떨어진 명품관 상품인 경우)</span>
+                                </li>
+                                <li>
+                                    <span>5.</span>시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</li>
+                                <li>
+                                    <span>6.</span>고객의 요청사항에 맞춰 제작에 들어가는 맞춤제작상품의 경우
+                                    <span>(판매자에게 회복불가능한 손해가 예상되고, 그러한 예정으로 청약철회권 행사가 불가하다는 사실을 서면 동의 받은 경우)</span>
+                                </li>
+                                <li>
+                                    <span>7.</span>복제가 가능한 상품 등의 포장을 훼손한 경우
+                                    <span>(CD/DVD/GAME/도서의 경우 포장 개봉 시)</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 

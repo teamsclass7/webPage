@@ -41,3 +41,114 @@ function insertCommas(n) {
 
   return s2;
 }
+
+
+$(function(){
+$("#btn_a").click(function(){
+  $(".con_a").show();
+  $("#btn_a").css({
+    "background" : "#666",
+    "color" : "#fafafa"
+  });
+  $(".con_b").hide();
+  $("#btn_b").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_c").hide();
+  $("#btn_c").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_d").hide();
+  $("#btn_d").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+});
+});
+$(function(){
+$("#btn_b").click(function(){
+  $(".con_b").show();
+  $("#btn_b").css({
+    "background" : "#666",
+    "color" : "#fafafa"
+  });
+  $(".con_a").hide();
+  $("#btn_a").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_c").hide();
+  $("#btn_c").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_d").hide();
+  $("#btn_d").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+});
+});
+$(function(){
+$("#btn_c").click(function(){
+  $(".con_c").show();
+  $("#btn_c").css({
+    "background" : "#666",
+    "color" : "#fafafa"
+  });
+  $(".con_d").hide();
+  $("#btn_d").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_a").hide();
+  $("#btn_a").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_b").hide();
+  $("#btn_b").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+});
+});
+$(function(){
+$("#btn_d").click(function(){
+  $(".con_d").show();
+  $("#btn_d").css({
+    "background" : "#666",
+    "color" : "#fafafa"
+  });
+  $(".con_a").hide();
+  $("#btn_a").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_c").hide();
+  $("#btn_c").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+  $(".con_b").hide();
+  $("#btn_b").css({
+    "background" : "none",
+    "color" : "#333"
+  });
+});
+});
+
+let header = document.querySelector("nav");
+let headerHeight = 1200;
+
+window.onscroll = function () {
+  let windowTop = window.scrollY;
+  if (windowTop >= headerHeight) {
+    header.classList.add("drop");
+  } 
+  else {
+    header.classList.remove("drop");
+  }
+};
