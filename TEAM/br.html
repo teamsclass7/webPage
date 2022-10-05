@@ -140,50 +140,56 @@
     </section>
     <section id="page1_1">
       <div class="wrap">
+        <div class="video_modal_popup">
+          <div class="video_modal_popup-closer"></div>
+        </div>
+        
         <h2>활명수 발자취</h2>
         <h3 class="fd">
-          생명을 살리는 물,<br /><span>활명수</span>의 발자취를 만나보세요.
+          생명을 살리는 물,<br /><span>활명수</span>의 발자취를 만나보세요.<br/>
+       <div id="ddi">제품 사진을 <img src="./images/brand_main/click.svg" alt="click"/></div> 
         </h3>
         <hr class="line1" />
         <ul class="origin">
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink01.png" alt="drink01" />
+          
+          <li class="drink_youtube">
+            <figure><a data-video="_D5_6YasjBI" >
+              <img  src="./images/brand_main/drink01.png" alt="drink01" /></a>
               <h5 id="line1"></h5>
               <figcaption>초창기 활명수</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink02.png" alt="drink02" />
+          <li class="drink_youtube">
+            <figure><a data-video="_D5_6YasjBI" >
+              <img src="./images/brand_main/drink02.png" alt="drink02" /></a>
               <h5 id="line2"></h5>
               <figcaption>1910년</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink03.png" alt="drink03" />
+          <li class="drink_youtube">
+            <figure><a data-video="D_DCgh4D7bM" >
+              <img src="./images/brand_main/drink03.png" alt="drink03" /></a>
               <h5 id="line3"></h5>
               <figcaption>1967년</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink04.png" alt="drink04" />
+          <li class="drink_youtube">
+            <figure><a data-video="IXKIHjpXNsQ" >
+              <img src="./images/brand_main/drink04.png" alt="drink04" /></a>
               <h5 id="line4"></h5>
               <figcaption>1991년</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink05.png" alt="drink05" />
+          <li class="drink_youtube">
+            <figure><a data-video="Gah6jnc4LBA" >
+              <img src="./images/brand_main/drink05.png" alt="drink05" /></a>
               <h5 id="line5"></h5>
               <figcaption>1996년</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="./images/brand_main/drink06.png" alt="drink06" />
+          <li class="drink_youtube">
+            <figure><a data-video="pXmSHVd4gbE" >
+              <img src="./images/brand_main/drink06.png" alt="drink06" /></a>
               <h5 id="line6"></h5>
               <figcaption>2011년</figcaption>
             </figure>
@@ -191,7 +197,8 @@
         </ul>
 
         <ul class="latest">
-          <li><img src="./images/brand_main/drink07.png" alt="drink07" /></li>
+          <li class="drink_youtube">
+            <a data-video="QP-P23CmN9I" ><img src="./images/brand_main/drink07.png" alt="drink07" /></a></li>
         </ul>
 
         <hr class="line2" />
@@ -204,6 +211,7 @@
         <h2>활명수 발자취</h2>
         <h3>
           생명을 살리는 물,<br /><span>활명수</span>의 발자취를 만나보세요.
+         
         </h3>
         <div>
           <div class="item_left">
@@ -282,8 +290,10 @@
           </div>
           <hr class="end_line" />
           <h4>2021년~</h4>
-        </div>
+        
       </div>
+
+      
     </section>
     <section id="page2">
       <div class="wrap">
@@ -386,7 +396,7 @@
         </figure>
       </div>
     </section>
-
+    <a href="#" class="up_button"></a>
     <footer>
       <div class="wrap clear">
         <ul class="logo clear">
@@ -439,6 +449,38 @@
           });
         });
       });
+
+      $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".up_button").fadeIn();
+          } else {
+            $(".up_button").fadeOut();
+          }
+        });
+        //Click event to scroll to top
+        $(".up_button").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+
+
+      $(".drink_youtube a").click(function() {
+    $(".video_modal_popup").addClass("reveal"),
+    $(".video_modal_popup .video-wrapper").remove(),
+    $(".video_modal_popup").append("<div class='video-wrapper'><iframe width='560' height='315' src='https://youtube.com/embed/" + $(this).data("video") + "?rel=0&playsinline=1&autoplay=1' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>")
+}),
+$(".video_modal_popup-closer").click(function() {
+    $(".video_modal_popup .video-wrapper").remove(),
+    $(".video_modal_popup").removeClass("reveal")
+});
+
+
+
+
+      
     </script>
   </body>
 </html>
