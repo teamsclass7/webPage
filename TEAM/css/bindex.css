@@ -79,7 +79,7 @@ h2 {
 }
 
 .r_icon {
-  width: 70px;
+  width: 80px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -91,7 +91,7 @@ h2 {
 }
 
 #main_search {
-  width: 380px;
+  width: 400px;
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -221,46 +221,50 @@ h2 {
   font-size: 1.7rem;
   line-height: 2;
   top: 266px;
+  z-index: 99999;
 }
 #menu > ul > li > a {
   transition: all 0.4s;
   color: #5d5d5d;
+  z-index: 99999;
 }
 #menu > ul > li > a:hover {
   font-size: 30px;
   color: #156037;
   font-weight: bold;
   transition: all 0.4s;
+  z-index: 99999;
 }
+
 /*링크*/
 
 /*영상모달*/
 .video_modal_popup.reveal {
   display: flex;
   position: fixed;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   right: 0;
   bottom: 0;
   justify-content: center;
   align-items: center;
-  z-index:9
+  z-index: 9;
 }
 
 .video_modal_popup .video-wrapper {
   position: relative;
-  width: 80%;
-  padding-bottom: 45%;
-  z-index: 10
+  width: 65%;
+  padding-bottom: 35%;
+  z-index: 10;
 }
 
 .video_modal_popup .video-wrapper iframe {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
 }
 
 .video_modal_popup.reveal .video_modal_popup-closer {
@@ -269,12 +273,10 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .5);
-  z-index: 9
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 /*page1 구역*/
-
-
 
 #page1 {
   background: url("../images/brand_main/bc_sec01_bg.png") no-repeat center
@@ -432,10 +434,18 @@ span {
   font-weight: 100;
   font-family: "양진체";
 }
-#ddi{  display: block; text-align: right; font-size: 20px; font-weight: 500; padding-left: 75%;
-color:#156037;}
+#ddi {
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 75%;
+  color: #156037;
+}
 
-#ddi img{width:40px;}
+#ddi img {
+  width: 40px;
+}
 .origin img:hover {
   transform: scale(1.2);
 }
@@ -642,16 +652,7 @@ color:#156037;}
   display: none;
 }
 
-/*기타*/
-.up_button {
-  width: 40px;
-  height: 40px;
-  background-image: url("../images/brand_main/up_button.svg");
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  display: none;
-}
+
 /*푸터영역*/
 footer {
   background: #d7d7d7;
@@ -674,6 +675,7 @@ footer > div > address > p {
   line-height: 25px;
   font-size: 1.2rem;
   color: #5d5d5d;
+  text-align: left;
 }
 footer > div > .ft_01 {
   float: right;
@@ -886,11 +888,6 @@ footer > div > .ft_01 > li > a {
   }
   /*모바일 page1_1 영역*/
 
-
-
-
-
-  
   #page1_1 {
     width: 1024px;
     height: 2100px;
@@ -908,7 +905,6 @@ footer > div > .ft_01 > li > a {
     height: 2100px;
   }
 
-  
   #m_itemlist figcaption {
     padding-top: 40px;
     font-size: 1.3rem;
@@ -1005,7 +1001,7 @@ footer > div > .ft_01 > li > a {
   .item_left > ul > li:last-child {
     margin: 0;
   }
-  .item_left > ul > li:last-child  img {
+  .item_left > ul > li:last-child img {
     width: 100%;
     position: absolute;
     left: 50%;
@@ -1054,15 +1050,13 @@ footer > div > .ft_01 > li > a {
   .item_right > ul > li:last-child {
     margin-top: 0;
   }
-  .item_right > ul > li:last-child  img {
+  .item_right > ul > li:last-child img {
     width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
-  
 
   /*모바일 page2 영역*/
   #page2 {
@@ -1136,15 +1130,19 @@ footer > div > .ft_01 > li > a {
     padding-top: 40px;
   }
 
+  
   /*기타*/
-  /*기타*/
-  .up_button {
-    width: 40px;
-    height: 40px;
-
-    right: 20px;
-    bottom: 20px;
-  }
+ 
+.up_button {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/brand_main/up_button.svg");
+  position: fixed;
+  right: 30px;
+  bottom: 120px;
+  display: none;
+ 
+}
 
   /*모바일 푸터*/
 
@@ -1186,6 +1184,7 @@ footer > div > .ft_01 > li > a {
   footer > div > address > p {
     font-size: 1rem;
     color: #5d5d5d;
+    text-align: left;
   }
   footer > div > .ft_01 {
     text-align: left;
