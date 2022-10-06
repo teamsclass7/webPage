@@ -219,5 +219,35 @@
 </footer>
 </div>
 <script src="../js/business.js"></script>
+<script>
+    $(document).ready(function() {
+            $(window).scroll( function(){
+                $('#product').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element){
+                        $(this).animate({'opacity':'1','margin-left':'0px'},800);
+                    }
+                    
+                }); 
+            });
+        });
+    $(document).ready(function() {
+            $(window).scroll( function(){
+                $('#brand').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element){
+                        $(this).animate({'opacity':'1','margin-left':'0px'},800);
+                    }
+                    
+                }); 
+            });
+        });
+</script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    #ani{
+        font-size: 3em;
+        display: flex; 
+        opacity: 1;
+    }
+</style>
+<body>
+<div id="ani">
+    <div class="num_animation" data-rate="000">0</div>,
+    <div data-rate="000">000</div>,
+    <div data-rate="000">000</div>
+</div>
+    <script>
+        $(document).ready(function(){
+            var numAnimation = document.querySelector(".num_animation");
+            var num = 0;
+            var timer = setInterval(function(){
+                ++num;
+                numAnimation.innerText = num;
+                if(num == 100){
+                    clearInterval(timer);
+                }
+            }, 10);
+        });
+
+    </script>
+
+</body>
+</html>

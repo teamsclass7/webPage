@@ -8,67 +8,83 @@
     <link href="../css/order.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
-    <div>
-        <section id="m_header">
-
-        <h1 id="m_logo"><a href="#"><img src="../images/brand_main/logo.jpg" alt="logo"></a></h1>    
-        <input type="checkbox" id="m_btn">
-        <label for="m_btn">  <!--label은 인라인 스타일-->
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul id="m_popup">
-            <li>
-                <ul class="m_gnb">
-                    <li><a href="">브랜드 이야기</a></li>
-                    <li><a href="">제품 소개</a></li>
-                    <li><a href="">제품 구매</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul class="m_util">
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                    <li><a href="">1:1문의</a></li>
-                    <li><a href="">Language</a></li>
-                    <li><a href="">관리자페이지</a></li>
-                </ul>
-            </li>
-
-            
-
+   <!--헤더영역-->
+   <section id="m_header">
+    <h1 id="m_logo">
+      <a href="#"><img src="./images/brand_main/logo.jpg" alt="m_logo" /></a>
+    </h1>
+    <input type="checkbox" id="m_btn" />
+    <label for="m_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul id="m_popup">
+      <li>
+        <ul class="m_gnb">
+          <li><a href="">브랜드 이야기</a></li>
+          <li><a href="">제품 소개</a></li>
+          <li><a href="">제품 구매</a></li>
         </ul>
-    </section>
+      </li>
+      <li>
+        <ul class="m_util">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">1:1문의</a></li>
+          <li><a href="">관리자페이지</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <header id="header">
+    <div class="header_wrap">
+      <h2>헤더영역</h2>
+      <h1 id="logo">
+        <a href="#"><img src="./images/brand_main/logo.jpg" alt="logo" /></a>
+      </h1>
+
+      <div id="util">
+        <ul class="util_right">
+          <li><a href="#">로그인</a></li>
+          <li>|</li>
+          <li><a href="#">회원가입</a></li>
+          <li>|</li>
+          <li><a href="#">1:1 문의</a></li>
+          <li>|</li>
+          <li><a href="#">관리자 페이지</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="gnb">
+          <li><a href="./br.html">브랜드 이야기</a></li>
+          <li><a href="#">제품 소개</a></li>
+          <li><a href="#">제품 구매</a></li>
+        </ul>
+      </div>
+      <div id="main_search">
+        <div>
+          <input
+            type="search"
+            placeholder="소화엔 역시 활명수"
+            name="main_search"
+          />
+          <a href="#"
+            ><img src="./images/brand_main/검색아이콘2.png" alt="search_icon"
+          /></a>
+        </div>
+        <div class="r_icon">
+          <a href="#"
+            ><img src="./images/brand_main/mypage.svg" alt="mypage"
+          /></a>
+          <a href="#"
+            ><img src="./images/brand_main/cart.svg" alt="cart"
+          /></a>
+        </div>
+      </div>
     </div>
-    <header id="header">
-        <h2>헤더영역</h2>
-            <h1 id="logo"><a href="#"><img src="../images/brand_main/logo.jpg" alt="logo"></a></h1>     
-            
-        
-            <div id="util">
-                <ul class="util_right">
-                    <li><a href="#">로그인</a></li>
-                    <li>|</li>
-                    <li><a href="#">회원가입</a></li>
-                    <li>|</li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li>|</li>
-                    <li><a href="#">Language</a></li>
-                    <li>|</li>
-                    <li><a href="#">관리자 페이지</a></li>
-                    <li>|</li>
-                    <li><a href="#"><img src="../images/brand_main/검색아이콘.png" alt="icon"></a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="gnb">
-                    <li><a href="./br.html">브랜드 이야기</a></li>
-                    <li><a href="#">제품 소개</a></li>
-                    <li><a href="#">제품 구매</a></li>
-                </ul>
-            </div>
-        </header>
+  </header>
 <div id="step">
     <h4>주문하기</h4>
 </div>
