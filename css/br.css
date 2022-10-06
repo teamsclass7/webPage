@@ -58,6 +58,8 @@ h2{
 .util_right>li>a{
     font-size:1.2rem;
 }
+
+
 .gnb{
     position:absolute;
     transform:translateX(-50%);

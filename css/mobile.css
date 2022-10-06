@@ -11,8 +11,11 @@ img{vertical-align:top;}
 a{text-decoration:none;}
 a,a:link,a:visited,a:hover,a:active{color:#000000;}
 
-@media all and (max-width:1020px){
-    body{width: 100%;}
+@media all and (max-width:1024px){
+    body{width: 100%; }
+    
+    
+
 }
 
 
