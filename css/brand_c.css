@@ -204,6 +204,11 @@ h2{
 .product table {height:700px; width:1130px;}
 .product table tr:last-child>td {border: bottom 1px;}
 td>a>img{height:150px;}
+.product table tr:nth-child(4)>td:nth-child(6),
+.product table tr:nth-child(3)>td:nth-child(6),
+.product table tr:nth-child(3)>td:nth-child(3),
+.product table tr:nth-child(4)>td:nth-child(3){font-size: 1.2rem;}
+.product table tr>td>span{font-size: 1.2rem;}
 
 /*합계*/
 .s_sum {
@@ -237,6 +242,7 @@ td>a>img{height:150px;}
 	line-height:14px;
 	outline:0;
 	cursor:pointer;
+  color:#fff;
 }
 .s_button01 p:nth-child(1) {
 	float:left;
@@ -247,6 +253,7 @@ td>a>img{height:150px;}
 }
 
 /* 총 합계 */
+.total{margin-top:100px;}
 .total table {
 	width:1130px; height:249px;
 }
@@ -260,7 +267,7 @@ td>a>img{height:150px;}
 .s_button02 {
 	margin:55px 0 157px;
 	float:right;
-	
+	width:100%;
 }
 
 .s_button02 input {
@@ -281,12 +288,12 @@ td>a>img{height:150px;}
 .s_button02 .s_btns {
 	background-color:#156037;
 	color:#fff;
-	margin-right:360px;
+	margin-right:600px;
 }
 
 .s_button02 .f_shopping {
 	background-color:#156037;
-	margin-right:40px;
+  color:#fff;
 }
 /* 변경버튼 */
 .s_changeb {
@@ -355,9 +362,10 @@ td{position:relative;}
 .s_info table {
 	width:1130px; height:480px;
 }
-
+.s_tradius>td{border:0 !important;}
 .s_info table tr:last-child>td {border-bottom:0;}
 
+.s_info tbody>td{border-top : 0 !important;}
 .s_info td {
 	text-align:left;
 	padding-left:40px;
@@ -540,6 +548,7 @@ td{position:relative;}
     #mypage{display:none;}
     .s_info,.s_button01,.product,table{width:740px !important;
     margin:0 auto;}
+    .product{margin-top:100px;}
     
 .s_sum {
 	margin:29px 0 0 27px;
@@ -556,10 +565,12 @@ td{position:relative;}
 	float:right;
 	margin-right:20px;
 }
-.s_button02{width:740px;margin:0 auto;background:red; float:none; margin-bottom: 100px;}
+.s_button02{width:740px;margin:0 auto; float:none; margin-bottom: 100px;}
 .s_button02 .s_btns {
-	margin-right:120px;
+	margin-right:214px;
 }
+.s_cbtn {right:10px;}
+
     /*모바일 푸터*/
   
   footer{
