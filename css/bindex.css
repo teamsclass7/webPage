@@ -201,14 +201,14 @@ color:#5d5d5d; z-index:99999;}
   bottom: 0;
   justify-content: center;
   align-items: center;
-  z-index:9
+  z-index:999999;
 }
 
 .video_modal_popup .video-wrapper {
   position: relative;
-  width: 80%;
-  padding-bottom: 45%;
-  z-index: 10
+  width: 60%; height: 80%;
+  margin: 10%;
+  z-index: 10;
 }
 
 .video_modal_popup .video-wrapper iframe {
@@ -216,8 +216,7 @@ color:#5d5d5d; z-index:99999;}
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
 }
 
 .video_modal_popup.reveal .video_modal_popup-closer {
@@ -227,7 +226,6 @@ color:#5d5d5d; z-index:99999;}
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, .5);
-  z-index: 9
 }
 /*page1 구역*/
 #page1{background: url('../images/brand_main/bc_sec01_bg.png')no-repeat center center/cover;
@@ -377,7 +375,7 @@ h3{
     height:10px;
     position:relative;
     left:45px;
-    top:30px;
+    top:43px;
 }
 
 #line7{
@@ -408,7 +406,7 @@ h3{
 
 .origin>li{text-align: center;margin-bottom:10px; font-weight:700;}
 #page1_1>.wrap figcaption{
-    padding-top:40px;font-size:1.3rem;
+    padding-top:53px;font-size:1.3rem;
 }
 .latest{
     position:relative;
@@ -655,8 +653,12 @@ h3{
   box-sizing: border-box;
   font-family: '양진체'
 }
-#page4>.wrap>h4{font-size:41px; margin:20px 0px 40px; }
-#page4>.wrap>h4>span{font-weight: 900;}
+#page4>.wrap>h4{font-size:41px; margin:0px 0px 40px; }
+#page4>.wrap>h4>span{
+  font-weight: 700;
+  font-size: 5rem;
+  color:#156037;
+}
 
 .abc{
   width: 100%;
@@ -743,7 +745,7 @@ h3{
   width: 65px;
   font-size:31px;
   color:#333;
-  font-weight: 500;
+  font-weight: 800;
 }
 #ani>div:last-child{
   width: 20px;
@@ -1132,7 +1134,9 @@ input[type=checkbox]:checked ~ #search_popup {
     #m_itemlist{display:block; width:1024px; margin:0 auto; height: 2100px;
     }
     #m_itemlist figcaption{
-        padding-top:40px;font-size:1.3rem; font-weight: bold;
+        padding-top:40px;
+        font-size:1.3rem; 
+        font-weight: bold;
     }
     #m_itemlist>div{width:740px; margin:0 auto;}
     #m_itemlist>div::after{
@@ -1166,7 +1170,10 @@ input[type=checkbox]:checked ~ #search_popup {
     border-radius:50px;
     width:10px;
     height:10px; display:inline-block;
-    position: absolute; right:0; top:50%; transform: translateY(-50%);
+    position: absolute; 
+    right:0; top:50%; 
+    transform: translateY(-50%);
+
 }
 
 
@@ -1176,6 +1183,9 @@ input[type=checkbox]:checked ~ #search_popup {
     .item_left>ul>li>figure{position: absolute; right: 45%; top:50%; transform: translateY(-50%);}
     .item_left>ul>li:last-child{margin: 0;}
     .item_left>ul>li:last-child>img{width:100%;  position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
+
+
+
 /*right*/
 .item_right>ul{width:100%; height:90%;}
 .item_right>ul>li{width:100%; height: 20%; position: relative; margin-top: 40%;}
