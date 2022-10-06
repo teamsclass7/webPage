@@ -147,7 +147,7 @@ visibility:hidden;
 }
 .gnb>li>a:hover::after {
   content: "";
-  width: 50%;
+  width: 60%;
   height: 4px;
   position: absolute;
   background: #156037;
@@ -165,10 +165,7 @@ visibility:hidden;
   bottom: -15px;
   transform: translateX(-50%);
   transition: all 0.3s;}
-  .gnb>li:nth-child(2)>a:first-child:hover::after,
-  .gnb>li:nth-child(3)>a:first-child:hover::after {
-      width: 60%;
-  }
+  
 
 
 #menu{
@@ -361,48 +358,166 @@ nav.drop {
 
 /*푸터영역*/
 footer{
-    background:#d7d7d7;
-    height:150px;
+  background:#d7d7d7;
+  height:100px;
 }
 footer>.wrap{
-    position:relative;
-    padding:0;
+  position:relative;
+  padding:0;
 }
 footer>div>.logo{
-    float:left;
-    margin-top:65px;
+  float:left;
+  margin-top:40px;
 }
 footer>div>address{
-    position:absolute;
-    left:300px;
-    top:55px;
+  position:absolute;
+  left:300px;
+  top:30px;
+  text-align: left;
 }
 footer>div>address>p{
-    line-height:25px;
-    font-size:1.2rem;
-    color:#5d5d5d;
+  line-height:25px;
+  font-size:1.2rem;
+  color:#5d5d5d;
 }
 footer>div>.ft_01{
-    float:right;
-    margin-top:55px;
+  float:right;
+  margin-top:30px;
 }
 footer>div>.ft_01>li{
-    padding:5px;
+  padding:5px;
 }
 footer>div>.ft_01>li:nth-child(1){
-    text-align:right;
+  text-align:right;
 }
 footer>div>.ft_01>li:nth-child(2){
-    font-size:1.2rem;
-    color:#5d5d5d;
+  font-size:1.2rem;
+  color:#5d5d5d;
 }
 footer>div>.ft_01>li>a{
-    font-size:1.5rem;
-    font-weight:bold;
-    color:#5d5d5d;
+  font-size:1.5rem;
+  font-weight:bold;
+  color:#5d5d5d;
+}
+/*검색창 영역*/
+#search_popup{
+font-weight: 700;
+}
+.search_bar_bg{width:83%; margin:2% auto 1%;
+height:10%;}
+.search_bar1{
+border:3px solid #156037;
+width: 90%;
+height:100%;
+background: #f2f2f2;
+box-sizing: border-box;
+margin-right: 15px;
+}
+
+.search_bar_bg img{width:5%;  margin-top: 1%; }
+#search_bg{
+margin-top:2%;
+width:83%;
+height:82%;
+border:3px solid #156037;
+position: relative;
+box-sizing: border-box;
+}
+
+#search_bg>div{
+width:45%;
+height:6.25%;
+}
+#search_icon>div:nth-child(1)>a img{
+padding: 2px 0 0;
+}
+#search_icon>div:nth-child(1)>a{
+    width:270px; height:30px;
+}
+#search_bg:nth-child(2)>a img{
+padding: 5px 0 0;
+}
+#search_r>li>a,#search_l>li>a{ line-height: 2;
+color:#333;
+font-size: 16px;
+}
+
+#search_bg{margin:0 auto;}
+#search_r>li:first-child{display: flex;
+flex-flow: row wrap; 
+justify-content: space-around;
+align-items :center}
+#search_l>li:last-child{margin:140px 0 0 20px; }
+#search_bg>ul{
+width:50%;
+height:100%;
+}
+#search_l>li>a{padding-left: 10px;}
+#search_bg>ul:nth-child(1){
+position: absolute;
+left: 0; 
+border-right: 2px solid rgba(21, 96, 55,0.1);
+
+
+}
+#search_r>li{padding-left: 5%;}
+#search_bg>ul:nth-child(1)>li:first-child{text-align: center; }
+#search_bg>ul>li:first-child>a{color: #156037; font-size: 20px;}
+#search_bg>ul:nth-child(2){
+position: absolute;
+right:0 ;
+}
+#search_bg>ul:nth-child(2)>li:nth-child(5){
+top:30px;
 }
 
 
+
+
+input[type=checkbox] {
+display: none;
+}
+
+input[type=checkbox] + label {
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+position: relative;
+z-index: 2;
+text-align: right;
+
+}
+#x_icon{width:35px; height: 35px;}
+#search_popup{
+visibility: hidden;
+width: 0;
+height: 0;
+overflow: hidden;
+text-indent: -9999px;
+}
+
+
+
+input[type=checkbox]:checked ~ #search_popup {
+visibility: visible;
+width: 600px;
+height: 400px;
+
+overflow: hidden;
+text-indent: 0;
+right: 0;
+background: rgba(0,0,0,0.1);
+transition: all 0.4s;
+position: fixed;
+
+box-sizing: border-box;
+top: 50px;
+right: 50px;
+z-index: 1;
+}
+
+#search_insert{width:240px; border:0;  background: rgba(0,0,0,0.1);}
 
 
 
@@ -565,6 +680,7 @@ footer>div>.ft_01>li>a{
         z-index: 1;
       }
 
+
       /*콘텐츠*/
     .opt_sec,.sel_opt>ul:last-child{display:flex; flex-flow: row wrap; justify-content: space-between;}
     .btn{width:360px; height:120px;}
@@ -634,52 +750,52 @@ table{margin-left: 50px !important;}
  /*모바일 푸터*/
 
  footer{
-   width:1024px; height:100px; margin:0 auto;
-   margin-top: 100px;
-  }
-  footer div.wrap {width:740px; height:100px;
-    position:relative;
-    padding:0;
+  width:1024px; height:100px; margin:0 auto;
+  margin-top:100px;
+}
+footer div.wrap {width:740px; height:100px;
+  position:relative;
+  padding:0;
+
+}
+
+footer>div>.logo{
+  position: absolute; left:0; top:50%; transform: translateY(-50%); width:250px; height:30px; line-height: 30px; text-align: center; margin: 0;
+}
+footer>div>.logo img{width:244px; height:25px; vertical-align: middle;}
+footer>div>address{ 
+  text-align: left;
+  position:absolute;
   
-  }
+  top:15px;
+  left:35%;
+}
+footer>div>address>p{
   
-  footer>div>.logo{
-    position: absolute; left:0; top:50%; transform: translateY(-50%); width:250px; height:30px; line-height: 30px; text-align: center; margin: 0;
-  }
-  footer>div>.logo img{width:244px; height:25px; vertical-align: middle;}
-  footer>div>address{ 
-    text-align: left;
-    position:absolute;
-    
-    top:15px;
-    left:35%;
-  }
-  footer>div>address>p{
-    
-    font-size:1rem;
-    color:#5d5d5d;
-  }
-  footer>div>.ft_01{
-    text-align: left;
-    width:450px;
-    margin:0;
-    
-   position: absolute;
-   top:70px;
-   left:35%;
-   display: flex;
-    flex-flow: row wrap; 
-   justify-content:space-between;
-   align-items:flex-end;
-  }
-  footer>div>.ft_01>li{ display: block; padding:0; height:20px; line-height: 20px; }
-  footer>div>.ft_01>li:first-child{width:135px;  text-align: left; }
-  footer>div>.ft_01>li:last-child{width:315px; text-align: right; }
-  footer>div>.ft_01>li:nth-child(2){
-    font-size:1rem;
-  }
-  footer>div>.ft_01>li>a{
-    font-size:1.4rem;
-  }
+  font-size:1rem;
+  color:#5d5d5d;
+}
+footer>div>.ft_01{
+  text-align: left;
+  width:450px;
+  margin:0;
+  
+ position: absolute;
+ top:70px;
+ left:35%;
+ display: flex;
+  flex-flow: row wrap; 
+ justify-content:space-between;
+ align-items:flex-end;
+}
+footer>div>.ft_01>li{ display: block; padding:0; height:20px; line-height: 20px; }
+footer>div>.ft_01>li:first-child{width:135px;  text-align: left; }
+footer>div>.ft_01>li:last-child{width:315px; text-align: right; }
+footer>div>.ft_01>li:nth-child(2){
+  font-size:1rem;
+}
+footer>div>.ft_01>li>a{
+  font-size:1.4rem;
+}
   
 }
