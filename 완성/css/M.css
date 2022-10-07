@@ -300,10 +300,12 @@ h2 {
     padding-bottom: 15px;
 }
 .page>div>p>span{margin-left: 20px;}
+.page>div>a{display: block; padding-top: 15px;}
+
 .page>div span{
     font-size: 14px;
     color: #666;
-    padding-top: 15px;
+
     margin: 0 10px;
 }
 .page>div>span:last-child{padding-bottom: 0;}
