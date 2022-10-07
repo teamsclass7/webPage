@@ -184,7 +184,7 @@ section.clear{height:2200px;}
     display:flex;}
 #mypage {
     width: 290px;
-    height: 532px;
+    height: 450px;
     box-sizing: border-box;
     border: 2px solid #156037;
     margin:100px 50px 0 150px;
@@ -254,12 +254,12 @@ section.clear{height:2200px;}
 	margin-bottom:20px;
 	overflow:hidden;
 }
-.product .t_bg>td{border-top:2px solid black !important;
+.product .t_bg>td{border-top:2px solid #666 !important;
 border-bottom:1px solid #999 !important;}
 .product table {height:700px; width:1130px;}
 td>a>img{height:150px;}
 .product table tr:nth-child(3)>td{border-bottom: 1px solid #999 !important;}
-.product table tr:nth-child(4){border-bottom: 2px solid black; border-top: 0 !important; }
+.product table tr:nth-child(4){border-bottom: 2px solid #666; border-top: 0 !important; }
 .product table tr:nth-child(4)>td:nth-child(6),
 .product table tr:nth-child(3)>td:nth-child(6),
 .product table tr:nth-child(3)>td:nth-child(3),
@@ -312,8 +312,8 @@ td>a>img{height:150px;}
 .total{margin-top:100px;}
 .total table {
 	width:1130px; height:200px;
-  border-top:2px solid black;
-  border-bottom:2px solid black;
+  border-top:2px solid #666;
+  border-bottom:2px solid #666;
 }
 .total tbody tr:last-child>td{border:0 !important;}
 .total tr span {
@@ -342,13 +342,9 @@ td>a>img{height:150px;}
 .s_button02 .s_btnt{
 	background-color:#156037;
 	color:#fff;
-	margin-right:10px;
+	margin-right:787px;
 }
-.s_button02 .s_btns {
-	background-color:#156037;
-	color:#fff;
-	margin-right:604px;
-}
+
 
 .s_button02 .f_shopping {
 	background-color:#156037;
@@ -422,7 +418,7 @@ td{position:relative;}
 .s_info table {
 	width:1130px; height:480px;
 }
-.s_tradius>td{border:0 !important;}
+.s_tradius>td{border-top:0 !important; border-bottom:1px solid #999 !important;}
 .s_info table tr:last-child>td {border-bottom:0;}
 
 .s_info tbody>td{border-top : 0 !important;}
@@ -789,8 +785,8 @@ z-index: 1;
 	margin-right:20px;
 }
 .s_button02{width:740px;margin:0 auto; float:none; margin-bottom: 100px;}
-.s_button02 .s_btns {
-	margin-right:214px;
+.s_button02 .s_btnt {
+	margin-right:397px;
 }
 .s_cbtn {right:10px;}
 .s_button01,.s_button02{margin-top: 20px;}
