@@ -1,0 +1,216 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*font-family: '양진체'*/
+
+html{width:100%;height:100%;margin:0 auto;font-size:12px; font-family: 'Noto Sans KR', sans-serif;}
+img{vertical-align:top;}
+a{text-decoration:none;}
+a,a:link,a:visited,a:hover,a:active{color:#333;}
+
+
+.wrap{
+    padding:100px 0;
+	width:100%;height:750px;
+	margin:0 auto;
+	position:relative;
+	
+}
+
+#sec01_wrap>h2,#sec01_wrap>h3{
+    padding:30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+#sec01_wrap hr,#sec02_wrap hr{
+    border: 0;
+    background:#156037;
+    width: 100%;
+    height: 3px;
+    margin:10px 0 30px 0;
+}
+
+
+
+/*ㅇ*/
+#l2_tabs{
+    
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+#l2_tabs div{
+	width:300px; height:70px;
+	text-align:center;
+	line-height:70px;
+	font-size:20px;	
+    
+}
+.tab_b02{
+	border:1px solid #e1e1e1;	
+	border-bottom:3px solid #156037;
+	color:#156037;
+	box-sizing:border-box;
+    font-weight: 700;
+}
+.tab_b01{
+	box-sizing:border-box;
+	border:1px solid #e1e1e1;
+	box-sizing:border-box;
+	color:#c1c1c1;
+}
+
+/*비밀번호 찾기*/
+
+.findarea input::placeholder {
+	color:#c1c1c1;
+	font-size:16px;
+}
+.findarea{
+	text-align:center;
+	margin-top:20px;
+}
+.findarea input{
+	width:500px; height:50px;
+	border:1px solid #e1e1e1;
+	outline:0;
+	padding-left:20px;
+}
+#find2{display:none;}
+.confir_btn{text-align:center;}
+.confir_btn input{
+	background:0;
+	border:0;
+	color:#fff;
+	font-size:20px;
+	outline:none;
+	width:200px; height:50px;
+	background:#156037;
+	cursor:pointer;
+	line-height:50px;
+	margin:50px 20PX 0;
+}
+.confir_btn a{
+	display: inline-block;
+	color:#fff;
+	font-size:20px;
+	width:200px; height:50px;
+	background:#156037;
+	cursor:pointer;
+	line-height:50px;
+	margin:50px 20px 0;
+}
+.email input{
+	width:278px;
+	vertical-align:middle;
+}
+.email select{
+	width:205px; height:54px;
+	border:1px solid #e1e1e1;
+	vertical-align:middle;
+	color:#000;
+	padding-left:10px;
+	font-size:16px;
+	outline:0;
+}
+
+/*팝업창*/
+.popup_black{
+	display:none;
+	position:fixed;
+	left:0; top:0;
+	width:100%; height:100%;
+	background-color:rgba(0,0,0,0.6);
+	z-index:9999;
+}
+.popup_wrap{
+	display:none;
+	position:fixed;
+	left:50%; top:50%;
+	transform:translate(-50%, -50%);
+	width:400px; height:350px;
+	background:#fff;
+	z-index:999999;
+	
+	text-align:center;
+}
+.popup_wrap h3{
+	margin:20px 0;
+	color:#000;
+	font-size:22px;
+}
+.popup_wrap p{
+	margin:30px 0;
+	color:#000;
+	font-size:20px;
+}
+.pop_line{border-bottom:1px solid #e1e1e1;}
+.close_btn2{
+    display:inline-block;
+	background:#156037;
+	margin:20px 10px;
+	width:150px; height:50px;
+	outline:0;
+	border-radius:50px;
+	text-align:center;
+	line-height:50px;
+	color:#fff;
+	cursor:pointer;
+	border:0;
+}
+.close_btn{	
+    display:inline-block;
+    background:#666;
+	margin:20px auto;
+	width:150px; height:50px;
+	outline:0;
+	border-radius:50px;
+	text-align:center;
+	line-height:50px;
+	color:#fff;
+	cursor:pointer;
+	border:0;
+}
+
+
+
+.log_sch_form {
+	width:470px;
+	margin:50px auto ;
+}
+.radio_sch {
+	text-align:center;
+}
+.radio_sch p {
+	display:inline-block;
+}
+
+.radio_sch p input {
+	margin-right:10px;
+}
+
+.radio_sch{
+   text-align: center;
+
+}
+.radio_sch label{padding:0 10px;}
+#sec01_wrap>h3{display:none;}
+@media all and (max-width:1024px) {
+	.wrap{
+        width:100%;
+
+        margin:0 auto;
+    }
+ 
+    #sec01_wrap h2:first-child{display:none;}
+    #sec01_wrap>h3{display:block;}
+
+}
