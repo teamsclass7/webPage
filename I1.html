@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <title>간짜장먹고싶니?</title>
+    <title>제품상세페이지</title>
     <link href="css/I1.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -12,7 +12,7 @@
     <!--헤더영역-->
     <section id="m_header">
         <h1 id="m_logo">
-          <a href="#"><img src="./images/brand_main/logo.jpg" alt="m_logo" /></a>
+          <a href="main.html"><img src="./images/brand_main/logo.jpg" alt="m_logo" /></a>
         </h1>
         <input type="checkbox" id="m_btn" />
         <label for="m_btn">
@@ -23,17 +23,17 @@
         <ul id="m_popup">
           <li>
             <ul class="m_gnb">
-              <li><a href="">브랜드 이야기</a></li>
-              <li><a href="">제품 소개</a></li>
-              <li><a href="">제품 구매</a></li>
+              <li><a href="main.html">브랜드 이야기</a></li>
+              <li><a href="G.html">제품 소개</a></li>
+              <li><a href="I.html">제품 구매</a></li>
             </ul>
           </li>
           <li>
             <ul class="m_util">
-              <li><a href="">로그인</a></li>
-              <li><a href="">회원가입</a></li>
-              <li><a href="">1:1문의</a></li>
-              <li><a href="">관리자페이지</a></li>
+              <li><a href="L.html">로그인</a></li>
+              <li><a href="J.html">회원가입</a></li>
+              <li><a href="Q.html">1:1문의</a></li>
+              <li><a href="M.html">마이페이지</a></li>
             </ul>
           </li>
         </ul>
@@ -43,25 +43,25 @@
         <div class="header_wrap">
           <h2>헤더영역</h2>
           <h1 id="logo">
-            <a href="#"><img src="./images/brand_main/logo.jpg" alt="logo" /></a>
+            <a href="main.html"><img src="./images/brand_main/logo.jpg" alt="logo" /></a>
           </h1>
   
           <div id="util">
             <ul class="util_right">
-              <li><a href="#">로그인</a></li>
+              <li><a href="L.html">로그인</a></li>
               <li>|</li>
-              <li><a href="#">회원가입</a></li>
+              <li><a href="J.html">회원가입</a></li>
               <li>|</li>
-              <li><a href="#">1:1 문의</a></li>
+              <li><a href="Q.html">1:1 문의</a></li>
               <li>|</li>
-              <li><a href="#">관리자 페이지</a></li>
+              <li><a href="A.html">관리자 페이지</a></li>
             </ul>
           </div>
           <div>
             <ul class="gnb">
-              <li><a href="./br.html">브랜드 이야기</a></li>
-              <li><a href="#">제품 소개</a></li>
-              <li><a href="#">제품 구매</a></li>
+              <li><a href="main.html">브랜드 이야기</a></li>
+              <li><a href="G.html">제품 소개</a></li>
+              <li><a href="I.html">제품 구매</a></li>
             </ul>
           </div>
           <div id="main_search">
@@ -76,10 +76,10 @@
               /></a>
             </div>
             <div class="r_icon">
-              <a href="#"
+              <a href="M.html"
                 ><img src="./images/brand_main/mypage.svg" alt="mypage"
               /></a>
-              <a href="#"
+              <a href="C.html"
                 ><img src="./images/brand_main/cart.svg" alt="cart"
               /></a>
             </div>
@@ -124,6 +124,12 @@
                 </li>
                 <li>
                     <dl>
+                        <dt>제품가격</dt>
+                        <dd>14,400원</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
                         <dt>구매수량</dt>
                         <dd>
                             <div id="input_div"> 
@@ -137,7 +143,7 @@
                 <li><hr></li>
                 <li>
                     <dl>
-                        <dt>총 상품 금액 : </dt>
+                        <dt>총 구매 금액 : </dt>
                         <dd>
                             <input type="text" value="14400" id="total_count" hidden=hidden />
                             <input type="text" value="14400" id="total_count_view"  readonly/>
@@ -147,12 +153,12 @@
             <ul>
                 <li>
                     <button type="button" class="btn btn_keeb">
-                        <a href="#">장바구니</a>
+                        <a href="C.html">장바구니</a>
                     </button>
                 </li>
                 <li>
                     <button type="button" class="btn btn_buy">
-                        <a href="#">바로구매</a>
+                        <a href="G3.html">바로구매</a>
                     </button></li>
             </ul>
         </div>
@@ -189,9 +195,9 @@
                         <ul>
                             <li><img src="./images/b_sub2/profile.png" alt="profile"></li>
                             <li>★★★★☆</li>
-                            <li>이말*</li>
+                            <li>이매*</li>
                             <li>2022.09.30</li>
-                            <li>방구마려웠는데 이거먹으니까 방구가 잘나와요</li>
+                            <li>방구마려웠는데 이거먹으니까 방구가 잘나와요!</li>
                             <li><img src="./images/b_sub2/re_1.jpg"></li>
                         </ul>
                     </li>
@@ -259,43 +265,43 @@
                     <li>미답변</li>
                     <li>혹시 많이사면 할인 되나요?</li>
                     <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>2022-10-03</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
-                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요</li>
-                    <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요.</li>
+                    <li>김영*</li>
+                    <li>2022-10-03</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
-                    <li>토할때 먹어도 도요??</li>
-                    <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>토할때 먹어도 되요??</li>
+                    <li>허성*</li>
+                    <li>2022-10-04</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
                     <li>혹시 많이사면 할인 되나요?</li>
-                    <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>강병*</li>
+                    <li>2022-10-05</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
-                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요</li>
-                    <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>배고파서 먹었는데 별로 배가 차지도 않네요 환불해주세요.</li>
+                    <li>임혜*</li>
+                    <li>2022-10-07</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
-                    <li>토할때 먹어도 도요??</li>
-                    <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>토할때 먹어도 되요??</li>
+                    <li>오지*</li>
+                    <li>2022-10-07</li>
                 </ul>
                 <ul class="clear">
                     <li>미답변</li>
                     <li>1빠 ㅋㅋ</li>
                     <li>박서*</li>
-                    <li>2022-10-10</li>
+                    <li>2022-10-07</li>
                 </ul>
             </div>
 
@@ -370,7 +376,7 @@
     <footer>
         <div class="wrap clear">
             <ul class="logo clear">
-                <li><a href="#"><img src="./images/brand_main/footer_logo.png" alt="footer_logo"/></a></li>
+                <li><a href="main.html"><img src="./images/brand_main/footer_logo.png" alt="footer_logo"/></a></li>
             </ul>
             <address>
                 <p>04522 서울 특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층 대표이사:유준하,한종현</p>
@@ -386,6 +392,6 @@
 
 
 
-    <script src="./js/I1.js"></script>
+    <script src="./js/bsub_2-1.js"></script>
 </body>
 </html>
