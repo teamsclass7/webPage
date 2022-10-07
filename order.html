@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>결제완료</title>
+    <link href="./css/order.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+   <!--헤더영역-->
+   <section id="m_header">
+    <h1 id="m_logo">
+      <a href="#"><img src="./images/brand_main/logo.jpg" alt="m_logo" /></a>
+    </h1>
+    <input type="checkbox" id="m_btn" />
+    <label for="m_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul id="m_popup">
+      <li>
+        <ul class="m_gnb">
+          <li><a href="">브랜드 이야기</a></li>
+          <li><a href="">제품 소개</a></li>
+          <li><a href="">제품 구매</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="m_util">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">1:1문의</a></li>
+          <li><a href="">관리자페이지</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <header id="header">
+    <div class="header_wrap">
+      <h2>헤더영역</h2>
+      <h1 id="logo">
+        <a href="#"><img src="./images/brand_main/logo.jpg" alt="logo" /></a>
+      </h1>
+
+      <div id="util">
+        <ul class="util_right">
+          <li><a href="#">로그인</a></li>
+          <li>|</li>
+          <li><a href="#">회원가입</a></li>
+          <li>|</li>
+          <li><a href="#">1:1 문의</a></li>
+          <li>|</li>
+          <li><a href="#">관리자 페이지</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="gnb">
+          <li><a href="./br.html">브랜드 이야기</a></li>
+          <li><a href="#">제품 소개</a></li>
+          <li><a href="#">제품 구매</a></li>
+        </ul>
+      </div>
+      <div id="main_search">
+        <div>
+          <input
+            type="search"
+            placeholder="소화엔 역시 활명수"
+            name="main_search"
+          />
+          <a href="#"
+            ><img src="./images/brand_main/검색아이콘2.png" alt="search_icon"
+          /></a>
+        </div>
+        <div class="r_icon">
+          <a href="#"
+            ><img src="./images/brand_main/mypage.svg" alt="mypage"
+          /></a>
+          <a href="#"
+            ><img src="./images/brand_main/cart.svg" alt="cart"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+<div id="step">
+    <h4>주문하기</h4>
+</div>
+<div class="b_wrap">
+<section id="order">
+    <div class="title">
+    <h3>주문제품 정보</h3>
+    </div>
+    <div>
+        <p>제품정보</p>
+        <p>할인금액</p>
+        <p>결제금액</p>
+    </div>
+    <div class="product">
+        <div>
+            <div class="image">
+                <img src="./images/brand_main/img01.jpg" alt="img01" />
+            </div>
+            <ul>
+                <li>까스 활명수</li>
+                <li>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식, 체함, 구역, 구토</li>
+                <li>50ml</li>
+                <li>수량 : 2개</li>
+                <li>8,000원</li >
+            </ul>
+            <div class="price">
+                <p>0원</p>
+                <p>16,000원</p>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div>
+            <div class="image">
+                <img src="./images/brand_main/img02.jpg" alt="img02" />
+            </div>
+            <ul>
+                <li>활명수</li>
+                <li>식욕감퇴(식욕부진), 위부팽만감, 소화불량, 과식, 체함, 구역, 구토</li>
+                <li>50ml</li>
+                <li>수량 : 2개</li>
+                <li>8,000원</li >
+            </ul>
+            <div class="price">
+                <p>0원</p>
+                <p>16,000원</p>
+            </div>
+        </div>
+    </div>
+</section>
+<form name="form" id="abc" method="post">
+<section id="consumer">
+    <div class="title">
+        <h3>주문자 정보</h3>
+        <h4>* 표시는 필수 입력 항목입니다.</h4>
+    </div>
+    <div class="c_info">
+        <p><span>이름 *</span> <input type="text" name="name" placeholder="이름을 입력해주세요."></p>
+        <p><span>휴대 전화 *</span> 
+            <select>
+                <option>010</option>
+                <option>011</option>
+            </select>&nbsp;ㅡ&nbsp;&nbsp;
+            <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요.">
+        </p>
+        <p>
+            <span>이메일 *</span> <input type="text" name="email" placeholder="이메일을 입력해 주세요."> &nbsp;@&nbsp;   
+            <select>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>daum.net</option>
+            </select>
+        </p>
+    </div>
+</section>
+<section id="address">
+    <div class="title">
+        <h3>배송지 정보</h3>
+        <h4>* 표시는 필수 입력 항목입니다.</h4>
+    </div>
+    <div class="a_info">
+        <p><span>받는 분 *</span> <input type="text"  name="name2" placeholder="이름을 입력해주세요."></p>
+        <p><span>휴대 전화 *</span> 
+            <select>
+                <option>010</option>
+                <option>011</option>
+            </select>&nbsp;ㅡ&nbsp;&nbsp;
+            <input type="text" name="phonenumber2" placeholder="휴대폰 번호를 입력해주세요.">
+        </p>
+        <div class="add">
+            <p>주소 *</p>
+            <p>
+                <input type="text" name="postcode" id="sample6_postcode" placeholder="우편번호">
+                <input type="button" id="sample6_search" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                <input type="text" name="address" id="sample6_address" placeholder="주소">
+                <input type="text" id="sample6_detailAddress" name="address2" placeholder="상세주소">
+            </p>
+        </div>
+        <p><span>배송시 요청사항</span> <input type="text"></p>
+    </div>
+</section>
+<section id="pay">
+    <div class="title">
+        <h3>결제수단</h3>
+    </div>
+    <div class="choise">
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment01.jpg" alt="payment01" />
+        </label>
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment03.jpg" alt="payment03" />
+        </label>
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment07.jpg" alt="payment07" />
+        </label>
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment06.jpg" alt="payment06" />
+        </label>
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment05.jpg" alt="payment05" />
+        </label>
+        <label>
+            <input type="radio" name="pay">
+            <img src="./images/brand_main/payment04.jpg" alt="payment04" />
+        </label>
+    </div>
+</section>
+<section id="confirm">
+    <div class="title">
+        <h3>총 주문금액</h3>
+    </div>
+    <div>
+        <div>
+            <p>주문금액</p>
+            <p>34,000원</p>
+        </div>
+        <div>
+            <p>할인금액</p>
+            <p>0원</p>
+        </div>
+        <div>
+            <p>배송비</p>
+            <p>0원</p>
+        </div>
+        <div>
+            <p>최종결제금액</p>
+            <p><span>34,000</span>원</p>
+        </div>
+    </div>
+    <p><input type="checkbox"> 동의하시면 결제가 진행됩니다</p>
+    <div class="c_btn">
+        <a href="#">취소하기</a>
+    </div>
+    <div class="p_btn">
+        <a href="#"><input type="submit" value="결제하기"></a>
+    </div>
+</section>
+</form>
+</div>
+<a href="#" class="up_button"></a>
+<footer>
+    <div class="wrap clear">
+        <ul class="logo clear">
+            <li><a href="#"><img src="./images/brand_main/footer_logo.png" alt="footer_logo"/></a></li>
+        </ul>
+        <address>
+            <p>04522 서울 특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층 대표이사:유준하,한종현</p>
+           <p> Tel:02-2021-9300 Mail:dongwha@dong-wha.co.kr 사업자등록번호:110-81-00102</p>
+            </address>
+        <ul class="ft_01">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li>Copyright(c) DONG WHA PHARM. CO., LTD</li>
+        </ul>    
+    </div>
+</footer>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="./js/order.js"></script>
+<script>
+    $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".up_button").fadeIn();
+          } else {
+            $(".up_button").fadeOut();
+          }
+        });
+        //Click event to scroll to top
+        $(".up_button").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+</script>
+
+
+</body>
+</html>

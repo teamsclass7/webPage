@@ -1,0 +1,106 @@
+@charset "utf-8";
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{padding:0; margin:0;list-style:none;}
+*{text-decoration:none;}
+html{font-family: 'Noto Sans KR', sans-serif;}
+.wrap{
+    width:1200px;
+    margin:0 auto;
+    height:2000px;
+
+}
+.bg2{background:#e7efeb;width:1920px;height:1064px;}
+h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-align:-9999px;
+}
+h3{
+    font-size:45px;
+    text-align: center;
+    font-weight:500;
+    line-height:1.5;
+    padding:60px;
+}
+span{
+    color:#156037;
+    font-size:62px;
+    font-weight:100;
+    font-family: '양진체';
+}
+
+img:hover{transform:scale(1.2);}
+.bg2>div>.origin{    
+    margin:0 auto;
+    display:flex;
+    width:80%;
+    justify-content:space-between;
+    flex-flow:row wrap;
+    
+}
+
+.origin>li>figure>img{
+    padding-bottom:10px;
+}
+.line1{background:#156037;
+    width:960px; height:3px;
+    position:relative;
+    top:225px;
+    margin:0 auto;
+}
+.line2{background:#156037;
+    width:960px; height:3px;
+    position:relative;
+    top:20px;
+    margin:0 auto;
+}
+#line1,#line2,#line3,#line4,#line5,#line6{
+    background:#156037;
+    border-radius:50px;
+    width:10px;
+    height:10px;
+    position:relative;
+    left:45px;
+    top:30px;
+}
+
+#line7{
+    background:#156037;
+    border-radius:50px;
+    width:10px;
+    height:10px;
+    position:relative;
+    left:600px;
+    top:45px;
+}
+.fig>li:last-child{
+    position:relative;
+    left:580px;
+    top:55px;
+    font-weight:700;
+}
+.origin>li{text-align: center;margin-bottom:10px; font-weight:700;}
+.bg2>.wrap figcaption{
+    padding-top:40px;font-size:1rem;
+}
+.add{
+    position:relative;
+    width:700px;
+    margin:0 auto;
+    margin-top:50px;
+}
+
+
+.add>li:nth-child(1) img{
+    width:700px;
+    margin:0 auto;
+}
+.add:hover{transform:scale(1.0);}

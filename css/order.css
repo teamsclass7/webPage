@@ -503,6 +503,8 @@ color:#5d5d5d; z-index:99999;}
 }
 
 
+
+
 /*푸터영역*/
 footer{
   background:#d7d7d7;
@@ -525,6 +527,7 @@ footer>div>address>p{
   line-height:25px;
   font-size:1.2rem;
   color:#5d5d5d;
+  text-align: left;
 }
 footer>div>.ft_01{
   float:right;
@@ -785,6 +788,16 @@ footer>div>.ft_01>li>a{
    }
 
 
+  /*탑버튼*/
+  .up_button {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/brand_main/up_button.svg");
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    display: none;
+  }
  /*모바일 푸터*/
 
  footer{
