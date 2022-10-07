@@ -157,7 +157,7 @@ visibility:hidden;
   color:#156037;
   transition: all .4s;
 }
-.gnb>li:nth-child(1)>a{font-size:1.9rem;
+.gnb>li:nth-child(3)>a{font-size:1.9rem;
   color:#156037;}
 
 .gnb>li>a::after {
@@ -178,7 +178,7 @@ visibility:hidden;
   transform: translateX(-50%);
   transition: all 0.3s;
 }
-.gnb>li:nth-child(1)>a::after{ content: "";
+.gnb>li:nth-child(3)>a::after{ content: "";
   width: 60%;
   height: 4px;
   position: absolute;
