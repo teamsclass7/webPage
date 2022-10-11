@@ -138,7 +138,7 @@ h2{
   }
   .gnb>li>a:hover::after {
     content: "";
-    width: 50%;
+    width: 60%;
     height: 4px;
     position: absolute;
     background: #156037;

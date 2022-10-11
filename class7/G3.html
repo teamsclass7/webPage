@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <title>결제완료</title>
+    <title>결제진행</title>
     <link href="./css/order.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
@@ -32,6 +32,8 @@
           <li><a href="L.html">로그인</a></li>
           <li><a href="J.html">회원가입</a></li>
           <li><a href="Q.html">1:1문의</a></li>
+          <li><a href="./M.html">마이페이지</a></li>
+
         </ul>
       </li>
     </ul>
@@ -74,7 +76,7 @@
           /></a>
         </div>
         <div class="r_icon">
-          <a href="#"
+          <a href="M.html"
             ><img src="./images/brand_main/mypage.svg" alt="mypage"
           /></a>
           <a href="C.html"
@@ -238,7 +240,7 @@
             <p><span>34,000</span>원</p>
         </div>
     </div>
-    <p><input type="checkbox" name="agree"> 동의하시면 결제가 진행됩니다</p>
+    <p><input type="checkbox" name="agree" id="agree"> <label for="agree">동의하시면 결제가 진행됩니다</label></p>
     <div class="c_btn">
         <a href="main.html">취소하기</a>
     </div>
