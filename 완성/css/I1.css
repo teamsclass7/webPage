@@ -205,7 +205,7 @@ color:#5d5d5d; z-index:99999;}
 .thumbnail>ul>li:nth-of-type(2):hover,
 .thumbnail>ul>li:nth-of-type(3):hover,
 .thumbnail>ul>li:nth-of-type(4):hover,
-.thumbnail>ul>li:nth-of-type(5):hover{transform: scale(1.1);}
+.thumbnail>ul>li:nth-of-type(5):hover{transform: scale(1.1); cursor: pointer;}
 
 
 

@@ -401,7 +401,7 @@ h2 {
 
 .f_receipt > li:nth-child(4) {
   height: 250px;
-  padding: 20px 0 30px 15px;
+  padding: 20px 15px 30px 15px;
   border-bottom: 3px solid #d6d6d6;
 }
 .receipt_table02 {
@@ -420,7 +420,7 @@ h2 {
   width: 100%;
 }
 .receipt_table02 > tbody > tr {
-  width: 650px;
+  width: 100%;
   height: 60px;
   line-height: 60px;
   display: flex;
